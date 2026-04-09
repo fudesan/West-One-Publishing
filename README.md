@@ -1,4 +1,4 @@
-# West-One-Publishing
+
 # West One Publishing
 
 Fan fiction and original fiction by **Fude-san** (筆者さん).
