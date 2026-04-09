@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>There Can Be Only One Morning Shift: Book Three — West One Publishing</title>
+<meta name="description" content="A Highlander fan fiction novel. Book Three of the Jennifer Marsh Series by Fude-san.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;600&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1a1512;
+    --page: #faf7f2;
+    --warm-mid: #8c7355;
+    --rule: #c9b99a;
+    --accent: #5c3d1e;
+    --muted: #7a6a58;
+    --max-width: 680px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  .site-header {
+    border-bottom: 1px solid var(--rule);
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--page);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .site-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .site-name:hover { color: var(--accent); }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  .nav-links a {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  .title-block {
+    max-width: var(--max-width);
+    margin: 5rem auto 0;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .fandom-tag {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+  h1.story-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  .series-line {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+  }
+  .epigraph {
+    margin: 2.5rem auto;
+    padding: 1.5rem 2rem;
+    border-left: 2px solid var(--rule);
+    text-align: left;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 480px;
+  }
+  .byline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+  .byline span { color: var(--accent); font-weight: 400; }
+  .meta-row {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3rem;
+  }
+  .wip-badge {
+    display: inline-block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--page);
+    background: var(--warm-mid);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    margin-top: 0.8rem;
+  }
+  .title-rule { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+  .toc { max-width: var(--max-width); margin: 0 auto 3rem; padding: 0 2rem; }
+  .toc-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .toc ol { list-style: none; counter-reset: toc-counter; }
+  .toc li {
+    counter-increment: toc-counter;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px dotted var(--rule);
+    font-size: 0.9rem;
+  }
+  .toc li::before {
+    content: counter(toc-counter, upper-roman);
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: var(--muted);
+    min-width: 2rem;
+  }
+  .toc a { color: var(--ink); text-decoration: none; flex: 1; }
+  .toc a:hover { color: var(--accent); }
+
+  .disclaimer {
+    max-width: var(--max-width);
+    margin: 0 auto 4rem;
+    padding: 1.2rem 2rem;
+    border: 1px solid var(--rule);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  .story { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem 6rem; }
+
+  .story h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 4rem 0 0.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .story h2.chapter { font-size: 1.05rem; margin-top: 5rem; }
+  .story h3 {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin: 2.5rem 0 0.25rem;
+  }
+  .story p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .story p:first-of-type { text-indent: 0; }
+  .section-break {
+    text-align: center;
+    color: var(--rule);
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+  .back-to-top {
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .back-to-top:hover { color: var(--accent); }
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    line-height: 1.8;
+  }
+  footer a { color: var(--muted); }
+  @media (max-width: 600px) {
+    .site-header { flex-direction: column; gap: 0.8rem; }
+    .story p { text-align: left; }
+    h1.story-title { font-size: 1.5rem; }
+  }
+</style>
+</head>
+
+<body id="top">
+
+<header class="site-header">
+  <a href="index.html" class="site-name">West One Publishing</a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="title-block">
+  <p class="fandom-tag">Highlander: The Series &nbsp;&middot;&nbsp; Fan Fiction</p>
+  <h1 class="story-title" id="top-of-story">There Can Be Only One Morning Shift</h1>
+  <p class="series-line">A Highlander Novel &nbsp;&middot;&nbsp; Book Three of the Jennifer Marsh Series</p>
+
+  <blockquote class="epigraph">
+    &ldquo;The solstice delivered something none of them had planned for.<br>
+    It had delivered her. Fully. Completely. Irrevocably.&rdquo;
+  </blockquote>
+
+  <p class="byline">Written by <span>Fude-san</span></p>
+  <p class="meta-row">Rating: T &nbsp;&middot;&nbsp; Characters: Duncan MacLeod, Richie Ryan, Methos, Amanda, Hugh Fitzcairn, OC</p>
+  <p class="meta-row">Tags: OC-centric, Canon-parallel, Found Family, Summer Solstice 1993</p>
+  <span class="wip-badge" style="background: var(--accent);">Complete</span>
+
+  <hr class="title-rule">
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <p class="toc-heading">Contents</p>
+  <ol>
+    <li><a href="#one-arrival">One &mdash; Arrival and the Shower Incident</a></li>
+    <li><a href="#two-the-deck">Two &mdash; The Deck</a></li>
+    <li><a href="#three-richies">Three &mdash; Richie&rsquo;s Coffee Martini and Tiny Dancer</a></li>
+    <li><a href="#four-amanda">Four &mdash; Amanda Fixes the Hair</a></li>
+    <li><a href="#five-the-bonfire">Five &mdash; The Bonfire and Rowan&rsquo;s Arrival</a></li>
+    <li><a href="#six-the-energy">Six &mdash; The Energy Conversation</a></li>
+    <li><a href="#seven-the-tarot">Seven &mdash; The Tarot Reading</a></li>
+    <li><a href="#eight-amanda-and-rowan">Eight &mdash; Amanda and Rowan</a></li>
+    <li><a href="#nine-the-fire-pit">Nine &mdash; The Fire Pit</a></li>
+    <li><a href="#ten-the-aftercare">Ten &mdash; The Aftercare</a></li>
+    <li><a href="#eleven-the-lotus">Eleven &mdash; The Lotus</a></li>
+    <li><a href="#twelve-fitz">Twelve &mdash; Fitz and the Uncle Offer</a></li>
+    <li><a href="#thirteen-sunday">Thirteen &mdash; What Was Understood by Sunday</a></li>
+  </ol>
+</nav>
+
+<div class="disclaimer">
+  Highlander: The Series and all associated characters are the property of Davis-Panzer Productions.<br>
+  No copyright infringement is intended and no profit is being made.<br>
+  Original characters and story content are the author&rsquo;s own. &copy; Fude-san.
+</div>
+
+<!-- STORY CONTENT -->
+<main class="story" role="main">
+
+<h2 class="chapter" id="one-arrival">ONE &mdash; ARRIVAL AND THE SHOWER INCIDENT</h2>
+
+<p>The cabin was remote in the specific Pacific Northwest way &mdash; not inaccessible, just removed. The trees made decisions about how much sky you got and the answer was not much. The cabin had a spacious main room with a fireplace and a full kitchen that contained working appliances. It could house eight to ten people with four bedrooms. There were two on each floor on opposite ends of the building. The exterior held a fire pit area and a large deck with an incredible view. Mac had rented it in the past. It was his in the way certain places became yours after enough returns.</p>
+
+<p>The occasion was the summer solstice, June 21st, the longest day, the counterweight to Mac's winter solstice birthday. Jennifer had graduated with her BS in May, but the cabin rental was not a graduation party. Amanda had seen fit to a proper graduation celebration. The cabin was just an excuse to get out of the city into the fresh air, to enjoy being alive and let the mountain work its magic.</p>
+
+<p>The group caravan had stopped along the road for dinner and arrived just as the sun was setting. After getting all of the baggage and gear out of the vehicles the division of bedrooms was sorted. Mac and Amanda took the front bedroom and assigned the back second floor bedroom to Richie and Jennifer. They were young, could take the stairs and hopefully keep down the racket.</p>
+
+<p>The back bathroom had, by mountain cabin standards, an unreasonably spacious, good shower. At some point the owner had installed a rainfall head in addition to the standard fixture. The water pressure was the kind that made you stand under it longer than you'd planned. The enclosure was large enough that it held build-in seating. Richie and Jennifer had individually checked out the shower room and made mental plans.</p>
+
+<p>Once the rooms were sorted Mac started up a fire which glowed and set a comfortable atmosphere for lounging, eating some of the pastries Fitz had brought along and drinking several dessert wines. Around midnight the group broke up and everyone headed to their rooms. Some went right to sleep and the kids on the top floor in the back managed to make a racket loud enough for Amanda to hear, clearly. "Fucking amateurs."</p>
+
+<p>"They're kids. We're here to enjoy ourselves," Mac soothed. "Let's enjoy ourselves."</p>
+
+<h3>Saturday Morning &mdash; Before Everyone Else</h3>
+
+<p>Jennifer made the coffee as her first task of the day no matter where that day started. On Saturday morning, it was the cabin kitchen. It wasn't the best coffee machine available on the market, but it was acceptable.</p>
+
+<p>This had become a daily ritual before the partnership had been officially named, before the dinner and the compact made it formal. It had started on the yacht, the two of them on the stern deck in the early light. It merged into the dojo and then the agreement. The practice itself was just what they did.</p>
+
+<p>Jennifer had stopped wondering how or why Mac was also awake before she arrived to make coffee. At the cabin she found him waiting on the mountain deck. The pre-dawn cold made the coffee that much more necessary.</p>
+
+<p>Mac took the mug she handed him without ceremony. They stood with the mountains for a moment. This was also how it worked. The coffee was first, then the quiet and movement when the time was right.</p>
+
+<p>Jennifer looked at the outline of the trees. "I've been thinking about a name," she said. Mac turned his head to look at her.</p>
+
+<p>"For you. You gave me Hato. It seemed like the direction should go both ways."</p>
+
+<p>He said nothing. Listening.</p>
+
+<p>"木の壁," she said. Ki no kabe. Wood wall.</p>
+
+<p>Mac was quiet for a moment. "That's a description," he said. "Not a name."</p>
+
+<p>"It's what you are," she said.</p>
+
+<p>"It's what I am explained in too many words," he said. He looked at the mountains. "What's the word that matters in that phrase?"</p>
+
+<p>She considered. "Ki," she said. Mac agreed. Jennifer held her hands wrapped around the coffee mug for warmth. She thought about Sakan-san, which had come out of her by accident, and which had been true. She thought about what she was doing now, which was deliberate, and what the difference between those two things meant. "Ki-san," she said and it sounded right. Short, to the point, correct.</p>
+
+<p>"Yes," Mac replied in agreement. He finished his coffee and set the mug down on the railing. "From the top," he said.</p>
+
+<p>She set her mug down beside his and they moved into the first position. The mountains watched. The trees let in a little more light.</p>
+
+<p>They continued training while the rest of the household rose and began taking in the morning. The scent of breakfast was alluring and Mac closed the session. "Something smells good. Let's go check it out."</p>
+
+<p>"Yes, we should, but I wanted to alert you to something," Jennifer announced. "I will be avenged this weekend.:</p>
+
+<p>He chuckled. "Bring it. I can't wait to see what you've learned since the last attempt."</p>
+
+<p>Methos had been at it since the eggs.</p>
+
+<p>It was subtle &mdash; it was always subtle with Methos, which was what made it effective. A particular quality of stillness when Jennifer came to the table. A slight pause before he reached for the coffee. The specific expression of a man carefully not saying something, which communicated everything he was carefully not saying.</p>
+
+<p>Jennifer had ignored it through the eggs. She had ignored it through the toast.</p>
+
+<p>Then Methos said, to nobody in particular:</p>
+
+<p>"Did anyone hear that last night? After everyone called it a night."</p>
+
+<p>Nobody answered.</p>
+
+<p>"Sounded like a coyote," he said. "Very distinctive. Quite sustained."</p>
+
+<p>Jennifer focused on her coffee.</p>
+
+<p>"The mountain habitat supports a healthy coyote population," Methos continued, with the specific pleasantness of someone reading from a nature documentary. "Remarkable vocal range. Very&mdash;" He paused, as if searching for the word. "Expressive."</p>
+
+<p>Jennifer set her mug down with more force than necessary. Richie put his fork down in tandem.</p>
+
+<p>"Methos," he said. The tone was quiet. It was also completely unambiguous. "That's enough. Stop now."</p>
+
+<p>Methos looked at Richie with five thousand years of assessment. Richie looked back with twenty-two years of having absolutely nothing to lose on this specific subject. "I was merely considering," Methos said, "what other animal sounds Jennifer might be able to perform-"</p>
+
+<p>The coffee mug left Jennifer's hand.</p>
+
+<p>It was not a decision. It was physics &mdash; the specific physics of a person whose patience had completed its journey and whose arm had received the information before her brain had finished processing the situation. The mug crossed the kitchen in a flat trajectory, missed Methos's head by perhaps four inches, and shattered against the support beam directly behind him.</p>
+
+<p>The cabin was completely silent.</p>
+
+<p>Methos looked at the beam. He looked at the ceramic on the floor. He looked at Jennifer with the expression of a man who had pushed slightly too far and was now living in the specific geography of that decision.</p>
+
+<p>Jennifer was looking at her hand. The hand that had, until recently, been holding a coffee mug.</p>
+
+<p>Mac stood up. "Jennie." He looked at her with the complete calm of a man who had seen enough escalation to know what the moment required. "Walk. Now."</p>
+
+<p>She got her jacket and headed outside.</p>
+
+<p>Fitz looked at the ceramic on the floor. "You broke a coffee cup," Fitz said. The gravity in his voice was genuine. "A vessel. The chalice that holds her ambrosia." He shook his head. "Unthinkable."</p>
+
+<p>"I didn't throw it," Methos said.</p>
+
+<p>"You most certainly started it," Fitz said.</p>
+
+<p>Amanda said nothing but a string of opinions were running through her mind.</p>
+
+<p>"Methos cleans it up," Richie said. "Consensus?"</p>
+
+<p>"Consensus," said Fitz, Amanda, and the general moral weight of the room simultaneously.</p>
+
+<p>Methos looked at the ceramic. He picked up the dustpan.</p>
+
+<p>"I may have pushed slightly too far," he said.</p>
+
+<p>"You think?" Richie said.</p>
+
+<p>The property ran further than the cabin suggested. Past the fire pit, past the tree-line edge, down a slope that leveled into a stretch of ground that ended at the water. There was a boathouse. It was old but solid &mdash; weathered wood, a good roof, the specific quality of a structure that had been maintained without being fussed over.</p>
+
+<p>They walked.</p>
+
+<p>"Don't let him get to you," Mac said.</p>
+
+<p>"He's not getting to me," Jennifer huffed. Mac's expression objected. "Fine, he's getting to me. I can't believe I threw a mug at him. That wasn't very responsible."</p>
+
+<p>"Heat of the moment. It happens to the best of us," Mac responded. "Block and deflect. He's looking for the reaction. If you don't give it to him he has nothing to work with."</p>
+
+<p>"I know, it's just," she stopped. "He's five thousand years old and he's sitting there with that face&mdash;"</p>
+
+<p>"I know," Mac said.</p>
+
+<p>She walked. She thought about block and deflect. She thought about Methos's face.</p>
+
+<p>"For the record, it was Richie, the animal sounds that Methos attempted to attribute to me. It was Richie." Mac looked at the water and tried to hold his composure. "The walls in that cabin are apparently not as thick as they look."</p>
+
+<p>"No," Mac said. "They're not."</p>
+
+<p>They walked a little further.</p>
+
+<p>"The boathouse," Mac said.</p>
+
+<p>She looked at it.</p>
+
+<p>"Roomy," he said. "Well built. And considerably further from the main structure." He paused. "Less likely to carry sound."</p>
+
+<p>Jennifer evaluated the boathouse, its proximity to the water and considered the specific problem of Richie Ryan in an acoustically compromised environment. "If he's too loud, I can push him into this lake. It's right there. He's not going to drown."</p>
+
+<p>Mac was about to expand on how Richie could drown but would regenerate but it wasn't the right face for the conversation."That would solve the noise problem," he offered with a light tone.</p>
+
+<p>They stood at the edge of the water for a moment. Jennifer was about to add a sarcastic line to the conversation when she felt it. Not heard, not seen. Felt, in the sternum, the specific place where the awareness lived. Jennifer had felt strangers before. Twice she had felt the cold frequency of someone coming with the wrong intentions and had known it before she saw their face. This was not that.</p>
+
+<p>This was not anything she had a category for.</p>
+
+<p>She went still.</p>
+
+<p>"What," Mac said.</p>
+
+<p>"Someone's coming," she said. "Through the tree-line. East." She stayed with it, trying to read it the way she read other things, carefully and without rushing. "Not one of ours. I don't know them, but it's not, it's not friend or foe. It doesn't resolve into either. It's like&mdash;" She searched for it. "It's like being handed an ice cream cone made of rocks. The shape is familiar. The contents don't make sense."</p>
+
+<p>Mac looked at her.</p>
+
+<p>Then she felt his awareness shift &mdash; the Immortal sense coming online beside hers &mdash; and she watched him locate the same presence.</p>
+
+<p>"Immortal," he said. "Unknown." He was still. His hand had not moved toward his sword but the quality of his attention had changed. He looked at her. "What do you have."</p>
+
+<p>"Neutral," she said. "Genuinely neutral. Not hunting. Not afraid." She paused. "Curious, maybe."</p>
+
+<p>They waited.</p>
+
+<p>The tree-line moved.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Rowan came out of the trees the way someone came out of trees when they had decided to be seen &mdash; deliberately, without hurry, hands visible. She was dressed in the specific way of someone for whom the late 1960s had become permanent: layers, earth tones, a coat that had seen decades of weather, a drum on her back. She had the quality of a person who had been outside for a very long time and had made peace with it completely.</p>
+
+<p>She stopped when she saw them. Rowan looked at Mac, at Jennifer and then back to Mac again with the specific attention of someone recalibrating.</p>
+
+<p>Mac said: "I'm Duncan MacLeod of the Clan MacLeod."</p>
+
+<p>The woman stared at Jennifer. "Two," she announced quietly, as if confirming something to herself. "I was told one. The rumors said one." She tilted her head. "A mortal who can sense us. Sometimes before we sense each other." She studied Jennifer with the unhurried attention of someone reading a text in an unfamiliar script. "I wasn't prepared for two distinct signatures."</p>
+
+<p>"There's only one signature," Mac said. "She's mortal."</p>
+
+<p>"She is," the woman agreed. "And yet." She left that where it was. She looked at Jennifer. "You felt me coming."</p>
+
+<p>"I felt something," Jennifer said. "I couldn't read it. You didn't resolve."</p>
+
+<p>Something shifted in the woman's face &mdash; recognition, or the closest thing to it. "No," she said. "I wouldn't. Not to someone like you." She seemed to find this interesting rather than troubling. "I'm Rowan."</p>
+
+<p>"Duncan MacLeod," Mac said again. The question underneath it.</p>
+
+<p>"I know who you are," Rowan said pleasantly. "I'm not here for you." She looked at the property, the water, the tree-line. "I'm looking for a clearing. Proper one, with the right aspect for the solstice. I've been moving through these mountains for three days." She looked at Mac. "Your property has a clearing."</p>
+
+<p>"It does," Mac said.</p>
+
+<p>She waited.</p>
+
+<p>Mac assessed. He looked at the woman &mdash; the drum, the coat, the three days of mountains in her bearing. He looked at the water, the boathouse, the specific geography of where they stood. He thought about the group back at the cabin and the odds, which were very much not in this woman's favor regardless of what she was or intended.</p>
+
+<p>"We're building a bonfire tonight," he said. "For the solstice. You're welcome to join us."</p>
+
+<p>Rowan considered this. "Perhaps," she said. Then she looked at him directly, and something shifted in her register &mdash; older, more formal, the language changing before the words came out. "Is mór an sonas a thug an grianstad dom inniu," she said. "Draó ar draó."</p>
+
+<p>Mac went very still for a moment and then he nodded. Once. The small nod.</p>
+
+<p>Rowan turned without further ado and walked back into the trees.</p>
+
+<p>Jennifer watched her go. She turned to Mac.</p>
+
+<p>"What did she say."</p>
+
+<p>"What great blessing the solstice has brought me today," Mac said. "Druid to druid." He was already moving back up the slope toward the cabin. "Come. We need to brief the others."</p>
+
+<p>She fell into step beside him. She thought about the ice cream cone made of rocks. She thought about two signatures where there should be one.</p>
+
+<p>"Am I famous or something? Is that what's happening."</p>
+
+<p>"There are rumors," Mac replied, "about a mortal who can sense Immortals."</p>
+
+<p>"I wasn't prepared for the burdens of being famous."</p>
+
+<p>"You're not famous," Mac said. He knew the chatter escaping her was stress related and not a sincere claim to fame. "You're notable among a very small and specific population."</p>
+
+<p>Jennifer considered his words. "That's somehow worse." They reached the cabin door. She stopped. "Mac, is this cabin on holy ground?"</p>
+
+<p>"Yes, it's always been the main selling point."</p>
+
+<h3>Saturday Afternoon &mdash; Before the Bonfire</h3>
+
+<p>After a light lunch prepared by Amanda Richie and Jennifer decided to see if they could execute a plan related to the luxury shower. It was all proceeding beautifully until her hair gummed up the works.</p>
+
+<p>Jennifer's hair was, in Richie's extensive experience of it, a force with its own agenda. Loose and wet it had a volume and reach that bore no relationship to its managed state. The rainfall head was directly above. The standard fixture was at shoulder height. The geometry of the particular position they'd arrived at &mdash; which was ambitious, which Richie had suggested based on some research, which Jennifer had agreed to with the specific enthusiasm of someone who had also conducted her own research.</p>
+
+<p>In order to produce a desired result Jennifer's hair had been secured to both the rainfall head and the standard fixture. From there they assumed a position where Jennifer's right knee was placed over Richie's knee. She was incredibly exposed and felt the gentle tug on her hair that overtime would send her to the moon.</p>
+
+<p>Until her leg started cramping horribly. "Don't move."</p>
+
+<p>"I'm not moving," Richie said.</p>
+
+<p>"I mean in general," she returned before grabbing him while fighting through another cramp in her leg.</p>
+
+<p>"I understand, Jen. What would you like me to do?"</p>
+
+<p>"I need help," she said.</p>
+
+<p>"Yes," he said. "We do."</p>
+
+<div class="section-break">* * *</div>
+
+<p>Methos and Fitz heard them because the cabin was a cabin and acoustics were what they were.</p>
+
+<p>Methos arrived at the showroom and assessed the situation through the door, "Are either of you in danger?"</p>
+
+<p>"Not immediate danger," Jennifer said.</p>
+
+<p>"Then I'm going to need a moment," Methos said.</p>
+
+<p>The moment was Methos containing an expression he had decided not to share with the people inside the bathroom.</p>
+
+<p>Fitz arrived.</p>
+
+<p>"Are they&mdash;" Fitz started.</p>
+
+<p>"Yes.'</p>
+
+<p>"In that enormous shower," Fitz said. "With the rainfall head."</p>
+
+<p>"Yes."</p>
+
+<p>Fitz looked at the ceiling with the expression of a man who had missed an obvious opportunity through no fault of his own.</p>
+
+<p>"I hadn't thought of that," Fitz said.</p>
+
+<p>"Apparently they had," Methos said.</p>
+
+<p>"And now they're stuck."</p>
+
+<p>"And now they're stuck," Methos confirmed.</p>
+
+<p>Through the door: "Methos, we can hear you."</p>
+
+<p>"I know," Methos said. "I'm deciding whether I'm going to help."</p>
+
+<p>"I'm going to need you to get Mac," Jennifer said with the pink boxer discussion rolling through her mind. This day was going to go down as a full incident.</p>
+
+<p>Fitz found Mac on the deck and delivered the news with the manner of a man relaying a dispatch. Methos came with him, which was less about helping and more about not wanting to miss Mac's expression.</p>
+
+<p>"The young ones," Fitz said, "have gotten themselves into a bit of a pickle."</p>
+
+<p>"The fancy shower," Methos said. "And some ambition."</p>
+
+<p>"She ask for you directly."</p>
+
+<p>Mac set down his Scotch. "Right." He knocked on the shower door. "It's Mac."</p>
+
+<p>Richie confirmed they were not in immediate danger. Jennifer's leg was going numb. There was a robe on the hook but Richie would need to cut her leg off to reach it. Jennifer told Mac to come in, she didn't care what he saw.</p>
+
+<p>Mac looked at the door. He looked at the hallway. He opened the door.</p>
+
+<p>It was not as bad as he'd feared. It was also not not bad.</p>
+
+<p>Jennifer's right thigh was over Richie's shoulder. Her hair &mdash; loose, wet, what was it with her hair &mdash; had found both fixtures simultaneously and committed. Richie could not move without dropping her or pulling her hair out in significant quantity. Jennifer could not move without both.</p>
+
+<p>"I'm going to have to cut your hair," Mac said.</p>
+
+<p>Jennifer made a sound.</p>
+
+<p>"Jennifer." He used the full name. Not Jennie. Not a nighean. Jennifer, the way he said it when something was finished being discussed. "I've seen too much of people scalping themselves in four hundred years. You are not doing that."</p>
+
+<p>She looked at Richie. Richie looked at her with the expression of someone who was genuinely sorry about the hair and also not in a position to help. She figured out what mattered. "Fine," she said. "Cut as little as possible."</p>
+
+<p>Mac went to find scissors. Fitz had scissors. Of course Fitz had scissors.</p>
+
+<p>When Mac came back he looked at the specific angle of the hair around the fixtures and chuckled. He couldn't help it. He was The world had given him many things and this was one of them. He decided etiquette could wait. "This isn't an accident. What in hell were you two thinking? Whose brilliant idea was it to secure her hair to the fixtures? Who didn't realize that wet crazy hair like this would take on a life of its own once it was getting drenched and pulled?"</p>
+
+<p>Dead silence. Mac cut approximately eight inches of length as best he could. His measures created dramatically different result from what had been there before. But Jennifer was free, Richie was free, both intact. Two robes were produced with economy.</p>
+
+<p>Mac had them walking up and down the hallway for fifteen minutes to restore circulation. They walked with the dignity of people committed to being professional about the circumstances. Professional went out the window when Mac stopped.</p>
+
+<p>"What you two were attempting, is called the Ballet Dancer in most informed circles. I can provide reading material or you industrious love birds can use the internet for research." He paused. The pause of a man who had decided to land the blow and make the lesson count. "If you need your hair pulled to get there, Jennifer, just let Richie pull it. If needed I can provide supplementary instruction on the technique."</p>
+
+<p>Jennifer's face went through several states of redness rapidly. She leaned on Richie thinking she might faint in horror. Richie held her while Mac went to return Fitz's scissors.</p>
+
+<p>Jennifer stood in the hallway looking at the floor where eight inches of her hair were still visible near the bathroom door. She looked at the mirror at the end of the hallway. The haircut was not terrible. Mac had done it as carefully as the situation allowed. It was shorter and different and she looked like someone who had made a decision rather than had an incident. It was still eight inches gone. She had very few vanities. Her hair was one. She stood in the hallway and was stunned.</p>
+
+<p>Just hours ago she revealed the honorific she felt reflected the new and serious relationship she had with Mac and then he was bailing her and Richie out of a ridiculous, charged situation. And he'd called her Jennifer, not Jennie, not any of the other titles that had been bestowed. Jennifer.</p>
+
+<p>Richie came and stood beside her. He didn't say anything. He looked at the mirror and at her. Had Jennifer not been genuinely upset he would have found all of it funny. Richie hadn't needed hair pulling instructions. What he had needed in that shower was an extra hand. But this was not the moment to dissect that.</p>
+
+<h2 class="chapter" id="two-the-deck">TWO &mdash; THE DECK</h2>
+
+<h3>After the Hallway &mdash; Mac Returns the Scissors</h3>
+
+<p>Mac told Amanda she might want to check on Jennie and help with her hair. He told her briefly what had happened. Amanda shook her head slowly.</p>
+
+<p>"Fucking amateurs," Amanda said. Precisely. Enunciated properly, like a lady. She went to find Jennifer.</p>
+
+<p>Amanda had Jennifer sitting on the bed with a comb and whatever she carried that made her competent at everything.</p>
+
+<p>She worked in silence for a while. The work was good. She knew what she was doing. The shorter length was going to require a different approach but the approach existed and Amanda found it.</p>
+
+<p>After a while Jennifer said, "I should have asked you."</p>
+
+<p>"Yes," Amanda said.</p>
+
+<p>"About the shower."</p>
+
+<p>"Yes."</p>
+
+<p>"Really though? I should've just said something like, Hey Amanda, that shower is absolutely slammin'. Richie and I want to put a hurt on it in a multitude of ways. Do you have any ideas?"</p>
+
+<p>Amanda continued working on the hair. "I probably would have called it a slammin' shower," Amanda said. "But otherwise, yes. That is exactly what you should have said." She turned Jennifer's head slightly, assessing. "What is the point of a close personal sisterhood if these aren't the puzzles we solve together?"</p>
+
+<p>Jennifer looked at the mirror.</p>
+
+<p>"You are entitled to pleasure," Amanda said, "in any way that moves you and that Richie wants to provide. No shame, Minnie. Not with me. Not ever." She worked a section of hair. "If you and Richie want to commune with bananas in all the right places you can ask me whether I think Chiquita or Del Monte is the better option."</p>
+
+<p>Jennifer looked at the mirror.</p>
+
+<p>"Chiquita," Amanda said. "Since you're wondering."</p>
+
+<p>Jennifer put her face in her hands briefly. "I can't believe you just said that."</p>
+
+<p>"And that is why you fail."</p>
+
+<p>Empire of course.</p>
+
+<p>"Thank you, Amanda, for this, for all of it."</p>
+
+<p>Amanda looked at their reflections in the mirror. She looked at Jennifer in the mirror. "Also, I am reserving the slammin' shower for the rest of this evening," Amanda said pleasantly. "You and Richie will want to make other arrangements."</p>
+
+<p>Jennifer looked at the mirror.</p>
+
+<p>Amanda put the finishing touch on the haircut.</p>
+
+<p>"There," Amanda said. "That's you."</p>
+
+<p>Jennifer looked at herself. It was different. Considerably different. But Amanda had been right about the length; this was just her. The armor was gone. What remained was correct.</p>
+
+<p>Mac went to the deck. He stood with the mountains and his Scotch and the specific quality of a man who had done what was needed and was now processing the afternoon. Jennifer came out a while later. Her hair was different. Amanda had shaped what remained into something that was correct, shorter than before, more its own thing. She had her Marlboros. She checked the wind direction, sat beside Mac, lit one and looked at the mountains.</p>
+
+<p>After two cigarettes she was ready to discuss the matter with him. "You called me Jennifer."</p>
+
+<p>"Yes."</p>
+
+<p>"Not Jennie."</p>
+
+<p>"It was the moment for Jennifer if there ever was one. Not Jennie." He paused. "You're lucky I didn't give you the full parental treatment."</p>
+
+<p>She looked at him with confusion. "The what?"</p>
+
+<p>He straightened slightly and deployed a tone that was a reasonable impression of the voice of parental authority losing patience. "Jennifer Anne!"</p>
+
+<p>She looked at him and nodded. "The full parental."</p>
+
+<p>"The full parental," Mac confirmed. And then, more quietly: "Anne was my mother's name. Good woman," he said. The warm smile that arrived when he talked about things that mattered from a long time ago appeared like the sun after a storm. "Sturdy. She made&mdash;" he paused. "Shortbread. The proper kind. The kind you have to let rest before you cut it."</p>
+
+<p>Jennifer looked at the mountains. "The full parental probably would have put me in tears," she said. Quietly. "I've been on the receiving end of it too many times from someone who wasn't calm about it."</p>
+
+<p>Mac understood what she was saying, what she wasn't saying and he didn't push on either. "Hatoko, the haircut suits you. The shorter length. This is just you."</p>
+
+<p>Jennifer thanked him. She knew she would get used to it eventually and a braid was still possible.</p>
+
+<p>Mac looked at her steadily. "And there is no shame in what happened this afternoon. No anger from me, not even a little. I was scared for you both," Mac assured. "However, now that you're on steady ground, I'm going to go find Richie and give him a fairly comprehensive earful regarding the specific engineering failure that led to the hair situation. He should have thought that through."</p>
+
+<p>Jennifer considered this.</p>
+
+<p>Mac looked at the mountains. He looked at Jennifer. He stood.</p>
+
+<p>"Why is there a bonfire," she said, before he could go.</p>
+
+<p>He stopped.</p>
+
+<p>"The solstice," he said. "Midsummer. The longest day. The fire marks it &mdash; the peak of the light before the turning back toward darkness. Every tradition that has ever existed in the Northern Hemisphere has done something at the solstice."</p>
+
+<p>"And the druids," she said.</p>
+
+<p>Mac looked at her. "For the druids specifically, you want to ask Fitz. He has considerably more information on that subject than I do and considerably more enthusiasm for sharing it."</p>
+
+<p>She nodded: ask Fitz.</p>
+
+<p>"You're going to build the bonfire once everything's ready to go."</p>
+
+<p>"Hai, Ki-san."</p>
+
+<p>"I hope you are handling the lessons. Persist.\" She looked up sharply. \"Amanda told me Richie and I had to make sure the shower is sparkling clean before the bonfire,\" she countered flatly, with a hint of twinkle before lowering the boom. \"Apparently the shower is reserved tonight for some ancient rites and debauchery. Should I handle that task first?"</p>
+
+<p>Check.</p>
+
+<p>\"Ah, Amanda. Always saying just a bit too much.\" He was not bested. Not by far. \"Personally I probably would have gone with a partial hog tie for economy of motion. You would have literally been pulling your own hair while Richie had you in his clutches.\" He looked at her with complete calm. \"Your Japanese word of the day is shibari."</p>
+
+<p>Checkmate. He was not bested by far.</p>
+
+<p>Jennifer enlisted Richie to assist her in cleaning the shower before sending him to Mac to prepare for the bon fire. "Amanda has reserved this slammin' shower for the rest of the evening." Richie processed this."The rest of the evening," he said. "Her words" "How does she&mdash;" "I didn't ask," Jennifer said. They scrubbed in silence for a few minutes. "Oh, by the way,Mac mentioned nobody would hear any screaming from the boathouse." "Mac mentioned that?" "In a different context," Jennifer explained. "I wasn't the one screaming last night and won't be the one tonight either I imagine." "Oh, I know," Richie chuckled in the tone he chose when his words contained something deeper.</p>
+
+<p>"How do you feel about the boathouse?" Jennifer questioned. Richie reached into his jacket and produced two pieces of cloth, one larger, one smaller, and handed them to Jennifer. "I'm fine with the boathouse and you won't be able to scream with a gag in your mouth." Her heart stopped beating for a split second. "And the blindfold is so you can't see what's coming." Once better composed, "The blindfold, is perfunctory." "Is it, but I don't care if it's repetitious," he said. The fifty-cent word dropped with complete ease, thrown back at her from whatever dictionary she'd left open on the coffee table. "As long as it's aph·ro·di·si·ac." Her flat voice was still there but was working against a momentum burning from the inside. "Stay out of my dictionaries." Richie held the expression of someone who knew they were winning and was going to press it anyway, because the press was the point. "Now is that something a nice girl would say," he said, "or a naughty one?" The flat voice did not survive that volley; nothing did. "Stop it or I'm going to have to jump on you right now," she groaned.</p>
+
+<p>"Don't threaten me with a good time."</p>
+
+<p>"We'd have to be really, really quick."</p>
+
+<p>"I can do quick and quiet and still have you later in the boat house."</p>
+
+<p>"The Rules of Gentlemanly Conduct needs a review," Mac announced before he chopped the wood standing on the stump into two pieces in one swing. He set another log in place. "One, you need to think three steps ahead and have an exit plan, especially if you're experimenting with something that might cause embarrassment."</p>
+
+<p>Chop. "Two, safety first. If it's not safe you don't go through with it. Her comfort is second. If she's not comfortable you never push the issue. And pleasure is your last concern, hers first."</p>
+
+<p>Chop. "Three, your job is to protect her and her vanities. Jennie does not have a lot of vanities, but her hair is definitely one. Your job is to protect the things that matter to her."</p>
+
+<p>Chop. "Any questions?"</p>
+
+<p>Jennifer built the fire that evening. Mac showed her the structure and then let her complete the task. Jennifer found it satisfying in the specific way of physical work that had a clear right answer. The wood was right. The placement was right. By the time she was finished the frustration of the afternoon had gone somewhere useful. By the time the fire was roaring</p>
+
+<h2 class="chapter" id="three-richies">THREE &mdash; RICHIE'S COFFEE MARTINI AND TINY DANCER</h2>
+
+<h3>Pre-Bonfire &mdash; The Kitchen</h3>
+
+<p>Richie's earful from Mac had been comprehensive and delivered while they chopped wood, which meant it was physical work plus words plus the specific quality of Mac's pedagogical disappointment, which was a full sensory experience. Fitz, Amanda, and Methos had been nearby, engaged in various tasks, and not listening with great attention and visible restraint.</p>
+
+<p>When Richie returned to the cabin he went directly to the kitchen with the energy of someone who needed to do something useful with his hands. He had an idea and it was a coffee martini, not the standard version &mdash; a mocha version, chocolate integrated, something that would be correct for the evening.</p>
+
+<p>He started with the espresso. The cabin had a small stovetop espresso maker and Richie used it correctly because Jennifer had taught him how. He had the chocolate liqueur from Fitz's contribution to the weekend's supplies, he had vodka and cream.</p>
+
+<p>The first version was too sweet. He adjusted. The second version was too strong. He adjusted. The third version arrived at something. Richie tasted it and tasted it again. He made a fourth version to confirm. The fourth version was correct: espresso and chocolate liqueur and vodka shaken hard with ice, strained into a chilled martini glass, a splash of cream floating on top, a dusting of cocoa powder to finish.</p>
+
+<p>He looked at it.</p>
+
+<p>Fitz appeared in the kitchen doorway, drawn by the espresso smell.</p>
+
+<p>"Is that&mdash;" Fitz started.</p>
+
+<p>"Try it," Richie said.</p>
+
+<p>Fitz tried it. He looked at the glass. He looked at Richie.</p>
+
+<p>"Lad," Fitz said.</p>
+
+<p>Methos appeared. He tried the experimental second version that Richie had set aside. He said nothing. He finished it. He set the glass down.</p>
+
+<p>"The third version is better," Richie said.</p>
+
+<p>"I'm aware," Methos said. "This was adequate."</p>
+
+<p>Amanda tried the third version. She looked at it with the expression of someone running a serious assessment.</p>
+
+<p>"The cream ratio," she said.</p>
+
+<p>"I know," Richie said.</p>
+
+<p>"Just slightly more," she said.</p>
+
+<p>"The fourth version has it," Richie said.</p>
+
+<p>Amanda tried the fourth version. She made no further comment. This was the Amanda equivalent of a standing ovation.</p>
+
+<p>Nobody mentioned the Ballet Dancer.</p>
+
+<p>This was collectively correct behavior. Mac had handled it. Mac was still technically handling it, based on the sounds from the back of the property. The situation did not require additional commentary from the group.</p>
+
+<p>Richie made a version of the drink for Jennifer.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Jennifer was on the deck when he brought it to her. Richie's estimation was that she was about seventy percent recovered from the afternoon. The hair was different but it looked right; definitely still his girl. Jennifer received the glass, took a sip and then another. "This," she said, "is correct."</p>
+
+<p>"Fourth version," Richie revealed.</p>
+
+<p>"Ambitious espresso ratio."</p>
+
+<p>"You like it strong."</p>
+
+<p>"I do," she said. "Just like my men."</p>
+
+<p>She drank the coffee martini and enjoyed the view. The afternoon receded by approximately fifteen percent per sip, which was not a scientific measure but accurate. Jennifer leaned against him and sighed. This was the moment she had been waiting for all weekend.</p>
+
+<p>Inside, Methos had started humming something. Jennifer could hear it from the deck. She placed it after a moment.</p>
+
+<p>Hold me closer, tiny dancer...</p>
+
+<p>"If he keeps doing that all evening," she said.</p>
+
+<p>"He's going to keep doing that all evening," Richie said.</p>
+
+<p>She finished the coffee martini and went inside to get another.</p>
+
+<p>Methos was at the fireplace with his beer, humming with the specific quality of someone who was enjoying himself and was not going to stop.</p>
+
+<p>Jennifer refilled her glass sat down across from him. "Elton John," she said.</p>
+
+<p>"Tiny Dancer," Methos responded. "1971."</p>
+
+<p>"You heard it when it was new," she said.</p>
+
+<p>"I was in Los Angeles," he said. "Adjacent to the recording."</p>
+
+<p>"Adjacent?"</p>
+
+<p>"I get around."</p>
+
+<p>Jennifer was about to suggest that Methos actually try to find a song that actually referred to a ballerina if he wanted to torture her properly. She had The Twins and Van Morrison at the ready with Styx as a backup if needed.</p>
+
+<p>Fitz appeared in the doorway. "Is that Elton?"</p>
+
+<p>"Tiny Dancer," Jennifer replied as Methos kept humming. Fitz drew a breath and belted out the chorus.</p>
+
+<p>When he finished there was a large silence followed by applause from all areas of the cabin. Fitz bowed. "Thank you," Fitz said. "Thank you, yes, I'll be here all weekend."</p>
+
+<p>Jennifer was laughing. The real laugh. The one from the right place.</p>
+
+<p>Methos started humming again.</p>
+
+<p>"Methos," Mac said, from the doorway, where he'd appeared sometime during the chorus.</p>
+
+<p>"I'm setting the tone," Methos said.</p>
+
+<p>Fitz sat down with his wine.</p>
+
+<p>Jennifer finished her second coffee martini.</p>
+
+<p>She decided it could fix approximately any problem in the world, properly made, in the right company.</p>
+
+<p>And Richie had made it, just for her.</p>
+
+<h2 class="chapter" id="five-the-bonfire">FIVE &mdash; THE BONFIRE AND ROWAN'S ARRIVAL</h2>
+
+<h3>Sunset &mdash; The Clearing</h3>
+
+<p>By the time the solstice light finally gave up its long reluctant departure the fire was the brightest thing in the clearing.</p>
+
+<p>Jennifer felt it first and alerted everyone that company was arriving. Rowan came out of the tree-line when the fire was at its height, which was the right time to arrive for someone who knew what the fire meant. She examined the gathered group and lingered on Methos for slightly longer than the others.</p>
+
+<p>"Well," Rowan said. "The solstice delivers." She introduced herself as Rowan and said it the way someone said a name that was currently theirs. She had a drum and played it with the flat of her hand at irregular intervals in a rhythm Jennifer's body responded to before her brain processed it.</p>
+
+<p>Jennifer looked at her hands and leaned into Richie. "I feel that," she said quietly.</p>
+
+<p>"I don't think it's the Quickening thing."</p>
+
+<p>"No," she said. "It's much older than that."</p>
+
+<p>Rowan asked what the mechanism was; the question mortals and druids asked when they were genuinely curious rather than frightened. Mac said they didn't know. It was the same answer he'd given Jennifer at the round table. Still true.</p>
+
+<p>Jennifer had her coffee martini and was looking at the fire with the expression of someone who had been thinking about something for a long time. "Energy," she said. Everyone looked at her. "The first law of thermodynamics. Energy cannot be created or destroyed. It can only be transformed. A mortal dies and the energy that was them goes somewhere. Into the earth, into heat, into the biological systems that process the body. Nothing is lost. It's transformed." She looked at the fire. "An Immortal dies and the energy doesn't transform the same way. It's held. And when an Immortal dies permanently the Quickening is that energy releasing and transferring to another system." She looked at Mac. "That's consistent with the physics. It doesn't explain why. But it's consistent."</p>
+
+<p>Methos looked at the fire for a long moment.</p>
+
+<p>"The Quickening as energy transformation," he said.</p>
+
+<p>"It's what it feels like," Richie said. "When it happens. Like something is moving through you. Not from outside. Like it's being added to what's already there."</p>
+
+<p>"Transformation," Jennifer said.</p>
+
+<p>"Transformation," Richie confirmed.</p>
+
+<p>Rowan was watching Jennifer with the look that was reading something deeper than surface.</p>
+
+<p>Jennifer continued, "Maybe the Prize wasn't power. Maybe it was the end of the holding. The final transformation and into whatever came after."</p>
+
+<p>Methos told her he'd been there when Democritus and the atomists first wrote their theories. They'd been right about the basic principle. The mathematics took another two thousand years. This was the most useful framing he'd heard in five thousand years applied to a phenomenon he'd been living.</p>
+
+<p>Mac looked at the fire.</p>
+
+<p>"Four hundred years," he said. "Five thousand years. Every tradition that's ever existed. Every book that's been written." He looked at the fire. "Nobody knows what's going on."</p>
+
+<p>A beat.</p>
+
+<p>Jennifer looked at the fire.</p>
+
+<p>"Viktor Frankl," she said. "He was in the camps. Auschwitz. And he came out saying that the meaning isn't found. It's made. That the question isn't what does life mean but what does it require of you." She looked at the fire. "Maybe that's it. Not why we're here. What we do with the being here."</p>
+
+<p>Mac looked at her.</p>
+
+<p>Fitz raised his glass.</p>
+
+<p>"Come in," Fitz said. "Sit down. Raise a bloody glass."</p>
+
+<p>Everyone raised a glass.</p>
+
+<p>The fire burned. The mountains stood. Above them the solstice sky was enormous and indifferent and completely, staggeringly, beautiful.</p>
+
+<p>Rowan and Methos shared a brief conversation that ended with both of them taking leave from the group. It wasn't the relief Jennifer thought it would be with him out and away from the fire.</p>
+
+<h3>The Solstice Night &mdash; Rowan's Clearing</h3>
+
+<p>The grove was a twenty-minute walk east through the tree-line, down a slope that flattened into a natural clearing where the ground cover gave way to bare earth in a rough circle. Rowan had found it on the second day of her search. She knew what she was looking for &mdash; the specific quality of a place where the lines ran close to the surface, where the ground had a particular density of attention that most people walked through without noticing and that she had been noticing for three hundred years.</p>
+
+<p>It was the right place. It had always been the right place. Someone had known this before her.</p>
+
+<p>Methos had his jacket, his beer and the specific quality of a man who had attended a great many things across a great many centuries. He had learned to assess them correctly in advance. "The Great Rite," he said while noting the way she had constructed the area.</p>
+
+<p>"The Great Rite," Rowan confirmed.</p>
+
+<p>"Literal."</p>
+
+<p>"Literal," she confirmed.</p>
+
+<p>He set down his beer and took off his jacket. "I haven't been sacrificed in quite a while."</p>
+
+<p>"You'll manage," she said.</p>
+
+<p>Methos had the expression of a man making a considered assessment of the situation and finding it entirely satisfactory."Lead on," he said.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Afterward they lay in the clearing under the solstice sky, which was doing the thing solstice skies did &mdash; enormous, indifferent, completely, staggeringly beautiful. The ley lines ran beneath them in the way they always ran, patient and indifferent to the things that happened at the surface, the specific continuity of the earth doing what the earth did regardless.</p>
+
+<p>Rowan had her drum across her knees. She wasn't playing it. Just holding it.</p>
+
+<p>"The girl," she said.</p>
+
+<p>"Mm," Methos said.</p>
+
+<p>"I didn't believe it," she said. "The rumor. A mortal who can read us. Sometimes faster than we can ourselves." She turned the drum. "And then to find her here. With you, no less." She looked at the sky. "That is not coincidence."</p>
+
+<p>"No," Methos said. "It isn't."</p>
+
+<p>"Her father," Rowan said. She said it carefully, the way you said things when you were three hundred years old and had learned that some information required handling. "As I recall the name &mdash; if she is who I think she is &mdash; you were there when he died."</p>
+
+<p>Methos was quiet for a moment.</p>
+
+<p>"I was there," he said. "His name was Marin, Marin Pelagic."</p>
+
+<p>Rowan was quiet with what she knew and what she had done and what she had not known at the time she did it.</p>
+
+<p>"He had a daughter," she said finally. "I wouldn't have thought it possible. And yet." She looked at the treeline in the direction of the cabin. "It would explain some of the talent. Not all of it. She's something the talent alone doesn't account for."</p>
+
+<p>"No," Methos said. "She isn't only her father's daughter."</p>
+
+<p>Rowan turned the drum in her hands. "Are the five of you her bodyguards?"</p>
+
+<p>Methos looked at the sky.</p>
+
+<p>"I can't speak for the others," he said. "Though I'm quite sure they feel as I do." He paused. The pause of a man choosing words with the specific precision of someone who meant them completely. "She will be defended at any cost."</p>
+
+<p>Rowan looked at him. She had three hundred years of reading people and what she read in him now was not performance. Not the Methos she had encountered over the centuries &mdash; the deflection, the dry remove, the five thousand years of not committing to anything that cost something.</p>
+
+<p>This was something else.</p>
+
+<p>"The manner in which you teased her at the fire tonight," Rowan said. "She must trust you to let you in that far. Where your words matter."</p>
+
+<p>"The teasing is affection," Methos said. "The training is&mdash;" He stopped. He looked at the sky. "She is going to be in situations that require her to function under pressure. She needs to be able to hold her ground when someone gets under her skin. The fact that the someone is me is incidental." He paused. "Mostly."</p>
+
+<p>"And when the someone is not you," Rowan said. "When it's someone who means it."</p>
+
+<p>"Then she'll have had practice," he said. "And she'll hold."</p>
+
+<p>Rowan thought about the woman at the water's edge that morning &mdash; the stillness, the reading, the ice cream cone made of rocks. She thought about what it meant to be that, to be something the categories didn't quite fit. Rowan thought about what she was going to have to tell her in the morning. "She's going to have a difficult road."</p>
+
+<p>"Yes," Methos said.</p>
+
+<p>"And you're going to walk as much of it with her as she'll let you."</p>
+
+<p>Methos said nothing.</p>
+
+<p>Which was, Rowan understood, the answer.</p>
+
+<p>The solstice sky turned overhead. The ley lines ran beneath them. The fire at the cabin had burned down to coals by now, the others returned inside, the longest day finally giving way to the brief dark that was all the solstice allowed before the light came back.</p>
+
+<p>Rowan picked up her drum.</p>
+
+<p>She played it softly &mdash; not the rhythm from the bonfire, something older, something that belonged to the clearing and the lines and the specific quality of a night that had given her more than she'd come looking for.</p>
+
+<p>Methos lay on his back and looked at the stars and did not say anything further.</p>
+
+<p>There was nothing further to say.</p>
+
+<p>Fitz sat with his wine and the fire and the specific quality of being the only person without someone. He did not make anything about it. He sat with the longest day and was genuinely glad to be there.</p>
+
+<p>"Here we are, raising his glass to the sky. Still here. Still raising the glass. What a thing."</p>
+
+<h2 class="chapter" id="seven-the-tarot">SEVEN &mdash; THE TAROT READING</h2>
+
+<h3>The Morning After &mdash; Breakfast</h3>
+
+<p>Rowan had her cards.</p>
+
+<p>The breakfast table. Richie's eggs. Coffee. Methos had attempted to serve Jennifer coffee in a plastic container. She would nt have it. The mountains through the window.</p>
+
+<p>Rowan cleared a space and Jennifer sat across from her and Rowan shuffled with the ease of someone for whom this was breathing and laid the spread.</p>
+
+<p>The cards were older than the Rider-Waite. The imagery was stranger. Jennifer didn't know all the symbols but she recognized the energy of them the same way she'd recognized the drum rhythm from the night before.</p>
+
+<p>Rowan moved through the spread. Several things landed with the accuracy of things already known but not yet said aloud.</p>
+
+<p>Then Rowan placed the card in the father position.</p>
+
+<p>The Magician. Reversed.</p>
+
+<p>Rowan went very still.</p>
+
+<p>Jennifer looked at the card. She looked at Rowan's face, which was doing something that wasn't performance. It was the expression of someone receiving information they hadn't expected.</p>
+
+<p>Jennifer looked across the table.</p>
+
+<p>Methos was looking at his coffee with the stillness of someone who had been waiting for a moment that had now arrived.</p>
+
+<p>Jennifer looked at him. He looked up. Their eyes met.</p>
+
+<p>She understood.</p>
+
+<p>Not everything. But enough.</p>
+
+<p>"Tell me what the card means," she said. Flatly.</p>
+
+<p>Rowan told her. The Magician reversed in the father position indicated an Immortal known to the querent through absence rather than presence. Power interrupted. A life that ended before its time. And a connection between the querent and someone at this table who was present at that ending.</p>
+
+<p>The cabin was completely quiet.</p>
+
+<p>Jennifer looked at Rowan.</p>
+
+<p>"You," Jennifer said.</p>
+
+<p>Rowan did not look away.</p>
+
+<p>"I didn't know," Rowan said. "Who he was to you. I didn't know you existed."</p>
+
+<p>Rowan told her. The year. The place. The circumstances. She told it directly, without softening, because she was three hundred years old and had learned that the truth delivered cleanly was kinder than the truth delivered carefully. And because she was not sorry. She did not perform sorry about what she was.</p>
+
+<p>Jennifer listened. Both hands flat on the table. She did not perform anything.</p>
+
+<p>When Rowan finished Jennifer looked at Methos.</p>
+
+<p>"You were there," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"You watched."</p>
+
+<p>"Yes."</p>
+
+<p>"Did you know about me."</p>
+
+<p>The longest beat.</p>
+
+<p>"Not then," he said. "I found out later."</p>
+
+<p>Jennifer looked at him for a long time. She pushed her chair back. She stood.</p>
+
+<p>She looked at Rowan.</p>
+
+<p>"Thank you for the reading," she said. "I need you to leave now."</p>
+
+<p>Rowan gathered her cards without ceremony. She stood.</p>
+
+<p>"I'm available if you have questions," she said. "I'll be at my camp through tomorrow."</p>
+
+<p>"Thank you," Jennifer said. Again. The flat voice doing all the work.</p>
+
+<p>Rowan picked up her jacket. She looked at Methos once &mdash; three hundred years meeting five thousand, the night between them. He looked back.</p>
+
+<p>She went out the door.</p>
+
+<p>Jennifer looked at the table. She looked at everyone.</p>
+
+<p>She reached into her jacket. She took out her cigarettes. She looked at the back door.</p>
+
+<p>Everyone found something to do.</p>
+
+<p>Richie's hand brushed hers as she passed. Just that. She squeezed once. She went out.</p>
+
+<p>Methos sat for a moment. He stood. He followed her.</p>
+
+<h2 class="chapter" id="eight-amanda-and-rowan">EIGHT &mdash; AMANDA AND ROWAN</h2>
+
+<h3>While Jennifer and Methos Were at the Fire Pit</h3>
+
+<p>Jennifer felt it from the fire pit.</p>
+
+<p>The new awareness &mdash; the lotus opening. Not the Quickening exactly. The specific signature she'd learned to associate with Amanda, compressed and altered, as if Amanda had passed through something. At a distance. Through treeline.</p>
+
+<p>She went very still.</p>
+
+<p>Methos looked at her.</p>
+
+<p>She looked at the treeline.</p>
+
+<p>She understood what had happened before she knew she understood it.</p>
+
+<p>She sat with it.</p>
+
+<p>Amanda came back twenty minutes later through the back door. She poured wine. She came to find Jennifer, who had come back inside.</p>
+
+<p>Neither of them said anything for a moment.</p>
+
+<p>"I know," Jennifer said.</p>
+
+<p>"I felt it," Jennifer said. "From here."</p>
+
+<p>"You're not going to ask me why," Amanda said.</p>
+
+<p>"I know why," Jennifer said.</p>
+
+<p>After a while Jennifer said she hadn't asked her to. Amanda said she knew. Jennifer said she wouldn't have. Amanda said that's not why she did it.</p>
+
+<p>"Then why," Jennifer said.</p>
+
+<p>"Because she killed your father," Amanda said. "And I am not Mac. I don't deliberate the way he deliberates. I see what needs doing and I do it." She looked at Jennifer. "Sometimes that's the right answer."</p>
+
+<p>"And sometimes it isn't," Jennifer said.</p>
+
+<p>"And sometimes it isn't," Amanda confirmed.</p>
+
+<p>Jennifer sat with it. She told Amanda not to do that again without talking to her first. Amanda said all right. Jennifer believed her.</p>
+
+<h2 class="chapter" id="nine-the-fire-pit">NINE &mdash; THE FIRE PIT</h2>
+
+<h3>Outside &mdash; The Morning After</h3>
+
+<p>The fire pit was cold ash. She sat on the stone bench and lit a Marlboro. The lucky cigarette was still in the pack. This was not a lucky cigarette morning.</p>
+
+<p>Methos sat beside her. Far enough that she had room. He said nothing. He waited.</p>
+
+<p>She told him what she needed to know. He answered what he could answer. He told her the name. He told her the theory. She held the name without performing anything about it.</p>
+
+<p>"Was he a good man," she said.</p>
+
+<p>"He was complicated," Methos said. "In the way most of us are. He had a code. He kept it most of the time. He was not a bad man."</p>
+
+<p>He told her the father hadn't known about her. The timeline suggested he'd been gone before her mother knew she was pregnant.</p>
+
+<p>"Did you," she said.</p>
+
+<p>Methos looked at her.</p>
+
+<p>"Did you take his head," she said. Flatly. Just asking.</p>
+
+<p>Methos looked at the mountains for a long moment.</p>
+
+<p>He didn't answer.</p>
+
+<p>The not-answering was its own answer. She filed it in the place where she kept the things she was going to carry for a very long time.</p>
+
+<p>He told her about the lab fees. The electricity. Watching over her since before she knew any of them existed.</p>
+
+<p>"You owed him," she said. Not accusatory. Just accurate.</p>
+
+<p>"Yes," he said. "And more than that. You became more than a debt on your own."</p>
+
+<p>She told him she was angry. He said he knew. She said she understood why and she was still angry. He said both can be true. She told him to stop saying that. He said it's always true.</p>
+
+<p>She took the lucky cigarette out. She flipped it back the right way. She lit it from the end of the first. Methos watched and said nothing about what it meant.</p>
+
+<p>She told him about the sweat lodge. The red place. The depth of her anger that she knew about herself. She said she'd decided not to go there today. That was the lesson he'd given her &mdash; the decision made before the situation required it.</p>
+
+<p>"Stay," she said. "For a bit."</p>
+
+<p>"Yes," he said.</p>
+
+<p>They sat with the cold fire pit and the mountains and the morning and the specific quality of two people who had been through something and were going to be through more of it and neither of them was going anywhere.</p>
+
+<h2 class="chapter" id="ten-the-aftercare">TEN &mdash; THE AFTERCARE</h2>
+
+<h2 id="mac-the-long-hug">Mac &mdash; The Long Hug</h2>
+
+<p>He was waiting when she came back inside. Not arranged. Just standing with his coffee and the expression of a man who had been worrying and was trying not to show it.</p>
+
+<p>She looked at him. He opened his arms.</p>
+
+<p>She crossed the room and he put his arms around her and she cried. Not performed. The real version, the kind that came from somewhere that didn't get opened often. The specific grief of a loss that was complicated because she'd never had the thing she was grieving and was grieving it anyway.</p>
+
+<p>Mac held her. He said nothing. He didn't tell her it was going to be all right. He just held the weight of it with her and let it take the time it needed.</p>
+
+<p>She cried for a long time.</p>
+
+<p>He didn't move.</p>
+
+<p>When she was done she stayed a moment longer and then she stepped back and they looked at each other and both of them were, she thought, slightly wrecked, and that was correct.</p>
+
+<p>"A charaid," she said.</p>
+
+<p>Mo chridhe, he said.</p>
+
+<div class="section-break">* * *</div>
+
+<h2 id="amanda-swords-in-the-earth">Amanda &mdash; Swords in the Earth</h2>
+
+<p>Amanda came to her in the afternoon and asked if she wanted to fight. Not each other. Out there, in the clearing. Jennifer said yes.</p>
+
+<p>Amanda didn't make it gentle. She came at Jennifer with the intensity of someone who understood that the body needed somewhere to put things. Jennifer met her hard and they moved through the trees and the clearing with the quality of two people who trusted each other enough to be completely honest in the physical language they'd developed.</p>
+
+<p>Jennifer got knocked down three times. She got up three times. On the third time she went at Amanda with something she'd been carrying all morning and Amanda redirected it and stepped aside and said: "There it is."</p>
+
+<p>Amanda had two swords. She'd had them in her bag, which was the most Amanda thing. She handed one to Jennifer. Jennifer looked at it. She drove it into the mountain earth with both hands, the blade going in up to the hilt. Amanda drove hers beside it.</p>
+
+<p>They stood there.</p>
+
+<p>The swords stood in the mountain earth under the solstice sky.</p>
+
+<p>Amanda put her arm around Jennifer's shoulders.</p>
+
+<p>"Minnie," Amanda said.</p>
+
+<p>"Don't," Jennifer said. But not meaning it.</p>
+
+<p>They stood with the swords in the earth and the mountains around them and it was enough.</p>
+
+<div class="section-break">* * *</div>
+
+<h2 id="richie-just-there">Richie &mdash; Just There</h2>
+
+<p>Richie didn't do anything specific. He was just there.</p>
+
+<p>He was there when she came back inside and he was there when she sat down and he was there when she went to the kitchen and when she came back. His hand found hers at some point and stayed there. She didn't say anything about it and he didn't make anything of it.</p>
+
+<p>At one point she put her head on his shoulder and he adjusted so she was comfortable.</p>
+
+<p>That was the whole thing.</p>
+
+<p>That was exactly right.</p>
+
+<h2 class="chapter" id="eleven-the-lotus">ELEVEN &mdash; THE LOTUS</h2>
+
+<h3>The Solstice Night &mdash; The Back Bedroom &mdash; Late</h3>
+
+<p>She couldn't sleep. The day was too large.</p>
+
+<p>"Tell me," Richie said. From the dark. He wasn't asleep either.</p>
+
+<p>She told him about the buzz. How it was changing. How she could tell them apart now &mdash; not always, but usually. Friend or foe, before she saw them. The frequency of trust versus the feedback of wrong. And how she couldn't stop it and didn't know what it meant.</p>
+
+<p>"WTF," she said. In the most Jennifer way possible. Flat, accurate, completely serious.</p>
+
+<p>Richie was quiet for a moment.</p>
+
+<p>"Can I tell you something," he said.</p>
+
+<p>"Yes," she said.</p>
+
+<p>"The Quickening," he said. "I've been trying to understand it for three years. The closest I've come is &mdash; it's not a weapon. It's awareness. Connection. The stronger it is the more connected you are to everything around you."</p>
+
+<p>"The lotus," he said.</p>
+
+<p>She turned slightly to look at him in the dark.</p>
+
+<p>"The lotus grows in mud," he said. "In the dark. And it opens upward. The more rooted it is the higher it can reach." He paused. "You've been opening, Jennifer. Since you got here. And the more you've opened the more you can feel. It's not separate from who you are. Your heart is bigger than it was three years ago. Of course you can feel more."</p>
+
+<p>"You've been talking to Methos," she said.</p>
+
+<p>"Little bit," he said. "The lotus is mine."</p>
+
+<p>She looked at the ceiling. She felt the warmth of him beside her and the mountain around the cabin and somewhere in the trees the quality of Mac and Amanda and in the distance the trail that was Methos coming back and she could feel all of it. It was enormous. It was growing. It was hers.</p>
+
+<p>"I'm scared," she said.</p>
+
+<p>"I know," he said.</p>
+
+<p>"Not of it," she said. "Of what it means."</p>
+
+<p>"I know," he said.</p>
+
+<p>His hand found hers in the dark.</p>
+
+<p>The mountain was quiet.</p>
+
+<p>She fell asleep.</p>
+
+<p>Which was the right ending for a day that had been too large for any other ending.</p>
+
+<h2 class="chapter" id="twelve-fitz">TWELVE &mdash; FITZ AND THE UNCLE OFFER</h2>
+
+<h3>Sunday Morning &mdash; The Deck</h3>
+
+<p>Fitz had been watching her all weekend.</p>
+
+<p>Not the way that required addressing. The way Fitz watched people he cared about &mdash; the warm specific attention of someone tracking whether you were all right.</p>
+
+<p>She found him on the deck Sunday morning. He had his coffee and the mountains and the real expression, the one behind all the others.</p>
+
+<p>She sat beside him.</p>
+
+<p>"When are we running away together," he said. The greeting. The one he'd been giving her since the Comet Diner, always with a kiss on the back of her hand, always meaning it.</p>
+
+<p>She looked at him. The register was different. The warmth was the same but the frequency had shifted.</p>
+
+<p>"Fitz," she said.</p>
+
+<p>"I've been thinking," he said. "I've been flirting with you since the diner and it's been delightful and I mean every word of it and I also&mdash;" He looked at the mountains. "You need an uncle. Not what I've been performing. Someone who shows up and makes too much noise and brings the wrong wine and thinks you're the most extraordinary thing he's encountered and tells you so at every opportunity and has absolutely no agenda beyond your wellbeing." He looked at her. "I can be that. If you'll have me."</p>
+
+<p>Jennifer looked at the mountains. She thought about the tambourine, the shortbread, the wine from a vineyard that no longer existed, the chorus of Tiny Dancer sung the way it was meant to be sung. She thought about a man sitting alone by the fire on the longest day and finding something genuine to raise a glass to anyway.</p>
+
+<p>"Fitz," she said.</p>
+
+<p>"My darling girl," he said. Quietly. The real version.</p>
+
+<p>She put her arm around him. He put his arm around her.</p>
+
+<p>"You're still going to ask when we're running away together," she said.</p>
+
+<p>"Every time," he said. "It's tradition. With the hand kiss."</p>
+
+<p>"With the hand kiss," she agreed.</p>
+
+<p>She leaned her head against his shoulder.</p>
+
+<p>"Poppet," he said, trying it.</p>
+
+<p>She looked up at him.</p>
+
+<p>"Absolutely not," she said.</p>
+
+<p>"It's a term of endearment," he said.</p>
+
+<p>"It's a word for a puppet," she said.</p>
+
+<p>"Historically&mdash;"</p>
+
+<p>"Fitz."</p>
+
+<p>"My darling girl it is," he said.</p>
+
+<p>"My darling girl," she confirmed.</p>
+
+<p>He kissed the top of her head. She allowed it.</p>
+
+<p>Mac came out with coffee. He looked at the two of them. He looked at Fitz. Fitz looked back with the expression of a man who had done a thing and was glad of it.</p>
+
+<p>Mac nodded. Once. The small nod.</p>
+
+<p>He went to the railing and looked at the mountains.</p>
+
+<p>They all looked at the mountains.</p>
+
+<h2 class="chapter" id="thirteen-sunday">THIRTEEN &mdash; WHAT WAS UNDERSTOOD BY SUNDAY</h2>
+
+<p>By Sunday evening, when they packed the cabin and drove back toward Seacouver, several things had become true that had not been true before Friday.</p>
+
+<p>No one could sense Jennifer approaching. She gave no Quickening signature. She was invisible to the system that governed their world.</p>
+
+<p>Jennifer could sense all of them. She could tell them apart. She could feel the quality of an approaching Immortal's presence &mdash; the temperature of it, the frequency, friend or foe before she saw them.</p>
+
+<p>She was not a mortal with an interesting sensitivity. She was something new. The theoretical pre-Immortal nobody had actually met. A halfling &mdash; though nobody used that word because Methos said it was inaccurate and Jennifer said it sounded like a fantasy novel and Richie said he was keeping it.</p>
+
+<p>The sword training became urgent. The curriculum accelerated. The eskrima &mdash; the Filipino art of paired weapons, baston and blade, both hands working independently &mdash; was now the priority. Mac had seen what her hands could already do. The rest was translation.</p>
+
+<p>His name was known. His history was known. The circumstances of his death were known. Methos had a file. She was going to look at it when she was ready. She was not ready yet. She had said so and he had accepted it.</p>
+
+<p>Everyone understood, by Sunday, why Jennifer was in their circle. Not intellectually. In the way of understanding something that had been operating below the surface and had now surfaced completely.</p>
+
+<p>The solstice had delivered something none of them had planned for.</p>
+
+<p>It had delivered her. Fully. Completely. Irrevocably.</p>
+
+<p>She started it on the drive home. Her Rhodia. The heading:</p>
+
+<p>What I Know. What I Don't. What I'm Going to Find Out.</p>
+
+<p>She wrote for two hours while the mountains gave way to Seacouver.</p>
+
+<p>Richie was driving. He didn't ask what she was writing.</p>
+
+<p>She wrote.</p>
+
+<p>The city arrived around them gradually and then all at once.</p>
+
+<p>She closed the journal.</p>
+
+<p>She looked at Seacouver.</p>
+
+<p>She was not the same person who had left on Friday. She was the same person, more completely herself.</p>
+
+<p>Which was the only real kind of change.</p>
+
+<p>She filed it.</p>
+
+<p>She went home.</p>
+
+<a href="#top" class="back-to-top">Back to top &uarr;</a>
+
+</main>
+
+<footer>
+  <p>West One Publishing &nbsp;&middot;&nbsp; Written by Fude-san &nbsp;&middot;&nbsp; Complete</p>
+  <p>Highlander: The Series is the property of Davis-Panzer Productions. No infringement intended. No profit made.</p>
+  <p>&copy; Fude-san. Original characters and content reserved.</p>
+</footer>
+
+</body>
+</html>

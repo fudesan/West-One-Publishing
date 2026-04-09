@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>There Can Be Only One Morning Shift: Book Four — West One Publishing</title>
+<meta name="description" content="A Highlander fan fiction novel. Book Four of the Jennifer Marsh Series by Fude-san.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;600&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1a1512;
+    --page: #faf7f2;
+    --warm-mid: #8c7355;
+    --rule: #c9b99a;
+    --accent: #5c3d1e;
+    --muted: #7a6a58;
+    --max-width: 680px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  .site-header {
+    border-bottom: 1px solid var(--rule);
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--page);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .site-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .site-name:hover { color: var(--accent); }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  .nav-links a {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  .title-block {
+    max-width: var(--max-width);
+    margin: 5rem auto 0;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .fandom-tag {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+  h1.story-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  .series-line {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+  }
+  .epigraph {
+    margin: 2.5rem auto;
+    padding: 1.5rem 2rem;
+    border-left: 2px solid var(--rule);
+    text-align: left;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 480px;
+  }
+  .byline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+  .byline span { color: var(--accent); font-weight: 400; }
+  .meta-row {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3rem;
+  }
+  .wip-badge {
+    display: inline-block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--page);
+    background: var(--warm-mid);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    margin-top: 0.8rem;
+  }
+  .title-rule { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+  .toc { max-width: var(--max-width); margin: 0 auto 3rem; padding: 0 2rem; }
+  .toc-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .toc ol { list-style: none; counter-reset: toc-counter; }
+  .toc li {
+    counter-increment: toc-counter;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px dotted var(--rule);
+    font-size: 0.9rem;
+  }
+  .toc li::before {
+    content: counter(toc-counter, upper-roman);
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    color: var(--muted);
+    min-width: 2rem;
+  }
+  .toc a { color: var(--ink); text-decoration: none; flex: 1; }
+  .toc a:hover { color: var(--accent); }
+
+  .disclaimer {
+    max-width: var(--max-width);
+    margin: 0 auto 4rem;
+    padding: 1.2rem 2rem;
+    border: 1px solid var(--rule);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  .story { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem 6rem; }
+
+  .story h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 4rem 0 0.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .story h2.chapter { font-size: 1.05rem; margin-top: 5rem; }
+  .story h3 {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin: 2.5rem 0 0.25rem;
+  }
+  .story p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .story p:first-of-type { text-indent: 0; }
+  .section-break {
+    text-align: center;
+    color: var(--rule);
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+  .back-to-top {
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .back-to-top:hover { color: var(--accent); }
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    line-height: 1.8;
+  }
+  footer a { color: var(--muted); }
+  @media (max-width: 600px) {
+    .site-header { flex-direction: column; gap: 0.8rem; }
+    .story p { text-align: left; }
+    h1.story-title { font-size: 1.5rem; }
+  }
+</style>
+</head>
+
+<body id="top">
+
+<header class="site-header">
+  <a href="index.html" class="site-name">West One Publishing</a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="title-block">
+  <p class="fandom-tag">Highlander: The Series &nbsp;&middot;&nbsp; Fan Fiction</p>
+  <h1 class="story-title" id="top-of-story">There Can Be Only One Morning Shift</h1>
+  <p class="series-line">A Highlander Novel &nbsp;&middot;&nbsp; Book Four of the Jennifer Marsh Series</p>
+
+  <blockquote class="epigraph">
+    &ldquo;The awareness that doesn&rsquo;t stop.&rdquo;
+  </blockquote>
+
+  <p class="byline">Written by <span>Fude-san</span></p>
+  <p class="meta-row">Rating: T &nbsp;&middot;&nbsp; Characters: Duncan MacLeod, Richie Ryan, Joe Dawson, Methos, Amanda, OC</p>
+  <p class="meta-row">Tags: OC-centric, Canon-parallel, Found Family, Post-Solstice 1993&ndash;1994</p>
+  <span class="wip-badge">Work in Progress</span>
+
+  <hr class="title-rule">
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <p class="toc-heading">Contents</p>
+  <ol>
+    <li><a href="#one-eskrima">One &mdash; Eskrima</a></li>
+    <li><a href="#two-holy-ground">Two &mdash; Is the Dojo Holy Ground?</a></li>
+    <li><a href="#three-mrs-williams">Three &mdash; Mrs. Williams</a></li>
+    <li><a href="#four-saturday-at-nine">Four &mdash; Saturday at Nine</a></li>
+    <li><a href="#five-the-dry-cleaning">Five &mdash; The Dry Cleaning</a></li>
+    <li><a href="#the-belt-question">The Belt Question and Mr. Miyagi</a></li>
+    <li><a href="#six-zanshin">Six &mdash; Zanshin</a></li>
+    <li><a href="#the-private-belt">The Private Belt</a></li>
+    <li><a href="#belt-testing-day">Belt Testing Day</a></li>
+  </ol>
+</nav>
+
+<div class="disclaimer">
+  Highlander: The Series and all associated characters are the property of Davis-Panzer Productions.<br>
+  No copyright infringement is intended and no profit is being made.<br>
+  Original characters and story content are the author&rsquo;s own. &copy; Fude-san.
+</div>
+
+<!-- STORY CONTENT -->
+<main class="story" role="main">
+
+<h2 class="chapter" id="one-eskrima">ONE &mdash; ESKRIMA</h2>
+
+<h3>After the Solstice &mdash; DeSalvo's</h3>
+
+<p>Mac put two rattan sticks on the mat.</p>
+
+<p>Jennifer looked at the sticks. She looked at Mac.</p>
+
+<p>"FMA," Mac said. "Filipino Martial Arts. Eskrima, Kali, Arnis &mdash; the terms are related. The principles are shared. The core of it is ambidextrous weapon use &mdash; both hands, simultaneously, independent." He looked at her. "Pick them up."</p>
+
+<p>She picked them up.</p>
+
+<p>She held them. She felt the weight distribution &mdash; rattan, light, roughly the length of her forearm, balanced differently from a bokken, differently again from a sword. She turned them. She felt how they moved.</p>
+
+<p>Her hands moved with them the way her hands moved with drumsticks.</p>
+
+<p>Mac was watching her.</p>
+
+<p>"You've been doing this for years," he said.</p>
+
+<p>She looked at him.</p>
+
+<p>"The independent hand coordination," he said. "Ambidextrous control, different rhythms in each hand simultaneously. You've been training that since you were fifteen." He paused. "I should have seen it sooner."</p>
+
+<p>She looked at the sticks. She looked at her hands.</p>
+
+<p><em>Drumsticks, she thought. This is drumsticks with consequences.</em></p>
+
+<p>"Why now," she said.</p>
+
+<p>Mac looked at the mat.</p>
+
+<p>"Because what we found out at the solstice changes the training timeline," he said. "If you're pre-Immortal &mdash; if you are what we think you are &mdash; then at some point you're going to be in a situation that requires a response. And we don't know when. And we don't know&mdash;" he paused. "We don't know if you can die the way a mortal dies. We don't know if you'll come back. We don't know the rules for someone like you because there's never been someone like you." He looked at her. "So we prepare as if the rules are the most dangerous possible version. And we do it now."</p>
+
+<p>She looked at the sticks.</p>
+
+<p>"The katana," she said.</p>
+
+<p>"Still in the curriculum," he said. "But this is better for you. Lighter. Faster. Two weapons means two attack angles simultaneously. Harder to read. Easier to conceal." He looked at her hands. "And you already know how to use them. You just don't know you know yet."</p>
+
+<p>She turned the sticks. She found a grip. She moved through something that was not quite a kata &mdash; something that her hands knew from years of a different practice, translated into this context, arriving intact.</p>
+
+<p>Mac watched.</p>
+
+<p>He had the expression of a teacher watching a student arrive at something that had been there all along.</p>
+
+<p>"Yes," he said. "Exactly that."</p>
+
+<p>She went again.</p>
+
+<p>The sticks moved the way she needed them to move.</p>
+
+<p>She filed it in the place where she kept the things that felt like home.</p>
+
+<h2 class="chapter" id="two-holy-ground">TWO &mdash; IS THE DOJO HOLY GROUND?</h2>
+
+<h3>After the Solstice</h3>
+
+<p>She asked it between sets. Not dramatically. The way she asked things that had been sitting in the filing system and had finally risen to the top.</p>
+
+<p>"Is the dojo holy ground," she said.</p>
+
+<p>Mac stopped.</p>
+
+<p>He looked at her.</p>
+
+<p>"DeSalvo's," she said. "Is it holy ground?"</p>
+
+<p>"No," he said.</p>
+
+<p>"Can it be made holy ground," she said.</p>
+
+<p>Mac was quiet for a moment. He looked at the mat. He looked at the dojo.</p>
+
+<p>"It's not&mdash;" he started. "The designation isn't something you create. It's inherent to the history of a place. A church is holy ground because of what it's been used for and what it means to the people who use it. A mosque. A burial site. The ground holds the meaning." He paused. "DeSalvo's has been &mdash; it's a place of practice. Of genuine practice. Over time&mdash;"</p>
+
+<p>"Over time it might be," she said.</p>
+
+<p>"I don't know. I've never encountered a dojo that became holy ground. It's not something I can make happen. I'm not sure anything I can do makes it happen."</p>
+
+<p>She looked at the mat.</p>
+
+<p>"Methos would know," she said.</p>
+
+<p>"Methos would have a theory," Mac said. "Which is different."</p>
+
+<p>She smiled. The small one.</p>
+
+<p>"Why are you asking," he said.</p>
+
+<p>"Because I'm going to be spending a lot of time here," she said. "And I want to understand what I'm in."</p>
+
+<p>Mac looked at her. "What you're in," he said.</p>
+
+<p>"This world," she said. "Your world. My world now. I want to know the edges of it. Where the protections are and where they aren't." She looked at him. "If I can't make the dojo holy ground what do I do instead?"</p>
+
+<p>"You fill it with people who would protect it," he said. "People who know what it is and what happens here and who would not allow the Game to come inside it. You've been doing that since you started sweeping the mat."</p>
+
+<p>She nodded and picked up her sticks."Again?"</p>
+
+<p>"Again."</p>
+
+<h2 class="chapter" id="three-mrs-williams">THREE &mdash; MRS. WILLIAMS</h2>
+
+<h3>DeSalvo's &mdash; A Thursday &mdash; After the Littles Class</h3>
+
+<p>Karen Williams had the look of a woman who had rehearsed.</p>
+
+<p>Mac recognized it. He'd seen it in four hundred years of people who had decided to have a conversation and had prepared for it in the car. She had good posture and a good bag and the specific expression of someone who was going to be reasonable about this.</p>
+
+<p>"Mr. MacLeod," she said. "Do you have a moment."</p>
+
+<p>He had a moment. He brought her into the office. He offered her water. She declined with the small motion of someone who didn't want to be made comfortable. She wanted to be efficient.</p>
+
+<p>"It's about the Littles class," she said.</p>
+
+<p>"Kelly," Mac said.</p>
+
+<p>"Kelly," she confirmed. "I want to start by saying she loves it here. She talks about it constantly. She wants to come every week and on the weeks she can't she's genuinely upset." A pause. She was laying groundwork. "So this isn't about pulling her out."</p>
+
+<p>"I understand," Mac said.</p>
+
+<p>"It's about the instruction," she said. "I've been hearing from Kelly about someone called&mdash;" she paused. The pause of a woman saying something she found faintly ridiculous. "Broomie."</p>
+
+<p>Mac waited.</p>
+
+<p>"I assumed it was a nickname for one of the other children," she said. "But when I asked Kelly she said Broomie was her teacher. Her actual teacher." Karen set her bag on her knee more firmly. "I pay Sensei Ryan and yourself for instruction, Mr. MacLeod. I've seen your credentials. Nate's been with you for three years and the difference in him is&mdash;" She stopped. She recalibrated. "My point is that I know what proper instruction looks like. And what I'm hearing from Kelly suggests she's being taught by someone who is not on your staff in any formal capacity."</p>
+
+<p>Mac looked at her.</p>
+
+<p>He had the complete answer ready. He also knew it wasn't his to give.</p>
+
+<p>"Mrs. Williams," he said. "The person you're describing is Jennifer Marsh. She is on my staff in a formal capacity. She teaches the Littles class exclusively." He paused. "She's in the building right now. I'd like to ask her to join us, if you're willing. This is a conversation she should be part of."</p>
+
+<p>Karen looked at him with the expression of someone who had expected the conversation to be simpler than it apparently was.</p>
+
+<p>"All right," she said.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Mac found Jennifer breaking down the Littles mat equipment. She had the foam barriers stacked and was working on the practice weapons, efficient and specific, the way she did everything.</p>
+
+<p>"Office," he said. "Kelly Williams's mother. She has concerns about your instruction. I want you in the room."</p>
+
+<p>Jennifer looked at him.</p>
+
+<p>"I've got your back," he said. "But this one's yours."</p>
+
+<p>She looked at the practice weapon in her hand. She set it down carefully. She looked at the office door.</p>
+
+<p>"Give me thirty seconds," she said.</p>
+
+<p>He gave her thirty seconds.</p>
+
+<div class="section-break">* * *</div>
+
+<p>She came in and closed the door and introduced herself without waiting. "Jennifer Marsh. I run the Littles program." She sat across from Karen Williams and looked at her with the steadiness of someone who had thought about this kind of conversation before it required thinking about.</p>
+
+<p>"Broomie," Jennifer said. "That's me. Kelly named me that. The other kids picked it up." She looked at Karen. "I was sweeping the mat when Kelly first came in for a trial class. She thought I was the janitor. She told me she liked my broom. By the end of the class she was calling me Broomie." She paused. "I didn't correct it because it made her laugh and because a four-year-old who is laughing is a four-year-old who is going to come back next week."</p>
+
+<p>Karen's expression had shifted slightly. Recalibrating again.</p>
+
+<p>"My concern," Karen said, more carefully now, "is about credentials. Nate was instructed by Sensei Ryan and Mr. MacLeod. I know their backgrounds. I know what they hold." She looked at Jennifer. "What do you hold."</p>
+
+<p>Jennifer didn't look at Mac. She'd known this was coming.</p>
+
+<p>"I'm not a black belt," she said. "I'm not a belt at all in the traditional system. What I am is someone who has trained under Mr. MacLeod's direct supervision for three years in a curriculum he designed, and who was asked by him to run the Littles program because&mdash;" She looked at Karen steadily. "Because I'm good at it. Because I understand how small children learn and how to make them feel safe and capable at the same time. And because what Kelly needs at six years old is not what Nate needed at eleven."</p>
+
+<p>"What does Kelly need," Karen said. Not combative. Genuinely asking.</p>
+
+<p>"She needs to know her body is hers," Jennifer said. "She needs to know how to fall without being afraid of the floor. She needs to know the word no is a complete sentence and that she's allowed to use it even when an adult tells her otherwise. She needs to learn how to be loud when loudness is required." Jennifer looked at her. "She's six. If I put her in a formal belt curriculum right now she'll memorize kata and forget why she's there. In three years she'll quit because it stopped feeling like hers." She paused. "Kelly's not going to quit."</p>
+
+<p>Karen Williams was quiet for a moment.</p>
+
+<p>"She told me," Karen said slowly, "that Broomie taught her that her voice was a weapon."</p>
+
+<p>"It's the first thing I teach," Jennifer said.</p>
+
+<p>The quiet that followed was a different kind of quiet than the one before.</p>
+
+<p>Mac had not said a word since Jennifer came in. He did not say one now. He didn't need to.</p>
+
+<p>Karen looked at her bag. She looked at Jennifer.</p>
+
+<p>"Sensei Ryan teaches Nate," she said. "What's his relationship to you?"</p>
+
+<p>"He's my partner," Jennifer said. "He learned to fall on this mat. So did I."</p>
+
+<p>Another pause.</p>
+
+<p>"I'd like to observe a class," Karen said. "If that's permitted."</p>
+
+<p>"Saturday at nine," Jennifer said. "Parents are always welcome to observe but I ask that you stay on the sidelines, for everyone's safety. Come early. Kelly will want to show you the warm-up. She's been working on it."</p>
+
+<p>Karen nodded, stood, shook Mac's hand and then Jennifer's. She had the expression of a woman whose rehearsed conversation had gone somewhere she hadn't prepared for, and who had found the destination reasonable despite herself.</p>
+
+<p>Mac saw her out.</p>
+
+<p>He came back to the office. Jennifer was still sitting there. She had her hands flat on her knees and was looking at the middle distance.</p>
+
+<p>"Nicely done," he said.</p>
+
+<p>"She's going to come Saturday and assess me," Jennifer said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"That's fair," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>She stood. She went back to the practice weapons. She picked up where she'd left off.</p>
+
+<p>Mac stood in the office doorway and watched a woman who had just handled something difficult go back to work without needing anything from the moment but the moment itself.</p>
+
+<p>He filed it in the place where he kept the things that made him certain.</p>
+
+<h2 class="chapter" id="four-saturday-at-nine">FOUR &mdash; SATURDAY AT NINE</h2>
+
+<h3>DeSalvo's &mdash; The Littles Class</h3>
+
+<p>Karen Williams arrived at eight fifty-three.</p>
+
+<p>Jennifer was already on the mat. Cross-legged at the center, hands on her knees, eyes closed. She was not performing stillness. She was just still.</p>
+
+<p>Karen stopped in the doorway. She looked at Mac, who had appeared silently beside her in the way he did.</p>
+
+<p>"She starts in meditation," he said quietly. "The kids come in and join her. It takes as long as it takes."</p>
+
+<p>"Where do I&mdash;"</p>
+
+<p>"Here is fine," Mac said. "She asked me to remind you &mdash; sidelines, for everyone's safety. The children know you're observing. Kelly knows."</p>
+
+<p>Karen nodded. She settled her bag. She watched.</p>
+
+<div class="section-break">* * *</div>
+
+<p>They came in ones and twos.</p>
+
+<p>Shoes off at the door, which they did without being told. Each one crossed to the mat, found a spot in the circle around Jennifer, and sat. Some of them looked at Jennifer's face first, as if checking the quality of the quiet she was keeping. Then they matched it.</p>
+
+<p>A small boy sat down too hard and caught himself and looked around to see if anyone had noticed. The girl next to him &mdash; eight, maybe nine, with the watchful eyes of someone who had been here a long time &mdash; gave him the small nod of someone who had done the same thing once and was not going to make anything of it.</p>
+
+<p>Kelly came in at eight fifty-eight. She saw her mother on the sidelines. Her face moved through surprise and then delight and then something more careful &mdash; the expression of a child who understood that class was class regardless of who was watching. She crossed to the mat. She found her spot. She sat.</p>
+
+<p>She looked at Jennifer's face. She matched it.</p>
+
+<p>By nine o'clock there were eleven children in the circle. Jennifer sat with them.</p>
+
+<p>Then she opened her eyes.</p>
+
+<p>She stood in one motion, unhurried, and looked around the circle. She looked at each of them. When she'd seen all of them she said:</p>
+
+<p>"Bow in."</p>
+
+<p>They bowed. Not to her. To each other &mdash; heads down, hands on knees, the full circle completing itself. Jennifer bowed with them, the same bow, the same depth.</p>
+
+<p>Karen had not expected that.</p>
+
+<div class="section-break">* * *</div>
+
+<p>The basics moved through the circle the way water moved.</p>
+
+<p>Jennifer demonstrated once. Then she moved. She walked the inside of the circle, unhurried, watching each child work through the sequence. She stopped at a boy whose left hand kept dropping and repositioned it without comment, just a touch and a look, and he corrected and she moved on. She stopped at Kelly, who had the sequence but was holding her breath through it. Jennifer caught her eye and breathed out, demonstratively, and Kelly's shoulders dropped and the technique improved immediately. Jennifer gave her the small nod.</p>
+
+<p>She never raised her voice. She never demonstrated impatience. When someone got something right she said so, precisely, in terms specific enough that the child knew exactly what they'd gotten right and could find it again.</p>
+
+<p>When she corrected she corrected once and moved on. She did not hover.</p>
+
+<p>After twenty minutes the children were warm and focused and nobody had checked the clock.</p>
+
+<p>Karen had not checked her phone.</p>
+
+<div class="section-break">* * *</div>
+
+<p>"Ichi," Jennifer said.</p>
+
+<p>The children were already moving.</p>
+
+<p>"Ni," she said.</p>
+
+<p>Eleven voices: "San."</p>
+
+<p>"Mizu!" the children said, and the circle dissolved into the organized chaos of eleven small people finding their water bottles and moving toward the fountain in the specific order they'd worked out among themselves, each one counting their turn at the fountain while the others counted with them &mdash; "ichi, ni, san" &mdash; and stepping aside.</p>
+
+<p>Kelly appeared at the sideline. She was slightly out of breath and entirely pleased with herself.</p>
+
+<p>"Mom," she said. "Did you see the arm thing."</p>
+
+<p>"I saw it," Karen said. "You weren't breathing."</p>
+
+<p>Kelly looked at her with the expression of a child recalibrating her mother.</p>
+
+<p>"Sensei Broomie said that too," Kelly said. "She says the breath is the technique. The rest is just your hands knowing where to go."</p>
+
+<p>She went back for her water bottle.</p>
+
+<p>Karen looked at Mac.</p>
+
+<p>He looked at the mat.</p>
+
+<div class="section-break">* * *</div>
+
+<p>They came back to the circle without being asked.</p>
+
+<p>Priya &mdash; the oldest one, the one who had been watching Karen with the peripheral attention of someone who noticed everything &mdash; crossed to the edge of the mat where a canvas bag sat against the wall. She lifted it with the careful hands of someone transporting something of value. She brought it to her spot in the circle and sat with it in her lap.</p>
+
+<p>Jennifer sat down with them.</p>
+
+<p>"Priya," she said.</p>
+
+<p>Priya opened the bag and produced the book.</p>
+
+<p>It was small, spiral-bound, the kind of thing you ordered in a short run and held in both hands. The cover had an illustration of a turtle &mdash; careful line work, expressive, clearly done by someone who could draw and who had thought about what a turtle who knew things should look like. The title in Jennifer's handwriting: "The Jade Chronicles."</p>
+
+<p>Karen looked at the book.</p>
+
+<p>"Jade has been practicing courtesy," Jennifer said to the circle. "She thought she understood what it was. She's been saying please and thank you. She holds the door. She waits her turn." She looked at the children. "And then something happened."</p>
+
+<p>"What happened," said the small boy who had sat down too hard.</p>
+
+<p>"Jade's friend Pip was upset," Jennifer said. "Really upset. And Jade said please and thank you. She held the door. She waited her turn." She looked around the circle. "And Pip was still upset."</p>
+
+<p>The children were very quiet.</p>
+
+<p>"Was Jade being discourteous," Jennifer said.</p>
+
+<p>A girl near Kelly shook her head slowly. "She was doing all the right things."</p>
+
+<p>"She was," Jennifer agreed. "So what was missing."</p>
+
+<p>The circle thought about it. Kelly was thinking hard, Jennifer could see it.</p>
+
+<p>"Pip," Kelly said.</p>
+
+<p>Jennifer looked at her.</p>
+
+<p>"She was doing the courtesy things," Kelly said, "but she wasn't doing them &mdash; at Pip. She was just doing them."</p>
+
+<p>Jennifer looked at Kelly for a moment.</p>
+
+<p>"Yes," she said. "Exactly that. Courtesy isn't a set of actions. It's attention. It's seeing the person in front of you and letting them know you see them." She looked around the circle. "Jade figured that out. She put down the door-holding and the please and thank you and she just looked at Pip and said: I can see you're having a hard time. Is there something I can do."</p>
+
+<p>"Did it work," Priya said. With the tone of someone who already knew but wanted to hear it said.</p>
+
+<p>"It worked," Jennifer said. "Because Pip felt seen. And feeling seen is the thing courtesy is actually for."</p>
+
+<p>The circle sat with it.</p>
+
+<p>Outside Seacouver went on being Seacouver. Inside, eleven children were thinking about a turtle who had learned something that most adults hadn't.</p>
+
+<div class="section-break">* * *</div>
+
+<p>The bow-out was the same as the bow-in. The full circle. Everyone to everyone.</p>
+
+<p>After, Kelly ran to her mother without ceremony and attached herself to Karen's side and looked up at her with the expression of someone who had done good work and knew it.</p>
+
+<p>Karen put her hand on Kelly's head.</p>
+
+<p>Jennifer was helping the younger children find their shoes. She was patient about it. She was always patient about it.</p>
+
+<p>Karen crossed the mat line.</p>
+
+<p>"Ms. Marsh," she said.</p>
+
+<p>Jennifer looked up.</p>
+
+<p>"The book," Karen said. "Did you write it."</p>
+
+<p>"My partner drew it," Jennifer said. "I wrote it. We did a small print run."</p>
+
+<p>Karen looked at the copy Priya was carefully returning to the canvas bag.</p>
+
+<p>"Nate is eleven," Karen said. "Is there a version for eleven."</p>
+
+<p>Jennifer looked at her.</p>
+
+<p>"There will be," she said.</p>
+
+<p>Karen nodded. She looked at the mat. She looked at the circle of children pulling on shoes and finding their bags and saying goodbye to each other with the ease of people who had shared something.</p>
+
+<p>"Thank you," Karen said. "For letting me observe."</p>
+
+<p>"Same time every Saturday," Jennifer said. "You're always welcome."</p>
+
+<p>Karen nodded again. She took Kelly's hand.</p>
+
+<p>At the door Kelly turned back.</p>
+
+<p>"Bye Sensei Broomie," she said.</p>
+
+<p>"Same time Saturday, Kel," Jennifer said.</p>
+
+<p>They went down the stairs.</p>
+
+<p>Mac had been standing in the office doorway for the last twenty minutes. He said nothing. Jennifer began breaking down the mat equipment with the efficiency of someone who had done it many times.</p>
+
+<p>After a moment he came and helped.</p>
+
+<h2 class="chapter" id="five-the-dry-cleaning">FIVE &mdash; THE DRY CLEANING</h2>
+
+<h3>DeSalvo's, Joe's Bar &mdash; Fall 1993</h3>
+
+<p>The sticks were still in her hands when Mac said, "Stay a moment."</p>
+
+<p>She stayed. She set the rattan down on the mat and worked through the cooldown the way she'd been shown. Mac went to the office. She heard the desk drawer.</p>
+
+<p>He came back with a keychain. Celtic shield knot, solid, the kind of thing made to last. Three keys on it.</p>
+
+<p>"Dojo," he said, pointing to the first. "Loft." The second. He held up the third. "The elevator." He looked at her. "Not the T-Bird."</p>
+
+<p>She looked at the keys. She looked at him.</p>
+
+<p>"Never the T-Bird," she said.</p>
+
+<p>"Never," he confirmed.</p>
+
+<p>She took the keychain. She held it in her palm for a moment &mdash; the weight of it, the specific gravity of what it meant. She closed her fingers around it.</p>
+
+<p>She went back to breaking down the mat.</p>
+
+<div class="section-break">* * *</div>
+
+<p>She came in the following Tuesday with something in her jacket pocket. She waited until the session was done. She waited until the others had gone.</p>
+
+<p>She produced the keychain.</p>
+
+<p>It was small. Wooden disc, lacquered, kanji on both sides in black. A flea market thing &mdash; the kind of vendor who had a table of them with little paper tags explaining their meanings. She'd spent twenty minutes choosing.</p>
+
+<p>"308," she said. "Front and back."</p>
+
+<p>She handed it to him.</p>
+
+<p>Mac took it. He looked at the keychain. He read it.</p>
+
+<p>He read it again.</p>
+
+<p>Something moved through his expression in the time it took to complete a breath and then it was gone, replaced with the specific warmth of a man receiving something he intended to keep.</p>
+
+<p>"Thank you," he said.</p>
+
+<p>He put it in his pocket.</p>
+
+<p>He went to return Fitz's scissors.</p>
+
+<p>She never asked what it said.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Richie found out about the keys on a Thursday at Joe's.</p>
+
+<p>He found out the way he found out most things &mdash; someone mentioned something incidentally and he did the arithmetic and arrived at a conclusion he had opinions about. In this case the someone was Mac and the something was: "I'll let myself in, Jennifer has the dojo key." And the conclusion was that Mac MacLeod had a key to his girlfriend's apartment and Richie Ryan, who was also her boyfriend, did not.</p>
+
+<p>He raised this at the bar. He raised it with the energy of someone who felt a procedural injustice had occurred and wished it noted for the record.</p>
+
+<p>Jennifer listened to the full presentation. She reached into her bag.</p>
+
+<p>She produced a keychain. Michelangelo. The Ninja Turtle, orange mask, nunchucks, the specific enthusiasm of someone who had considered the options and chosen correctly. One key on the ring.</p>
+
+<p>On the key, in her handwriting: a small heart.</p>
+
+<p>She set it on the bar in front of Richie.</p>
+
+<p>He looked at it.</p>
+
+<p>He picked it up.</p>
+
+<p>He looked at the heart.</p>
+
+<p>He did not say anything further on the subject of procedural injustice.</p>
+
+<div class="section-break">* * *</div>
+
+<p>She came back the following Tuesday with a different argument.</p>
+
+<p>She had been reading. She presented this upfront, with the specific energy of someone who had done the work and wanted credit for the methodology before the conclusion was rejected.</p>
+
+<p>"The squire," she said, "was responsible for the knight's horse."</p>
+
+<p>Mac looked at her.</p>
+
+<p>"Historically," she said. "Feeding, grooming, tacking. The horse was the knight's primary mode of transport and the squire maintained access to it as a matter of function." She looked at him. "You have a horse."</p>
+
+<p>"I have a T-Bird," Mac said.</p>
+
+<p>"You have a T-Bird," she confirmed. "I should have a key."</p>
+
+<p>Mac looked at the mat. He looked at the dojo. He looked at the specific expression of a woman who had researched this position and was prepared to defend it.</p>
+
+<p>"The argument," he said, "is studied. It is logical. It is not without merit."</p>
+
+<p>"Thank you," she said.</p>
+
+<p>"No," he said.</p>
+
+<p>She looked at him.</p>
+
+<p>"However," he said. "When you need to get oats for the horse you may borrow the keys."</p>
+
+<p>She considered this.</p>
+
+<p>"Borrow," she said.</p>
+
+<p>"No copies," he said.</p>
+
+<p>She filed it in the place where she kept the things that were not finished yet.</p>
+
+<p>"Richie," she said, "is going to lose his mind the first time I drive it."</p>
+
+<p>Mac said nothing.</p>
+
+<p>He went to put the kettle on.</p>
+
+<h2 class="chapter" id="the-belt-question">THE BELT QUESTION AND MR. MIYAGI</h2>
+
+<h3>DeSalvo's &mdash; A Tuesday</h3>
+
+<p>The belt testing conversation happened on a Tuesday.</p>
+
+<p>She was finishing the sweep when a girl named Maya &mdash; nine years old, one of the intermediate students &mdash; was sitting on the bench by the door with her shoes on and her bag in her lap and the expression of someone who had decided to wait for something specific.</p>
+
+<p>"Belt testing is in three weeks," Maya said.</p>
+
+<p>"I know," Jennifer said.</p>
+
+<p>"I'm scared," Maya said. Not performing the fear. Just stating it as a fact she had assessed and found true.</p>
+
+<p>"What are you scared of?" Jennifer said.</p>
+
+<p>"Getting it wrong in front of everyone," Maya said. "The parents come and everyone watches and Sensei MacLeod watches and I know the form but when everyone watches I &mdash;" She stopped. She found it. "I lose it. My body forgets what it knows."</p>
+
+<p>Jennifer set the broom against the wall. She sat on the bench beside Maya.</p>
+
+<p>"That's a real thing," she said. "It happens to everyone."</p>
+
+<p>"Does it happen to you?" Maya said.</p>
+
+<p>Jennifer thought about the combination she'd gotten wrong in front of Mac seventeen times. About the two seconds her composure had broken in front of half the bar. "Yes," she said. "It happens to me."</p>
+
+<p>"Can you practice with me? Before testing. So I can get used to someone watching."</p>
+
+<p>"Tuesdays after my session with Sensei MacLeod," Jennifer said. "Three sessions, forty-five minutes each."</p>
+
+<p>Maya nodded. She stood. She looked at Jennifer with the specific relief of a child who has asked for something and received it and is now going to go home and practice so as not to waste the opportunity.</p>
+
+<p>"Thank you, Sensei Broomie," she said. She went down the stairs.</p>
+
+<p>Jennifer sat on the bench for a moment. Then she went to find Mac.</p>
+
+<div class="section-break">* * *</div>
+
+<p>He was in the loft, making tea. She came up the interior stairs and stood in the doorway.</p>
+
+<p>"I agreed to practice with Maya before belt testing," she said. "Tuesdays after our session. Three sessions."</p>
+
+<p>He poured the water. He did not turn around.</p>
+
+<p>"Is that all right?" she said.</p>
+
+<p>He turned around. He looked at her with the complete looking.</p>
+
+<p>"You know enough to teach," he said.</p>
+
+<p>"I'm not teaching," she said. "I'm practicing with her."</p>
+
+<p>"Yes," he said. "The distinction is less meaningful than you think."</p>
+
+<p>She stood in the doorway. "She said her body forgets what it knows when people are watching," she said.</p>
+
+<p>"It's a real problem," he said. "You're the right person to help with it."</p>
+
+<p>She was quiet for a moment.</p>
+
+<p>"Mac," she said. "The parents. When they watch the belt testing." She paused. "I don't have a belt. Should I have a belt? For &mdash; for legitimacy. So the parents don't wonder who this person is helping their kids."</p>
+
+<p>Mac looked at her.</p>
+
+<p>He set the tea down.</p>
+
+<p>"I can order one from Century if you want it," he said. "Whatever level you'd like to represent. We can talk about where you actually are and find the honest equivalent."</p>
+
+<p>"But?" she said.</p>
+
+<p>"But," he said, "the belt's primary function is to hold up the pants."</p>
+
+<p>She looked at him.</p>
+
+<p>He had the quality &mdash; the one she'd seen perhaps a dozen times, the specific quality of Mac being dry, the version that was so rare it took her a moment to recognize it.</p>
+
+<p>"The Karate Kid," she said.</p>
+
+<p>"You know the movie," he said.</p>
+
+<p>"I know the movie," she said.</p>
+
+<p>What she did not say: she had seen the movie seven times as a child. She had a VHS copy of it at her mother's house in Portland, on the shelf between Pretty in Pink and The Princess Bride, and she had in fact read the novelization before she saw the film because she had been that kind of twelve-year-old, and she had cried at the end of both the book and the movie and was not going to be telling Mac any of this.</p>
+
+<p>"You know the material," Mac said. "The parents will see that. The kids already see it." He picked up his tea. "But if you want the belt, I'll order it."</p>
+
+<p>"No," she said. "No belt."</p>
+
+<p>"Good," he said.</p>
+
+<p>She went back downstairs. She finished the sweep. She thought about Mr. Miyagi telling Daniel that a belt is just to hold up the pants, and she thought about Mac saying it with that same face, and she thought: he's seen the movie.</p>
+
+<p>She thought: of course he's seen the movie.</p>
+
+<p>She thought: I am not going to ask when.</p>
+
+<h2 class="chapter" id="six-zanshin">SIX &mdash; ZANSHIN</h2>
+
+<h3>DeSalvo's &mdash; The Office &mdash; A Tuesday</h3>
+
+<p>She brought lunch from the place on the corner &mdash; the one with the burritos that were technically too large to be practical and which everyone got anyway because practical was not the point. She had a tray with three of them and a carrier with three coffees and she came through the office door sideways, the way you came through doors when both hands were occupied, and set everything on Mac's desk.</p>
+
+<p>Mac was behind the desk. Richie was in the chair he always occupied when he was in the office, the one at the angle that suggested he'd sat down temporarily and then decided not to leave.</p>
+
+<p>"Lunch," she said.</p>
+
+<p>"Thank you," Mac said.</p>
+
+<p>Richie had already picked up his burrito.</p>
+
+<p>She sat. She distributed the coffees. She unwrapped her own and looked at Mac, who had the expression he had when something was on his mind and had been there for a while.</p>
+
+<p>"Go ahead," she said.</p>
+
+<p>He looked at her.</p>
+
+<p>"You have something to say," she said. "You've had it since I walked in. Go ahead."</p>
+
+<p>Richie stopped chewing briefly. He looked at Mac. He looked at Jennifer. He resumed chewing.</p>
+
+<p>Mac turned his coffee cup.</p>
+
+<p>"I want to put the dojo in your name," he said.</p>
+
+<p>The office was quiet.</p>
+
+<p>"The building," he said. "The business. All of it. I want you to own it formally and legally and on paper." He looked at her steadily. "I've spoken to a lawyer. The process is straightforward."</p>
+
+<p>"Mac," she said.</p>
+
+<p>He waited.</p>
+
+<p>She looked at the burrito. She looked at the desk. She looked at the man across from her who was four hundred years old and had decided, as a practical matter, to give her a building.</p>
+
+<p>"People don't just give each other buildings," she said.</p>
+
+<p>"Immortals with assets and mortal companions have been doing exactly this for as long as there have been legal structures to do it with," Mac said. "It's practical. I'm not always going to be in Seacouver. I'm not always going to be&mdash;" He paused. "Available. The dojo needs continuity. You are the continuity."</p>
+
+<p>She turned her coffee cup.</p>
+
+<p>"The classes," she said. "What's been built here. You want it protected in a form that doesn't depend on your presence."</p>
+
+<p>"It already doesn't depend on my presence," he said. "I'm making the paperwork accurate."</p>
+
+<p>She sat with this. Richie was watching her with the specific attention he gave to moments that mattered.</p>
+
+<p>"I'm uneasy," she said.</p>
+
+<p>"I know," Mac said.</p>
+
+<p>"Not because I don't&mdash;" She stopped. "It's not ingratitude. It's that it's a building. It's significant and I don't take significant things lightly and I want to make sure I understand what I'm being asked to carry."</p>
+
+<p>"You've been carrying it for two years," Mac said. "I'm asking you to let me make that official."</p>
+
+<p>She looked at the desk. She looked at him.</p>
+
+<p>"The name," she said. "If the ownership changes&mdash;"</p>
+
+<p>"That's a separate conversation," Mac said. "The name can stay DeSalvo's. It's been DeSalvo's for&mdash;"</p>
+
+<p>"It doesn't have to stay DeSalvo's," Richie said.</p>
+
+<p>They both looked at him.</p>
+
+<p>He had put down the burrito. He had the expression he got when an idea had arrived and he was following it.</p>
+
+<p>"DeSalvo's made sense when it was DeSalvo's," he said. "But if Jennifer's running it and owning it&mdash;" He turned his coffee cup. "There's a concept. In martial arts. The awareness you keep after a technique. The attention that doesn't stop when the movement stops. Being fully present and fully alert even in stillness." He looked at Mac. "It's like the opposite of being done. You're always still in it. Still aware."</p>
+
+<p>Mac was looking at him with a particular expression.</p>
+
+<p>"The concept you're describing," Mac said. "The word you're looking for is Zanshin."</p>
+
+<p>Richie pointed at him. "That. That's what this place is."</p>
+
+<p>Jennifer had her notebook out. She had it out without entirely deciding to have it out, the way certain movements were automatic.</p>
+
+<p>"How do you spell it," she said.</p>
+
+<p>Mac looked at her notebook. He looked at her pen.</p>
+
+<p>"Zed," he said. "A-N-S-H-I-N."</p>
+
+<p>She looked up.</p>
+
+<p>"Zed," she said.</p>
+
+<p>"Zed," he confirmed.</p>
+
+<p>She looked at Richie.</p>
+
+<p>Richie looked at Mac with the expression of someone encountering a fact that was going to take a moment to process.</p>
+
+<p>"You said Zed," Richie said.</p>
+
+<p>"I did," Mac said.</p>
+
+<p>"It's Zee," Richie said. "Z is Zee."</p>
+
+<p>"Z," Mac said, with the complete certainty of a man who had been pronouncing this letter correctly for four hundred years, "is Zed."</p>
+
+<p>"In America," Jennifer said carefully, "we say Zee."</p>
+
+<p>"In Scotland," Mac said, equally carefully, "we say Zed. In Britain. In most of the English-speaking world that is not America, in fact." He looked at Richie. "Zed."</p>
+
+<p>Richie turned to Jennifer. "He's been saying our alphabet wrong this whole time."</p>
+
+<p>"It's not wrong," Mac said. "It's correct."</p>
+
+<p>She was looking at her notebook. She had written it out. She said it quietly under her breath. Zed-anshin.</p>
+
+<p>She looked at it.</p>
+
+<p>She said it again.</p>
+
+<p>She looked at Mac, who was watching her with the expression of a man who was beginning to understand that something had just happened.</p>
+
+<p>"Zanshin Dojo," she said.</p>
+
+<p>The office was quiet.</p>
+
+<p>Richie looked at the desk. He looked at Jennifer. He looked at Mac.</p>
+
+<p>"That's the name," Richie said.</p>
+
+<p>Jennifer turned the notebook so Mac could see it. Zanshin Dojo. And underneath, in smaller letters: the awareness that doesn't stop.</p>
+
+<p>Mac looked at the notebook. He looked at her. He looked at the word.</p>
+
+<p>"Yes," he said. The quiet version. The one that meant more than yes.</p>
+
+<p>She turned the notebook back. She looked at what she'd written.</p>
+
+<p>"I'll take the building," she said.</p>
+
+<p>Mac looked at her.</p>
+
+<p>"On one condition," she said.</p>
+
+<p>He waited.</p>
+
+<p>"DeSalvo's name goes somewhere in the building," she said. "Permanent. Not a sign. Something in the fabric of it. Because it was his before it was mine and that matters."</p>
+
+<p>Mac was quiet for a moment.</p>
+
+<p>"Yes," he said. "That's right."</p>
+
+<p>She picked up her burrito. She turned the notebook back to look at the name one more time.</p>
+
+<p>Richie picked up his burrito.</p>
+
+<p>"Zed," he said. Trying it. The way it felt in the mouth &mdash; short, definite, like the beginning of something rather than the end of a letter.</p>
+
+<p>"Zed," Jennifer said.</p>
+
+<p>Mac looked at the two of them.</p>
+
+<p>"Zed," he said, with four hundred years of Zed behind it.</p>
+
+<div class="section-break">* * *</div>
+
+<p>The paperwork took six weeks.</p>
+
+<p>This was faster than Jennifer had expected and slower than Richie had expected and exactly as long as Mac had expected, because Mac had done this before in various forms across various centuries and had learned that legal processes moved at the speed of legal processes regardless of what you needed from them.</p>
+
+<p>The evening it was finalized &mdash; a Thursday in November, the folder on Mac's desk with the signatures where they needed to be &mdash; Mac called upstairs.</p>
+
+<p>He had champagne, chosen with the specific consideration he brought to things that mattered. He had dinner, which he had made himself &mdash; the good version, the kind that required the afternoon. He had set the table in the loft the way he set it when something was worth marking.</p>
+
+<p>Jennifer came up first. She looked at the table. She looked at Mac.</p>
+
+<p>"You cooked," she said.</p>
+
+<p>"It seemed appropriate," he said.</p>
+
+<p>Richie came up behind her and stopped in the doorway with the expression of someone who had not expected this degree of occasion.</p>
+
+<p>"Sit down," Mac said.</p>
+
+<p>They sat. Mac poured the champagne &mdash; three glasses, the actual thing.</p>
+
+<p>He raised his glass.</p>
+
+<p>"To Zanshin Dojo," he said.</p>
+
+<p>"To Zed," Jennifer said.</p>
+
+<p>Richie raised his. "To Zed." He looked at Mac. "And to Mac saying Zed and being right about it."</p>
+
+<p>Mac looked at him. "I'm always right about it."</p>
+
+<p>They drank.</p>
+
+<p>The dinner was excellent. The champagne was correct. Outside the loft windows November Seacouver was going about its business, and inside the three of them ate and talked and didn't talk and the evening was specific in the way of evenings that were going to be remembered.</p>
+
+<p>After dinner Jennifer was looking at the folder on Mac's desk. Not going through it. Just looking at it. Her name on the cover page. Jennifer Anne Marsh. The legal language that turned a building into a possession and a possession into a responsibility.</p>
+
+<p>"Can I ask something," she said.</p>
+
+<p>Mac looked at her.</p>
+
+<p>"Is this still your loft," she said.</p>
+
+<p>Mac looked at the loft. At the bar, the windows, the kitchen, the furniture that had been lived with long enough to become part of the place.</p>
+
+<p>"The loft is part of the building," he said carefully.</p>
+
+<p>"So technically," she said.</p>
+
+<p>"Technically," Mac said.</p>
+
+<p>"I'm your landlord," she said.</p>
+
+<p>The loft was quiet.</p>
+
+<p>Richie put his champagne down. He looked at Mac. "Are you a squatter," he said.</p>
+
+<p>"I am not a squatter," Mac said. "I am a long-term resident with an established claim to the premises."</p>
+
+<p>"That's what a squatter says," Richie said.</p>
+
+<p>"I built this bar," Mac said.</p>
+
+<p>"And Jennifer owns it," Richie said, with the specific helpless delight of someone watching a situation develop. He turned to Jennifer. "Does he need a lease? Is there a deposit situation?"</p>
+
+<p>"There's no deposit situation," Jennifer said. She was looking at the folder. She turned to Mac. "But I feel like there should be paperwork."</p>
+
+<p>Mac looked at her.</p>
+
+<p>"For my own protection," she said. "As the property owner."</p>
+
+<p>"Your protection," Mac said.</p>
+
+<p>"Legal exposure," she said. "I should probably understand what I'm liable for." She turned the folder over in her hands. "Richie, does he have renter's insurance?"</p>
+
+<p>"I don't need renter's insurance," Mac said.</p>
+
+<p>"Everyone needs renter's insurance," Jennifer said.</p>
+
+<p>"I'm four hundred years old," Mac said.</p>
+
+<p>"Which is exactly the kind of thing renter's insurance is designed for," Richie said.</p>
+
+<p>Mac looked at the two of them. He looked at the champagne. He picked it up.</p>
+
+<p>"I will," he said, with the complete dignity of a man making a significant concession, "look into renter's insurance."</p>
+
+<p>"I'll need first and last," Jennifer said.</p>
+
+<p>"You absolutely will not," Mac said.</p>
+
+<p>She held his eyes for three seconds. Then the thing happened at the corner of her mouth.</p>
+
+<p>"We'll discuss it," she said.</p>
+
+<p>"There's nothing to discuss," Mac said.</p>
+
+<p>"That's what the squatter always says," Richie said, into his champagne.</p>
+
+<p>Mac looked at him.</p>
+
+<p>Richie looked at the ceiling.</p>
+
+<p>The loft held the three of them &mdash; the champagne and the dinner and the folder with Jennifer's name on it and the specific warmth of a November evening that was going to be one of the ones they kept.</p>
+
+<p>Jennifer picked up her glass.</p>
+
+<p>"Same time Tuesday," she said.</p>
+
+<p>"Same time Tuesday," Mac said.</p>
+
+<p>"To Zed," Richie said.</p>
+
+<p>They drank.</p>
+
+<h2 id="the-private-belt">THE PRIVATE BELT</h2>
+
+<h3>Zanshin Dojo &mdash; Wednesday, August 19, 1994</h3>
+
+<p>The text came in at two-seventeen.</p>
+
+<p>Impromptu session, mandatory, before Joe's. Come as you are.</p>
+
+<p>She looked at it twice. She had just gotten out of her afternoon seminar and had forty minutes before her bar shift. When Ki-san called, she went.</p>
+
+<p>The dojo was empty.</p>
+
+<p>Mac was at the supply closet. That was all &mdash; just Mac, the closet, the specific quality of an afternoon dojo with nobody in it. Richie wasn't there. This registered. Richie was usually somewhere in the building at this hour, the specific background presence of him. His absence was noted and filed.</p>
+
+<p>She kicked off her shoes at the threshold. She bowed. She entered.</p>
+
+<p>Mac said nothing. She crossed to the mat, found her position, and lowered herself into seiza &mdash; 正座 &mdash; the formal sitting, feet tucked, hands on her thighs, spine straight. She closed her eyes.</p>
+
+<p>I am still. I can hear my heartbeat.</p>
+
+<p>She heard Mac move. She tracked him the way she had learned to track movement in a room &mdash; without looking, without the eyes, the awareness that had been opening in her since before she had a name for it. He crossed the mat. He stopped in front of her.</p>
+
+<p>She opened her eyes. She stood. She bowed.</p>
+
+<p>He returned the bow.</p>
+
+<p>Then he gestured &mdash; a small, specific motion. Her arms. Parallel to the floor.</p>
+
+<p>She moved her arms.</p>
+
+<p>He stepped in.</p>
+
+<p>She understood what was happening at the moment his hands found the belt &mdash; the specific black, the weight of it &mdash; and she nearly froze. The nearly was all there was. The freeze did not complete itself. She had learned too well the thing he'd taught her about commitment: you go all the way through or you don't go.</p>
+
+<p>She stayed.</p>
+
+<p>Mac worked with the economy of someone for whom this was not a ceremony but a fact being made visible. He tied it correctly &mdash; the knot, the tuck, the specific tension of something that was meant to hold. When it was right he gripped both ends and gave a final tug, precise, the period at the end of a sentence.</p>
+
+<p>He stepped back.</p>
+
+<p>He looked at her.</p>
+
+<p>Then he placed his right fist against his left palm.</p>
+
+<p>She understood. She brought her hands together. They bowed &mdash; the full bow, head down, the session ending the way all sessions ended.</p>
+
+<p>She straightened.</p>
+
+<p>He had already turned back toward the supply closet.</p>
+
+<p>She stood on the mat in the empty dojo with her arms at her sides and the belt at her waist and the specific quality of an afternoon that had just become one of the ones she was going to keep.</p>
+
+<p>No words had been spoken. It was one of the sessions that said the most.</p>
+
+<p>She bowed at the threshold on the way out, put her shoes on and walked to Joe's.</p>
+
+<p>Jennifer was four minutes early for her shift with a black belt neatly folded in her bag.</p>
+
+<h2 class="chapter" id="belt-testing-day">BELT TESTING DAY</h2>
+
+<h3>Zanshin Dojo &mdash; A Saturday</h3>
+
+<p>Jennifer arrived early as usual to make coffee and train with Mac. Richie arrived with breakfast at 7:30 as he usually did on a Saturday morning. Jennifer started another pot of coffee and wolfed down her meal. It was going to be a big day, one that had been advertised for weeks and she wanted to make sure everything went off without a hitch.</p>
+
+<p>The floor needed to be right, the wood clean and responsive, the corners clear. Jennifer had mopped it the evening before and moved as much of the free weight and other equipment up to the windows. That opened the space beautifully. Everything was in order by 8:15. The building already had the specific buzzing quality of an event that mattered. Parents arrived at eight forty-five. The younger siblings trailed behind with the specific philosophy of younger siblings everywhere: be present, don't get in the way, wait for something interesting.</p>
+
+<p>The students arrived in their uniforms, cleaner than usual, pressed. She recognized this quality because she had laid out her own keikogi the night before her first dojo session with Mac &mdash; the specific ritual of preparation that said: I take this seriously.</p>
+
+<p>Maya arrived at eight fifty-two and found Jennifer by the supply corner and said nothing. Jennifer looked at her and nodded once &mdash; the acknowledgment that said: you know the form. Your body knows the form. Let it. &mdash; and Maya nodded back and went to join the other students lining up.</p>
+
+<p>The testing itself was precise and sequential. Mac ran it with the quality he brought to everything &mdash; thorough, fair, without drama in either the praise or the correction. Each student went through their form. The parents watched from the bench with the collective held breath of people who had invested in something and were watching the return.</p>
+
+<p>When Maya's turn came she was third in her group. She took her position. Maya ran the form and she did not lose it. There was a moment in the second sequence where the hesitation was visible, where the body almost forgot what it knew. But it didn't forget. It found the next movement and committed and the form completed cleanly.</p>
+
+<p>Mac said: "Good."</p>
+
+<p>One word. Mac's version of everything.</p>
+
+<p>Jennifer and Richie were both called in to help with the board breaking section of the test. Richie had a line of the older students that were testing and Jennifer assisted the younger children. She felt something she had not been prepared for as she watched her students, the Littles, smash through the wood obstacles she was holding for them. Jennifer</p>
+
+<p>felt something she had not been prepared for; the clean sharp satisfaction and pride of watching someone succeed at something she had shared with them, lesson after lesson.</p>
+
+<p>Sensei Mac wrapped up the test by informing the assembled students who had tested that they would receive their belts at their next class. He also mentioned that Sensei Marsh, Sensei Broomie, would be taking the final test in his pedagogy at 1:00. Nobody left the area.The words had barely left his mouth before it became clear that the question was not who would stay but whether there was enough floor space for everyone who intended to be there.</p>
+
+<p>All of the chairs were taken and a dozen additional parents lined the walls. The junior students claimed the front. The Littles had arranged themselves in a cluster near office, Priya at the center with the specific authority of someone managing a situation. Kelly Williams was beside her. Nate Williams was against the wall with the older students, trying to look like he wasn't craning his neck.</p>
+
+<p>Karen Williams was in the back with the other parents. She had her arms folded and her full attention on the mat.</p>
+
+<p>Joe had come. He was near the door with his cane, which he didn't need on good days but had brought today. One of the high school students saw him arrive and made sure Joe had a chair. Jennifer was curious as to why Richie's desk chair was being rolled out of the room but it was clear when she looked, courtesy. She ate just enough lunch to squash hunger pangs and filled up on water. She wanted a cigarette desperately but did not want any of the kids or their parents watching her puff away in the alley. Richie kept her company and also ate some lunch. "You're going to do, great, Jen. None of them have left. If anything more people have arrived."</p>
+
+<p>"Not helping with the nerves, Richie."</p>
+
+<p>He nodded, placed his hand over hers and set it gently on her sternum. "We are still. We can hear the heart beat."</p>
+
+<p>Promptly at 1:00 Mac stood in front of the crowd and provided a short biography of his student, Jennifer Marsh.</p>
+
+<p>While Mac shared his speech she ran a check over herself. She had her hair up, tight, the working version and her go looked sharp. She was ready and gave Mac a small nod. He continued, "Before we begin, there are three parts to this exam. Jennifer is going to perform a complete set of forms. Each one will be called by name. I'm asking you to hold your applause until I give the signal at the end." He looked at the room. "All of it, and then all at once."</p>
+
+<p>The room absorbed this. Nobody argued with it.</p>
+
+<p>Mac looked at Jennifer.</p>
+
+<p>"Chon-Ji," he said.</p>
+
+<p>She moved.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Mac called them clean and even, one after the other, and she met each one.</p>
+
+<p>Dan-Gun. Do-San. Won-Hyo. Yul-Gok. Joong-Gun. Toi-Gye. Hwa-Rang.</p>
+
+<p>The room was completely silent.</p>
+
+<p>This was the thing about the silence Mac had asked for &mdash; it accumulated. Each form landed in it and the silence held the form and grew heavier, more specific, more aware of what it was holding. The parents who had come expecting a children's class recital were three forms in and understanding that this was something else entirely.</p>
+
+<p>Choong-Moo.</p>
+
+<p>She moved through it the way she moved through things she had earned &mdash; not performing, not demonstrating, just doing the thing completely. Her hands were precise. Her stances were low and rooted. When she struck she struck with the whole of herself, not the arm, not the shoulder, all of it, the specific commitment of someone who had been told four hundred times that half a technique is no technique and had finally, completely, understood.</p>
+
+<p>The Littles were very still. Priya had her hands folded in her lap.</p>
+
+<p>Mac watched. His face gave nothing except, to someone who knew how to read it, everything.</p>
+
+<p>Ge-Baek.</p>
+
+<p>The last form. She came through it and arrived at the finish and held the final position and the room held with her &mdash;</p>
+
+<p>Mac raised his hand.</p>
+
+<p>The room came apart.</p>
+
+<p>The sound was specific &mdash; not polite applause, not the scattered clapping of people being courteous, but the real version, the involuntary kind that happens when something has earned it completely. Nate Williams was clapping with his whole arms. Karen Williams had unfolded hers.</p>
+
+<p>Jennifer stood at the end of the mat and breathed.</p>
+
+<p>She was fierce. She was entirely herself. She had sweat on her forehead and her braid had held and her eyes were bright with the specific quality of someone who had just done something they had worked on for a very long time.</p>
+
+<p>She bowed to the room.</p>
+
+<p>The room bowed back.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Mac cleared the floor. Parents and students moved to the walls. Richie came onto the mat and Jennifer came to meet him and they bowed to each other with the specific quality of two people who had been doing this for years and were about to do it for real.</p>
+
+<p>"Hands only," Mac said. "Light contact. Three rounds."</p>
+
+<p>The room went quiet again.</p>
+
+<p>Richie moved first &mdash; the quality he had, fast and economical, the years with Mac in his body. Jennifer read him the way she'd learned to read him, which was differently from the way a stranger would have seen him. Jennifer knew his tells and Richie knew hers. The sparring between them had always been a conversation conducted in a language they'd developed together.</p>
+
+<p>First round. Jennifer gave ground when she needed to and took it when she could. They were, the room could see, genuinely evenly matched in the specific way of two people who had trained the same curriculum under the same teacher.</p>
+
+<p>Second round. Mac set the terms for the second round, "Legs only. And keep those hands up, Jennie." Richie, who had been counting on the arm drop, recalibrated.</p>
+
+<p>Third round. "Hands and legs." Richie moved in fast and was relentless. This was the last round and he wanted to see her bring her best to the mat. This was her show and she needed to shine. When Richie amped up his offense Jennifer matched him strike for strike. Richie did land a couple of kicks she hadn't blocked efficiently, but it was Richie would was flattened to the mat. For one moment his focus went somewhere it shouldn't have and Jennifer's combo landed. There was a group gasp and then the room went completely silent.</p>
+
+<p>Jennifer was already crouching beside him, hand out. Richie found the not-quite-smile, the warmth underneath it that was specifically his and his alone. Richie took her hand, she pulled him up and then bowed to each other. The match was complete.</p>
+
+<p>The room made a sound that was not quite applause and not quite a collective exhale but somewhere between the two.</p>
+
+<p>Mac said nothing. He had seen what he needed to see.</p>
+
+<div class="section-break">* * *</div>
+
+<p>The boards were pine. Mac held two of them together, horizontal, at waist height, with the steadiness of someone who had done this before and was not concerned. The room had pressed back to give space. The Littles were watching with their whole bodies. Jennifer stood at the correct distance, found her alignment and took a full breath.</p>
+
+<p>Mac said, "When you're ready."</p>
+
+<p>Front snap kick.</p>
+
+<p>The middle of both boards left Mac's hands at speed. He stood holding the top edges and the bottom edges of two boards that no longer had middles. There was a beat where the room processed what had just happened. Then the appreciation.</p>
+
+<p>Jennifer reset. Richie moved to her left with a board. The older student &mdash; a sixteen-year-old named Daniel who had drawn the assignment by virtue of being the largest junior student and who was now reconsidering what he'd agreed to &mdash; took position to her right. Mac stood at the center.</p>
+
+<p>Three boards. Three positions. A crescent arc.</p>
+
+<p>"When you're ready."</p>
+
+<p>She turned and she moved with speed. Three kicks formed an arc so fast that the boards didn't fall one after the other but essentially simultaneously, three snaps in the specific time it took to blink, and then three people stood holding the top portions of boards that no longer had bottoms. Daniel looked at his hands, the piece of board he was holding and then at Jennifer, at Broomie. His expression was priceless.</p>
+
+<div class="section-break">* * *</div>
+
+<p>Jennifer went for her water bottle. She took thirty seconds at the side of the mat, breathing and shaking out her hands. Mac stood beside her and spoke quietly. "Follow through," he said. "All the way to the floor. Don't think about the concrete. Think about the floor underneath it."</p>
+
+<p>"I know," she said.</p>
+
+<p>"You know," he confirmed. "Do it."</p>
+
+<p>Jennifer handed him the water bottle and walked back to the mat. Richie and Daniel had set the concrete block. The room had gone very quiet. The Littles had stopped moving entirely. Priya held Kelly's hand.</p>
+
+<p>Jennifer stood before the block. She did two slow practice movements &mdash; the alignment, the arc of the strike, all the way through, no power, just the geometry of it. Once. Twice.</p>
+
+<p>She set her feet and made the sound.It was the specific noise of a person committing the entire body to a single purpose. Jennifer's hand came down and the concrete hit the mat. The room produced a sound that was not organized into words.</p>
+
+<p>Jennifer straightened, checked her hand and verified that she had broken the brick. She took a breath.</p>
+
+<p>From the direction of the Littles came the specific sound of eleven children for whom professionalism had reached its absolute limit. They were across the mat before Mac could clear it, the entire cluster of them, and Jennifer went down under the weight of them, not as a fall but as an arrival; the kind that knocks you backward with the specific force of children who have decided that this moment requires them to be physically attached to you.</p>
+
+<p>Mac stood at the edge of the mat and scanned the room. The entire dojo had become delightfully undone. He let it run for a moment. "Floor."</p>
+
+<p>One word. That was all it took. The Littles peeled off with the speed of children who knew that voice. Jennifer got to her feet. She was laughing &mdash; the real one, from the right place. The room was still going.</p>
+
+<p>Mac picked up the black belt from the table at the side and crossed over to Jennifer. The room hushed on its own.</p>
+
+<p>Mac tied the belt himself, the way he had tied it the first time with no one watching. He tied it correctly, with the specific economy of someone for whom this was not a ceremony but a confirmation of something already true.</p>
+
+<p>He stepped back and looked at her. "Jennie," he said. "Well done.".</p>
+
+<p>Jennifer held his eyes for a moment. She nodded once &mdash; the small nod, the one that meant what it meant between the two of them. She then turned to the room.</p>
+
+<p>Karen Williams was clapping with her whole arms now. Nate was beside her. Kelly had gotten loose from Priya somehow and was at the front of the room with her hands above her head.</p>
+
+<p>Richie was at the very back. He was not clapping. Richie was watching her proudly. He had known this was coming and was still undone by the arriving of it. She found him across the room, fell into his arms and he planted one on her. There were a couple of reactions from a couple of the kids, but the kiss was correct. It was true and truth lived in the dojo.</p>
+
+<a href="#top" class="back-to-top">Back to top &uarr;</a>
+
+</main>
+
+<footer>
+  <p>West One Publishing &nbsp;&middot;&nbsp; Written by Fude-san &nbsp;&middot;&nbsp; Work in Progress</p>
+  <p>Highlander: The Series is the property of Davis-Panzer Productions. No infringement intended. No profit made.</p>
+  <p>&copy; Fude-san. Original characters and content reserved.</p>
+</footer>
+
+</body>
+</html>

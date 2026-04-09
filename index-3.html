@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>West One Publishing</title>
+<meta name="description" content="Fan fiction and original fiction by Fude-san.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;1,400&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1a1512;
+    --page: #faf7f2;
+    --rule: #c9b99a;
+    --accent: #5c3d1e;
+    --muted: #7a6a58;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    padding: 2.5rem 2rem 0;
+    text-align: center;
+  }
+
+  .publisher-name {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .publisher-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    max-width: 320px;
+    margin: 1.2rem auto 0;
+  }
+
+  /* ── MAIN ── */
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
+
+  .catalog {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .catalog-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 2rem;
+  }
+
+  .entry {
+    border-top: 1px solid var(--rule);
+    padding: 1.8rem 0;
+  }
+
+  .entry:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .entry-fandom {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .entry-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.3rem;
+  }
+
+  .entry-title a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .entry-title a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 3px;
+  }
+
+  .entry-series {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.8rem;
+  }
+
+  .entry-meta {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .wip-badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--page);
+    background: var(--muted);
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+  }
+
+  @media (max-width: 480px) {
+    header { padding: 1.5rem 1.5rem 0; }
+    main { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <p class="publisher-name">West One Publishing</p>
+  <hr class="publisher-rule">
+</header>
+
+<main>
+  <div class="catalog">
+    <p class="catalog-label">Fiction &nbsp;·&nbsp; Fude-san</p>
+
+    <div class="entry">
+      <p class="entry-fandom">Highlander: The Series &nbsp;·&nbsp; Fan Fiction</p>
+      <p class="entry-title">
+        <a href="aiop1.html">There Can Be Only One Morning Shift</a>
+      </p>
+      <p class="entry-series">Book One of the Jennifer Marsh Series</p>
+      <div class="entry-meta">
+        <span>OC-centric &nbsp;·&nbsp; Canon-parallel &nbsp;·&nbsp; Slow Burn</span>
+        <span class="wip-badge" style="background: var(--accent);">Complete</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <p class="entry-fandom">Highlander: The Series &nbsp;·&nbsp; Fan Fiction</p>
+      <p class="entry-title">
+        <a href="aiop2.html">There Can Be Only One Morning Shift</a>
+      </p>
+      <p class="entry-series">Book Two of the Jennifer Marsh Series</p>
+      <div class="entry-meta">
+        <span>OC-centric &nbsp;·&nbsp; Canon-parallel &nbsp;·&nbsp; Slow Burn</span>
+        <span class="wip-badge">Work in Progress</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <p class="entry-fandom">Highlander: The Series &nbsp;·&nbsp; Fan Fiction</p>
+      <p class="entry-title">
+        <a href="aiop3.html">There Can Be Only One Morning Shift</a>
+      </p>
+      <p class="entry-series">Book Three of the Jennifer Marsh Series</p>
+      <div class="entry-meta">
+        <span>OC-centric &nbsp;·&nbsp; Canon-parallel &nbsp;·&nbsp; Slow Burn</span>
+        <span class="wip-badge" style="background: var(--accent);">Complete</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <p class="entry-fandom">Highlander: The Series &nbsp;·&nbsp; Fan Fiction</p>
+      <p class="entry-title">
+        <a href="aiop4.html">There Can Be Only One Morning Shift</a>
+      </p>
+      <p class="entry-series">Book Four of the Jennifer Marsh Series</p>
+      <div class="entry-meta">
+        <span>OC-centric &nbsp;·&nbsp; Canon-parallel &nbsp;·&nbsp; Slow Burn</span>
+        <span class="wip-badge">Work in Progress</span>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  &copy; Fude-san &nbsp;·&nbsp; West One Publishing
+</footer>
+
+</body>
+</html>
