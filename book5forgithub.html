@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methos Boot Camp — The Jennifer Marsh Series, Book Five</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f5f0e8;
+            --parchment-dark: #e8e0d0;
+            --ink: #2c2416;
+            --ink-light: #5a4a36;
+            --accent: #8b4513;
+            --accent-light: #a0522d;
+            --divider: #c4b8a4;
+            --shadow: rgba(44, 36, 22, 0.08);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'EB Garamond', 'Georgia', serif;
+            background-color: var(--parchment);
+            color: var(--ink);
+            font-size: 1.15rem;
+            line-height: 1.85;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .title-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        .title-page::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: var(--divider);
+        }
+
+        .series-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .book-number {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 2.5rem;
+        }
+
+        .title-main {
+            font-family: 'Cinzel', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+        }
+
+        .title-subtitle {
+            font-family: 'EB Garamond', serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--ink-light);
+            margin-bottom: 3rem;
+        }
+
+        .title-author {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            color: var(--ink-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .title-publisher {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.85rem;
+            color: var(--divider);
+            letter-spacing: 0.1em;
+        }
+
+        .content {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .part-header {
+            text-align: center;
+            margin: 5rem 0 3rem;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .part-header::before,
+        .part-header::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background: var(--divider);
+        }
+
+        .part-header::before { top: 0; }
+        .part-header::after { bottom: 0; }
+
+        .part-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            color: var(--ink);
+            margin-bottom: 0.25rem;
+        }
+
+        .part-header .part-sub {
+            font-family: 'EB Garamond', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--ink-light);
+        }
+
+        .part-number {
+            font-family: 'Cinzel', serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin: 3.5rem 0 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            text-justify: inter-word;
+            hyphens: auto;
+        }
+
+        .scene-break {
+            text-align: center;
+            margin: 2.5rem 0;
+            color: var(--divider);
+            font-size: 1.2rem;
+            letter-spacing: 0.5em;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        .journal {
+            margin: 2.5rem 0;
+            padding: 1.5rem 2rem;
+            background: var(--parchment-dark);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .journal p {
+            text-align: left;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .journal p:last-child {
+            margin-bottom: 0;
+        }
+
+        .heartbeat {
+            text-align: center;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+        }
+
+        /* — Richie's Diary — */
+        .diary {
+            margin: 2.5rem 0;
+            padding: 1.5rem 2rem;
+            background: #f0ebe0;
+            border-left: 3px solid #6b8e6b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .diary p {
+            text-align: left;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .diary p:last-child {
+            margin-bottom: 0;
+        }
+
+        .diary .diary-date {
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: #5a6e5a;
+            margin-bottom: 0.3rem;
+        }
+
+        .diary .diary-heading {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: #4a5e4a;
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .diary .italian {
+            font-style: italic;
+            color: var(--ink-light);
+        }
+
+        .diary .poem {
+            font-style: italic;
+            padding-left: 1rem;
+        }
+
+        .end-matter {
+            text-align: center;
+            margin-top: 6rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--divider);
+        }
+
+        .end-matter .end-publisher {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            color: var(--divider);
+            margin-bottom: 0.3rem;
+        }
+
+        .end-matter .end-link {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.85rem;
+            color: var(--ink-light);
+        }
+
+        .end-matter .end-link a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--divider);
+            transition: border-color 0.2s;
+        }
+
+        .end-matter .end-link a:hover {
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 2rem 1.25rem 4rem;
+            }
+            .title-main {
+                font-size: 1.8rem;
+            }
+            .journal, .diary {
+                padding: 1rem 1.25rem;
+            }
+            body {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════ TITLE PAGE ═══════════════ -->
+<div class="title-page">
+    <div class="series-label">The Jennifer Marsh Series</div>
+    <div class="book-number">Book Five</div>
+    <div class="title-main">METHOS BOOT CAMP</div>
+    <div class="title-subtitle">Complete Draft Scenes</div>
+    <div class="title-author">by Fude-san</div>
+    <div class="title-publisher">West One Publishing</div>
+</div>
+
+<!-- ═══════════════ CONTENT ═══════════════ -->
+<div class="content">
+
+<!-- ——————— PART ONE: THE PLANNING ——————— -->
+<div class="part-header">
+    <div class="part-number">Part One</div>
+    <h2>Mac's Loft</h2>
+    <div class="part-sub">The Planning</div>
+</div>
+
+<p>It was a rare event for everyone to gather together on a Saturday evening at Mac's with family dinner on the calendar for the next day. There was ample seating in the living room. Richie and Jennifer were on the long green couch and Mac was right next to her. Methos sat directly across and Amanda on his left. Fitz had remained at the table and was on call.</p>
+
+<p>Jennifer squeezed Richie's hand and assured herself this was going to be okay, was somehow necessary and that all of her questions would be answered. Jennifer had negotiated a scene before without any kind of support circle in the past.</p>
+
+<p>Methos had a clipboard prepared to take notes and started the discussion with thoughts on context, intentions and frame of mind. "How are you feeling, Marsh?"</p>
+
+<p>Jennifer took in a deep breath. "Nervous, confused and very reluctant."</p>
+
+<p>"That's actually a mindful assessment," Mac commented, giving her a literal pat on the back.</p>
+
+<p>"It's the only thing that's been on my mind since it was first suggested," Jennifer returned.</p>
+
+<p>"Interesting," Methos commented before scribbling something on his pad. "Our main goals then."</p>
+
+<p>"Fearless development and action," Richie suggested. He knew where the rough edges were and loved them as much as the ingrained, well-earned pathways.</p>
+
+<p>"Gender equalizing," Amanda suggested briefly, knowing those two words covered twenty-five years of learned programming.</p>
+
+<p>Methos looked to Mac. "Centeredness, wholeness," Mac answered but looked at his Kosho, his pupil. "A balance."</p>
+
+<p>Methos nodded. "Marsh?"</p>
+
+<p>"Yes?" Jennifer replied, turning her eyes to Methos. It was perhaps the only time to that point she hadn't met him name to name. Methos informed her she could have a say in her own training, which was in itself a topic. "Not to do it wrong."</p>
+
+<p>"You're going to do it wrong, all day every day, most likely," Amanda returned with a shrug.</p>
+
+<p>Jennifer offered that she didn't want to disappoint anyone, any of the gathered. "But you will, whether it's something small like forgetting to return a call, or an action or non-action that wasn't correct to the moment."</p>
+
+<p>Jennifer was aware of her people-pleasing and perfectionism, but the word <em>correct</em> had popped in that response. Mac said <em>correct</em> sparingly but in appropriate measure. Feedback was always Good — Better — Correct.</p>
+
+<p>"We've spoken about this at length," Mac added gently. "Your generosity of spirit is a wonderful quality. The way you handle the children's classes is so gentle and magnanimous. The way you handle—"</p>
+
+<p>"Mac," Amanda inserted. "The way you handle Mac and Richie. It's not something you've learned. It's something you are. You are a living, breathing embodiment of grace."</p>
+
+<p>"But that quality does not always serve the Empress or her court," Methos added as he continued taking notes. "It's dangerous and could be deadly."</p>
+
+<p>She thought about some of the people she had met in Vancouver that had tried to use her. "I hadn't thought about it that way. I could—"</p>
+
+<p>"Don't," Richie snapped. His tone cut through the air. "Don't even suggest that as a solution to something that isn't a problem."</p>
+
+<p>"Not a problem but we've made this whole effort to have a talk about it," Jennifer groaned as she rubbed her temples. "I'm sorry, I just don't get it."</p>
+
+<p>"And how does that make you feel?" Fitz questioned from the kitchen.</p>
+
+<p>Jennifer took a deep breath, closed her eyes and unloaded. "How I feel. I feel like going up on the roof, taking Richie with me, having a cigarette and just getting a breath of fresh air."</p>
+
+<p>"That's it. Say it again," Mac encouraged before going into full teaching mode. "Now say that again but with your eyes open."</p>
+
+<p>She hadn't realized she had closed her eyes and sighed. "I want to go up on the roof and smoke a cigarette," and then at Richie: "You coming?"</p>
+
+<p>Amanda applauded sincerely. "There she is, there she is."</p>
+
+<p>Jennifer paused at Amanda's comments — what had made her react like that?</p>
+
+<p>"Are you waiting for permission? Go. Take your man up on the roof, have a cigarette. Get handsy, whatever. We're not on a time crunch here," Methos ordered.</p>
+
+<p>The word <em>Go</em>, the way Methos had said it, hit her right in the chest, put positively. Two cigarettes, a little handsy and some air may have been what the doctor ordered. Jennifer silently took Richie by the hand and did what she wanted. It was a leap in the right direction.</p>
+
+<p>"I thought you sealed off that door."</p>
+
+<p>"I didn't know those two made a habit of going up there," Mac chuckled with a smile. Of course they went up on the roof together to get some space, share a bottle, a moment. They were twenty-somethings in love.</p>
+
+<p>"You might want to go up there sometime, Mac," Methos suggested. "They might be storing an army of Beanie Babies and Ninja Turtles up there bent on world domination."</p>
+
+<p>After the smoke break they continued into the planning and Mac assured it would make sense, all of it. "For this exercise Mac will be placing you in my care for thirty days in the role of Kosho. I will guide the training. I say, you do. Either of us can withdraw from the agreement at any time without any explanation. Do you agree to this training of your own free will?"</p>
+
+<p>Mac saw it, her left foot tapping and trying to process what Methos had said. "Why don't we leave the pledge for last," Mac suggested lightly.</p>
+
+<p>Methos nodded and continued into the third aspect of planning the task. "If anyone objects to any suggestion please state your objection clearly. And yes that includes you, Marsh." He handed out an extended list.</p>
+
+<p>Finally, familiar territory. "Bondage?" Methos questioned.</p>
+
+<p>"Fine as long as you know what you're doing," Jennifer returned.</p>
+
+<p>Methos nodded and continued. "I would not attempt anything I wasn't proficient in. That would be disrespectful to you and Mac," Methos replied, "and I would never do that to you, Empress. Next category is bodily fluids and as far as I'm concerned that entire set is not on the table."</p>
+
+<p>When Methos proceeded to the category listed as fetishes, Richie raised objections in advance. "I object to any sexual activity that makes my wife uncomfortable," Richie stated firmly. "And I don't object so much as I suggest high-heeled shoes not be employed, in the name of safety."</p>
+
+<p>The room chuckled. Ignoring the joke Jennifer gawked at Richie and decided they would absolutely be discussing that later at home. Along with referring to her as his wife. That was new.</p>
+
+<p>"Humiliation."</p>
+
+<p>"Limited," Mac quickly responded. "Let's circle back to that if needed."</p>
+
+<p>"Impact and rough treatment." That category hung in the air for a long moment before Jennifer stepped over, took the clipboard away from Methos and started writing down her answers. "First five — fine, next three no, next two fine, next three no, yes, yes with hesitation, and yes."</p>
+
+<p>"What's the hesitation?" Methos questioned.</p>
+
+<p>"I would want a convincing display of your technique first."</p>
+
+<p>Amanda did her best to not laugh but the sudden bravado Jennifer was dialed into was so on point. It was a really good sign that she was going to come out of the ordeal empowered and unscathed.</p>
+
+<p>"Touch of intimacy."</p>
+
+<p>Jennifer was skimming the list. "No kissing of any kind."</p>
+
+<p>"You've let me kiss your hands before, Marsh."</p>
+
+<p>Jennifer stood her ground. "Objection without need of explanation," she argued.</p>
+
+<p>"Just like that," Fitz cheered, which lightened the tone of the room.</p>
+
+<p>"Non-monogamy."</p>
+
+<p>Richie again objected to the question of her preferences. Jennifer objected to the entire category and no one batted an eye.</p>
+
+<p>In the category of marking, Jennifer objected to branding and scarification outright. Role play: "I object to certain categories. Let's mark it for later editing."</p>
+
+<p>Richie was clear in his objections to sensory play and Mac nixed anything related to cutting off the air supply, electricity, breaking the skin and fire.</p>
+
+<p>"So basically no edge for safety — or should we table that category?"</p>
+
+<p>"Table," Mac answered. That category had a few items that he thought could be useful.</p>
+
+<p>"Service, behavior control." Jennifer objected aloud to phone sex and Methos said her phone usage would be limited, mostly due to the reception.</p>
+
+<p>"Erotic dancing," Richie announced as the list continued. "There's no way I'm allowing Methos an erotic dance when I've never received one."</p>
+
+<p>"You never asked," Jennifer sighed. She would have tried to dance for Richie. She didn't think she'd be any good at it but would've made the attempt.</p>
+
+<p>"I am asking. In fact, I think it's time we leave."</p>
+
+<p>And without any hesitation or self-awareness, Jennifer objected and tabled the timing to her preferences. "Let's finish this exhausting list already first."</p>
+
+<p>"We're nearly finished, we can push through or allow Marsh to open the Moulin Rouge," Methos announced.</p>
+
+<p>"Leave it," Mac suggested. "We're not locked down on a date yet. There's no reason to push through tonight."</p>
+
+<p>"As you know I can't attend dinner tomorrow, so I'll leave this in your hands, Mac," Methos announced. He looked at Jennifer. "I hope some of your reservations have been eased. This entire endeavor is for your benefit. We will not fail you." Methos stood and asked Jennifer if he could kiss her hand. She gave blanket permission for instances where it would be appropriate.</p>
+
+<p>Amanda cheered.</p>
+
+<p>Fitz left alongside Methos, suggesting they share a cab and filling the elevator with good cheer. Amanda had the air of someone who wasn't going anywhere soon. Mac walked Richie and Jennifer to the door; they both thanked him for his hospitality. Richie did his Richie thing — took hold of Jennifer's bag and stepped outside so Jennifer and Mac could say goodbye in their manner.</p>
+
+<p>Richie and Jennifer returned to their condo, took their shoes off and leaned back onto their couch together. "How are you doing? I know that was a lot."</p>
+
+<p>"A lot indeed," Jennifer echoed. "The entire conversation before we left was less confusing and tense than the beginning."</p>
+
+<p>Richie gently ran a soothing hand over her shoulder. "Yes, you were much more in your element with the checklist. I've noticed you enjoy lists — making them, cross-referencing them, developing a system that allows you to list your lists."</p>
+
+<p>Richie chuckled and she did too. Nothing was untrue, but despite the teasing Jennifer knew her lists, her systems, were making life for him like a cozy blanket. "There were a couple of things that kind of surprised me though." Richie asked what had surprised her. "How you said you objected to any sexual contact that made me uncomfortable."</p>
+
+<p>"Yes, my concern being your comfort, what you want, what you need. It's my job to protect your interests."</p>
+
+<p>"The knight's code, chivalry," she inserted, to confirm she understood where this aspect of his being lived. "But words are kind of my thing so I can't just let this sit in a journal."</p>
+
+<p>"Just say it, spit it out," Richie encouraged, reminding her that she was safe with him in all things.</p>
+
+<p>"You didn't say you objected to anything I would find uncomfortable, not <em>hands off my girlfriend</em>," Jennifer commented. "There is a huge difference there even though between the two it's the same in our agreed bond."</p>
+
+<p>Richie let it sit in the air. "Yes, exactly. You and I have mutually agreed that there are things that are sacred to us," with the warm memories of Paris, their blessing at St. Julianne du Parve. "But I don't own you. I wouldn't want to. I would hate myself if I found out I held you down. You're too much fun as a person when you're not overthinking things, we all are, but we're focused on you right now."</p>
+
+<p>"So hypothetically, if I had wanted to explore things with Daniela on a deeper physical level, you wouldn't have freaked out?"</p>
+
+<p>"No hypothetical about it. If you had said that you wanted to go to bed with Daniela to discover something more about yourself, to paint a bigger picture of yourself — I don't know every detail of what you two do together on your Thursday afternoon standing date as it is. And heaven only knows what you do with Amanda."</p>
+
+<p>"You don't want a full account of Amanda time," Jennifer chuckled, before releasing a long sigh. "I wish I would've been comfortable enough with myself in the moment, comfortable enough with you and what I hoped we were building."</p>
+
+<p>Richie gave her a squeeze and a kiss on her head. "Trust can be hard when your beginning years were filled with lies." He sat up a bit, adjusted his position being cautious not to knock her off of the couch and settled. "And it's not like Daniela's left the planet."</p>
+
+<p>"But the train has left the station. That's on me." Jennifer looked at Richie, leaned up to kiss him. "Are you aware you referred to me as your wife?"</p>
+
+<p>"I did? Well, that's how I think of you. We're living together. We're solidly together," he answered. "Would you prefer 'my old lady'?"</p>
+
+<p>"It would be ironic for you to call me your old lady. But, I'm just surprised no one else picked up on it or said anything," Jennifer commented. Maybe they had and just decided to leave it alone. "So, those erotic dances — were you thinking out here or in the bedroom?"</p>
+
+<p>"Yes."</p>
+
+<p><em>Yes.</em></p>
+
+<!-- ——————— PART TWO: THE FAMILY DINNER ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Two</div>
+    <h2>Mac's Loft</h2>
+    <div class="part-sub">The Family Dinner</div>
+</div>
+
+<p>Jennifer double-checked her phone for missed texts and made sure they had everything before Richie started securing what he could to the bike. "Ah, Fitz isn't coming after all," Jennifer sighed.</p>
+
+<p>"We'll see him again. That just turns this into a double date with Mac and Amanda, our close intimate family dinner." Richie hopped on the bike, started the engine, put on his helmet and waited to feel her lean into him. She squeezed three times quickly to indicate she was ready to go.</p>
+
+<p>They each had their own established rituals for entering Mac's loft. Jennifer would knock three times, remove her shoes and bow. Richie would then open the door and announce their arrival, usually boisterously, "The party has arrived, ladies and gentlemen."</p>
+
+<p>"Well, it's about time," Amanda returned greeting Richie and Jennifer. "What's in the bag?" Amanda questioned while taking it and rifling through it.</p>
+
+<p>"Everything that was requested and nothing more," Jennifer sighed. She had nothing more but knew she had everything.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>"Your Sensei will be out shortly, but in the meantime what are we drinking today?"</p>
+
+<p>It was a perfunctory question. Jennifer wanted coffee in the living room by the Picasso. It was her spot in the loft. "So, how are we feeling after last night? Any erotic dances?"</p>
+
+<p>"Two as it turned out," Richie answered with a grin. "For a drummer she's actually not that bad."</p>
+
+<p>"I'm sure you were delightful, Minnie," Amanda offered. "You're a lucky man, Richard."</p>
+
+<p>"Don't I know it," Richie confirmed. He took a sip from the bottle, set it down and took her hand. "Where is Mac anyway?"</p>
+
+<p>"Getting some papers from the printer."</p>
+
+<p>Jennifer stood and quickly walked in the direction of the guest bedroom. In her experience Mac and machines didn't mix well and she wanted to head off any trouble at the pass. Jennifer was about to knock when the door opened. "Sensei," she greeted. "Have you conquered the enemy?"</p>
+
+<p>Mac took a step back. "For now," he answered before bopping her on the head with the papers. "Let's go — take a look at these before we get cooking."</p>
+
+<p>What Mac had were the papers from the evening prior and the rest of the documents Methos had sent. "But first, how are you doing today? Both of you."</p>
+
+<p>Richie put his hands up as a brace to hold the back of his head. "I'm doing great now that I've been introduced to some erotic dancing."</p>
+
+<p>"Sounds like a nice way to cap off the evening," Duncan commented as he watched just the slightest touch of pink flash across her face. A bartender turned pupil, turned part of the chosen family and Kosho, a full-fledged doctoral student and author who could still blush. "If we're all of a mind to it, there's a few items tabled from last night and Methos sent over notes on discipline and consequences."</p>
+
+<p>Richie felt it when Jennifer tightened up and put one of his arms around her. "Listen first, no assumptions," Richie soothed. "You're going directly to what those words used to mean and not what they actually mean in this context."</p>
+
+<p>Jennifer leaned back and took a deep breath. "This would all be a lot easier for me with some context, any context," Jennifer groaned. "I mean, anything that won't ruin the surprise of what this is."</p>
+
+<p>"We couldn't possibly ruin anything because we are here now in this moment, in this time," Amanda shared, but unfortunately the message was not clear.</p>
+
+<p>"This might help," Duncan started. "Think of the structure, the structure we have in the dojo. I give a command, you follow it."</p>
+
+<p>Jennifer blinked her eyes. "That's it. That's all this is? Just with Methos?"</p>
+
+<p>"Yes and no," Mac answered. "Like Amanda said, you'll have to be in it to get it."</p>
+
+<p>The rules did not seem out of line, nothing crazy, and with the checklist, there were additional guardrails. Methos had put in a clause which would allow Jennifer to select her own consequences along with a safe word. A boatload of fear just lifted off of her shoulders. This wasn't going to be <em>that</em>. This was going to be <em>this</em>.</p>
+
+<p>Mac saw her relief, they all did. Richie felt it. "Now that we're all on a similar page, I do want to address humiliation. I don't think this will be easy for you. None of it might be easy, but this doesn't have to be cruel to work. Look this over again and let's hear what you think."</p>
+
+<p>Jennifer took hold of the papers and scanned the section Duncan had highlighted. "Well yes, of course, some of these are off the list automatically, like my hair."</p>
+
+<p>Amanda leaned toward Jennifer. "Aside from your hair, is there anything else you want to nix?"</p>
+
+<p>"Pretty much all of the sex stuff that Richie already declined," Jennifer announced before smiling at Richie. "Thank you for that, by the way." She looked again at the list. "Is it safe to think there wouldn't be a need to worry about it, whatever it is, in public?"</p>
+
+<p>"Absolutely not," Mac snapped. "Think about some of the games he's played with you in the bar, just on a whim."</p>
+
+<p>"Especially that last one, as I've heard it recounted at least," Richie added.</p>
+
+<p>"Not one of my better days," Jennifer sighed with a chill going up her spine. "Look, Mac, do me a favor and just nix anything you don't think I can handle. You're my sensei. You know what I can handle and you've been through all of this."</p>
+
+<p>"Actually, he hasn't and neither has Richard," Amanda interjected. "And that will be our salon discussion today, if we can ever be done with this and get something to eat."</p>
+
+<p>Mac nixed all of the sections that he thought would be emotionally dangerous on her behalf.</p>
+
+<p>"Do you have any medical issues or situations that we would need to make allowances for?" Mac questioned. By that time they pretty much knew each other inside out, but it was always safe to double-check. Jennifer said no.</p>
+
+<p>"Birth control?" Amanda questioned. Jennifer indicated she was indeed on the pill and would want access to her medication.</p>
+
+<p>"And your daily Flintstones vitamin," Richie added. "Oh, and there's that coffee and nicotine addiction thing you've got going on that might need acknowledgment."</p>
+
+<p>"I will not be denied coffee."</p>
+
+<p>"A battle cry if I've ever heard one," Mac chuckled before shuffling the papers. "Methos has a list of rules and suggested remediations. Look this over."</p>
+
+<p>Jennifer looked everything over and had no objections. "What's rice and peas?" Mac asked if Richie or Amanda cared to demonstrate rice and peas. Richie shook his head and Amanda attempted to grab Jennifer's hand to stop her from being gracious, but it was too late. "Well, I guess it's me then."</p>
+
+<p>"Oh Minnie," Amanda sighed putting her head in her hands. "First rule to take with you everywhere from here on out: never volunteer for anything, not when you're involved in this kind of thing."</p>
+
+<p>"If I knew what kind of thing I was involved with that would probably be useful advice," Jennifer sighed.</p>
+
+<p>"Do you want to demonstrate rice and peas here in the kitchen or downstairs?" Mac questioned.</p>
+
+<p>Jennifer thought she might've been getting the hang of things by not responding, not offering. Mac waited a minute to see if part of the lesson had been learned. He then extended a hand. "Set my table so we can eat."</p>
+
+<p>In good Kosho fashion Jennifer set the table with only what would be required, no more no less. A place setting for each of them with the appropriate silverware. As Mac wrapped up his cooking and reheating, Jennifer took each dish to the table. When every trivet was in place, she first sought Mac's approval and then invited Amanda and Richie to dinner.</p>
+
+<p>Once everyone was seated Mac asked that they join hands and zero in on the moment. "Bless this food and may we receive it with focus and clarity. Bless this meal including the salt and the butter, may it nourish us and strengthen our bond together."</p>
+
+<p>"Amen," Richie added while rubbing his hands together. Plates started shifting and filling. "And that is my favorite blessing if I haven't mentioned it before. It's short, sweet and says all it needs to say."</p>
+
+<p>"Which brings us to our discussion regarding gender roles and the exercise you will be doing with Methos soon."</p>
+
+<p>"Yes, why is this a girls' thing and not something you two had to complete?" Jennifer questioned.</p>
+
+<p>"Short answer, because we're men and you're not," Mac answered as he set down the last dish that needed to be passed. "Long answer, let's look at the times and places we all originated. Amanda is the oldest among us and lived a very poor life where the possibility of starving to death, repeatedly in this case, was a reality."</p>
+
+<p>Jennifer wondered if it was more a discussion on morals and morality but she ate and listened. As always the food was so good, fresh, and at this particular table very light.</p>
+
+<p>"And Mac didn't have it much better. Starvation, disease, war. If you made it to thirty you were a very old villager," Amanda added. "A lot of nations have become safer places to live. Your chances of starving to death in Seacouver are very low. And the same can be said of the level of disease. We have good medical care, great hospitals, and while the world isn't without battles, those battles aren't worldwide."</p>
+
+<p>Jennifer nodded. "Yes, life is much easier than in the past with advances in medicine and science," Jennifer commented before taking a sip of water. "The greatest time to be a human, especially in this country. Life is easy."</p>
+
+<p>"Life in this place and time is soft," Mac said. "More so for women than men."</p>
+
+<p>"How?" Jennifer demanded. From her view men had the better part of the deal in every way of their society.</p>
+
+<p>"How many times have you walked down a street, seen an approaching man and mentally had to decide if you could win a fight, if it came to that?" Jennifer indicated that was not what went through her head at all. "Every approaching man, stranger or not, has been considered when in approximation to my body. Every single time."</p>
+
+<p>"You're kidding. How do you get anything done?" Jennifer questioned. "I mean, I see a strange guy my guard goes up but I'm not trying to figure out how to beat him in a fight."</p>
+
+<p>"You're more worried about what this strange man could do to you," Amanda announced and Jennifer completely agreed. "This is the culture you've grown up in. You're not ready to throw down with every man you meet. At best you're hoping not to get thrown down or worse."</p>
+
+<p>"Richie, are you sizing up every man approaching you in life?" Jennifer questioned.</p>
+
+<p>"Every one, every day," he answered with a smile. "If I'm protecting you I need to make sure I know what the environment is before anything could ever happen and make a plan."</p>
+
+<p>"How long does that take?"</p>
+
+<p>"When you live this way for years it's a quick process, faster than you'd think," Mac responded.</p>
+
+<p>Jennifer nodded. "So, I'm going to go train with Methos to learn how to size up men and plan how I'm going to take them down?"</p>
+
+<p>"Yes and no," Mac inserted. "The way of the warrior is not soft."</p>
+
+<p>"You're saying I'm soft."</p>
+
+<p>"I'm saying you're not hard enough, in some respects."</p>
+
+<p>"So I'm going away with Methos to learn how to become a hard person?"</p>
+
+<p>Richie grabbed her free hand with a calming grin. "You're already in possession of these hard skills. You just don't let them out as often as needed."</p>
+
+<p>"You're too nice," Amanda added with a snap in her voice. "Women are raised to be nice, polite, sugar and sweet, accommodating, putting others ahead of themselves. The road you're on is going to require you to not be nice, for your own protection, ours or both. None of this is a dig on you, nothing. It's just something we should take care of rather than a circumstance in the future challenging you before we've taken care of it."</p>
+
+<p>Jennifer sighed. "I know that I live in a patriarchal society that is unfair by design and that everything I've ever had to do has been harder than necessary — whether that's my board, my drumming and apparently now this too."</p>
+
+<p>"Yes but there's more," Amanda agreed.</p>
+
+<p>Mac unexpectedly took hold of Jennifer's wrist. "Would you give your life for Richie's?"</p>
+
+<p>"Yes, of course I would."</p>
+
+<p>"Would you kill someone for him?"</p>
+
+<p>Jennifer had never seriously considered killing anyone, not for real, and the moment slammed into her. "Oh, that's it, isn't it, the hesitation, the not knowing." Jennifer sighed. "And Methos is going to teach me how to develop this?"</p>
+
+<p>"No, he's going to help you find it in yourself," Amanda said. "You already have everything you need."</p>
+
+<div class="scene-break">* * *</div>
+
+<p>After dinner, after everything that could be discussed was talked through, Mac walked Richie and Jennifer to the door. "This week we're going to incorporate some exercises and consequences into your training. I have also instructed Richie to cue up military movies from here on out."</p>
+
+<p>"I don't like those movies."</p>
+
+<p>"I know, that's the point."</p>
+
+<p>Jennifer bowed to him and he returned the gesture.</p>
+
+<p>"I think we'll start with Full Metal Jacket," Richie announced as he put his arm around her and walked with her down the stairs.</p>
+
+<!-- ——————— PART THREE: THE DOJO ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Three</div>
+    <h2>The Dojo</h2>
+</div>
+
+<h3>Boot Camp — Full Metal Jacket</h3>
+
+<p>Meditation, warm-ups and calisthenics, kata drills, work with targets and kicks. "How did you like the movie?"</p>
+
+<p>"Can't say I liked it," Jennifer answered before kicking the target. She then switched her stance and went at the target again. "The story arc was unsatisfying."</p>
+
+<p>Mac clapped the targets together to indicate that she should go again. "Beyond artistic merit, the content — what moved you or didn't?"</p>
+
+<p>"The content was horrifying," she answered before throwing another kick. "I asked Richie if any of it was true."</p>
+
+<p>Mac clapped the targets again after her second kick in the sequence. "And what did Richie say?"</p>
+
+<p>Jennifer requested a quick water break before the kicks resumed. "He said it's all real and probably censored to make movie rating guidelines possible," Jennifer answered before returning to her ready stance. "I can't believe we treat our military members like that. It's gross."</p>
+
+<p>Kick, switch, kick. "Why were they training marines that way?"</p>
+
+<p>"Why does anyone do anything?"</p>
+
+<p>Mac bopped her on the head with one of the kick pads. "Real answers, Socrates."</p>
+
+<p>Kick, switch, kick. "For the same reason you train me like this, Epicurus. It works. It does the job."</p>
+
+<p>Mac let it hang in the air. "It works. It does the job to teach them how to kill, how to become a killing machine, that saves the village or the country or the world."</p>
+
+<p>"So it's about taking life, not protecting or saving it from evil characters?"</p>
+
+<p>"It's both." Mac clapped the targets.</p>
+
+<!-- ——————— PART FOUR: CONSEQUENCES ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Four</div>
+    <h2>Consequences</h2>
+</div>
+
+<h3>The Rice and Peas</h3>
+
+<p>Before calling it a day though Mac sent Richie up to the loft to get the paper bag he had left near the sink. While Richie was on the move Mac asked Jennifer to roll up her pant legs past her knees. Richie returned with the bag and offered Jennifer a sympathetic smile. "I would like to reiterate that Mac asked me to get this and that is all I have done."</p>
+
+<p>That provisional claim put her at yellow alert. When Mac dumped a cup of uncooked rice on the floor in front of her she began to understand why Richie was attempting to absolve himself ahead of time. "Is this the rice and peas thing I carelessly volunteered for?"</p>
+
+<p>"It is," Mac answered as he set a timer on his phone. "I think three minutes should do it. Go ahead and kneel on the rice."</p>
+
+<p>Jennifer did and immediately thought three seconds was more than enough. Her weight on the kernels, on her joints, was terrible. "Permission to swear violently during this exercise?"</p>
+
+<p>"Granted," Mac announced nonchalantly. He looked at the timer. It was going to be a very long three minutes. "If I'm not back before the timer, Richie, help her up and walk the floor with the broom, ten times."</p>
+
+<p>"You got it, Mac." Richie then checked in on Jennifer. "How are you holding up?"</p>
+
+<p>"Fantastic, this is great," Jennifer gasped. How could little grains hurt so much. "Fuck, fuck, fuck, fuck, fuck, fuck, fuck."</p>
+
+<p>"Hang in there, one minute down."</p>
+
+<p>"Only one goddamned fucking minute?" Jennifer felt tears forming, tears from pain, and could feel her breathing ramping up. "Has anyone ever passed out from this?"</p>
+
+<p>"Not that I'm aware of."</p>
+
+<p>Mac breezed back into the office, checked on his pupil and commented on the remaining seconds on the timer. "Feet or pits?" Mac questioned as he prepared to get Jennifer off the floor.</p>
+
+<p>"Normally I'd say pits but since I'm here, feet," Richie answered. "We're going to lift you when the timer goes off, Jen. Do your best not to work against us."</p>
+
+<p>Jennifer was just trying to breathe and not cry. She just nodded. When the timer went off Mac stood behind her and lifted by the armpits at an angle so that Richie could access her lower half; one by one Richie assisted in straightening out her legs. Jennifer shrieked but tried to remain loose.</p>
+
+<p>"There we go," Mac encouraged as he began to help her back on her heels. "Arms up so you can grab onto Richie."</p>
+
+<p>Jennifer reached out as she was getting put back on her feet. She felt like an ice cream sandwich.</p>
+
+<p>"I would like to go on the record as warning you both that anything I say in the next five minutes about clobbering you is not my true feelings."</p>
+
+<p>Mac chuckled. Jennie was back and ready to start walking around the dojo. "All right, we're going to move, walking backward one step at a time until you're back on the floor. That's it, one step at a time."</p>
+
+<p>The outrageous pain from the rice was immediately lessened when she truly started distributing her weight. Jennifer firmly had her hands on Richie and Mac was spotting her. She was going to be fine.</p>
+
+<p>"All right, you've got it now. Ten times around with the broom," Mac announced. Richie walked alongside her and after the first lap Mac knew she was nearly back at 100%. "What have we learned here today, Kosho?"</p>
+
+<p>"Never to volunteer in advance," Jennifer answered. "For anything."</p>
+
+<p>"Good," Mac replied. "Anything else?"</p>
+
+<p>"Rice and peas comes off the consent list. I am never doing this again."</p>
+
+<p>Mac then directed his question to Richie. "What movie are we watching tonight?"</p>
+
+<p>"Platoon," Richie answered. "She's going to hate it."</p>
+
+<h3>The Dot Coloring Book</h3>
+
+<p>Mac continued peppering the lessons. And when the arrangements came through it was just a matter of the Persephone Committee meeting once more to finalize the details.</p>
+
+<p>Mac introduced Jennifer to a dot coloring book and a brand new box of colored pencils. "Today we are focusing on focus. Pick a page in the book to start and line up your pencils." She did as asked and got comfortable on the floor ready to color. "Take a pencil, inhale while you trace the circle you're going to color. Exhale and fill in the circle completely. You will only get one chance to fill in a circle much like you only get one chance at now, today, right here. When you're finished go to the next circle with a new color. I'll check on you in a bit."</p>
+
+<p>Jennifer found herself humming a song while she colored in dots. She used the pencils in rainbow order, red through violet and started over three times before Mac came back into the main space. "I think we have a problem," Mac announced. "You're not using all of the pencils."</p>
+
+<p>"You didn't say I had to use all of them, just one at a time." Mac insisted it had been implied and told her to pick out a consequence.</p>
+
+<p>Rice was out. Getting her hands hit with a ruler wasn't appealing. "Writing lines is what Bart is doing at the beginning of Simpsons?"</p>
+
+<p>"It is. One page in English, one in Japanese," Mac answered. "Is that your choice?"</p>
+
+<p>Jennifer nodded. "I think that's the only one I can handle."</p>
+
+<p>"One page of katakana, one page in English writing the tenets," Mac replied. "Due tomorrow first thing with coffee."</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Richie found the whole exercise hilarious. "You're obviously a very bad girl if you have to do punishments at home like this," he commented while looking over her shoulder. "Very. Bad. Girl."</p>
+
+<p>Jennifer set down her pen and rubbed her aching hand. "Well, it was either this, get my hands smacked or foul odors which could be impossible to live with. I've smelled a lot of bad things in my life."</p>
+
+<p>Richie nodded. "Yeah, that could be really, really gross," he agreed with his mind flashing back on a few unpleasant memories. "And I agree with you not wanting to get your hands slapped."</p>
+
+<p>"Thank you," Jennifer replied as she pushed through to finish the assignment.</p>
+
+<p>"Slapping your ass. That could be good."</p>
+
+<p>"I am not going to ask Methos to slap my ass," Jennifer barked. "Let's not ever go there."</p>
+
+<p>"You'd probably get a lecture about corporal punishment that lasted the whole thirty days."</p>
+
+<p>Thirty days of Methos lectures sounded like an unbearable situation. "Never going to happen, not even a little," she responded, rubbing her hands. The section between her thumb and forefinger was really displeased. "Ah, who am I kidding. No matter what it is it will essentially be thirty days of lecturing."</p>
+
+<p>Richie stretched out his arms and she crawled up on the couch to him. "We're going to watch Apocalypse Now once the food gets here."</p>
+
+<p>"Can hardly wait," Jennifer sighed rubbing her head. "What did you order?"</p>
+
+<p>"Loaded fries and burgers," Richie sighed. "Meat and potatoes."</p>
+
+<p>"Very manly," Jennifer sighed. A gigantic basket of fries was sounding like it would hit the spot.</p>
+
+<p>"Yes, incredibly manly." Jennifer turned her head and noticed a part of his outfit had disappeared. "Weren't you wearing a belt? What happened to your belt?"</p>
+
+<p>"It's waiting on the bed, for you, for later," Richie answered as he pulled her close while nibbling on her ear. "Very. Bad. Girl."</p>
+
+<!-- ——————— THE THIRTY DAYS ——————— -->
+<div class="part-header">
+    <h2>The Thirty Days</h2>
+</div>
+
+<!-- ——————— PART FIVE: ARRIVAL ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Five</div>
+    <h2>Arrival</h2>
+    <div class="part-sub">The Rules of the Exercise</div>
+</div>
+
+<p>The train had been fine. The porter had offered her a glass of water somewhere outside the city and she'd said yes and then not gotten it, which was the kind of small administrative failure that accumulated over six hours into something that felt personal. She wanted a glass of water and a gigantic iced coffee. Two iced coffees.</p>
+
+<p>Methos had read for most of the journey. He did not appear to require water.</p>
+
+<p>She didn't ask.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>The cottage was quiet. She had put her bag down. She had looked at the room, at the table, at Methos, and at the table again. He was pacing.</p>
+
+<p>That was when the rules began.</p>
+
+<p>"Listen carefully, kuzu," Methos said, "because I will only explain the rules of this exercise once."</p>
+
+<p><em>Kuzu.</em> Garbage. She filed it.</p>
+
+<p>"Rule one," he began. "You will take a moment to remember that Mac asked me to train you in this manner knowing full well what was going to happen to you, and that you chose to follow his directions to be here. This affirmation will be written in your notebook twice a day — when you wake and before you sleep." He paused. "The affirmation is: <em>Mac is making me do this and I agreed to it.</em>"</p>
+
+<p>She looked at him.</p>
+
+<p>"Write it," he said.</p>
+
+<p>She wrote it.</p>
+
+<p>"Rule two. I expect complete obedience. Fail to measure up and there will be undesirable consequences. Push me too far in a single day and we will start over at Day One again — with you lugging in the bags and standing where you are now."</p>
+
+<p>"Rule three. I am only allowing you access to the en suite because I have no desire to be inconvenienced by your urine, bowel movements, or your blood — especially the blood. It's disgusting and the odor is repulsive."</p>
+
+<p><em>This is going to be a lot of fun,</em> Jennifer thought. An acknowledgment that this is Mac's fault as well as her own, to transfer the blame. Complete obedience. Punishment needing to be punished. Well, at least she got to use the en suite.</p>
+
+<p>"Rule four, no direct contact without permission. Rule five, no speaking without permission."</p>
+
+<p>"Rule six," Methos said. "We will follow the training plan to the letter."</p>
+
+<p>That exception sounded familiar but Jennifer couldn't put her finger on it.</p>
+
+<p>"Respond."</p>
+
+<p>"Yes, Sensei."</p>
+
+<p>Methos struck the makiwara. She heard the air move a split second before impact — wood on wood, a sound she would be able to identify in a darkened room by day three. Somehow the sound was already familiar. She filed that too.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Day one was not complete when the end of the day alarm sounded. Methos put down the stick he had been holding.</p>
+
+<p>"Take your jewelry off."</p>
+
+<p>She reached up. She took off the Soundgarden necklace — guitar pick, sterling silver, black thread. She took the Shield Knot keychain out of her pocket. She looked at the small safe he'd placed on the shelf.</p>
+
+<p>"Combination," Methos said as he handed it to her. It was her combination. Her safe. Her things.</p>
+
+<p>She put them in and closed it. That was the whole transaction. Completely practical. No ceremony.</p>
+
+<p>And then thirty days of the jewelry being in the safe and her being aware of it being in the safe the way you're aware of something that's usually on your body when it isn't. Not painfully. Just — present in its absence. The weight of the necklace was not there. The keychain was not in her pocket.</p>
+
+<p>She wrote the affirmation before she slept.</p>
+
+<div class="journal">
+    <p><em>Mac is making me do this and I agreed to it.</em></p>
+</div>
+
+<p>She closed the notebook.</p>
+
+<p>Day one.</p>
+
+<!-- ——————— PART SIX: THE SETUP ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Six</div>
+    <h2>The Setup</h2>
+    <div class="part-sub">Bad Pencils and Thirty Boomboxes</div>
+</div>
+
+<p>Mac hadn't asked her. That was the thing. He hadn't sat her down and explained the plan and asked if she was willing. He'd said, quietly, one afternoon at the dojo after everyone else had gone, that he'd arranged something and that Methos would be in touch about the details and that she should pack for thirty days.</p>
+
+<p>She looked at him.</p>
+
+<p>"Where," she said.</p>
+
+<p>"Somewhere quiet," he said.</p>
+
+<p>"With Methos," she said.</p>
+
+<p>"With Methos," he confirmed.</p>
+
+<p>She looked at the mat. She looked at Mac.</p>
+
+<p>"What are we doing," she said.</p>
+
+<p>"Finding out," he said, "what you're made of."</p>
+
+<p>"I know what I'm made of," she said.</p>
+
+<p>"You know part of it," he said.</p>
+
+<p>She stood with that for a moment.</p>
+
+<p>"Thirty days," she said.</p>
+
+<p>"Thirty days," he said.</p>
+
+<p>She picked up her bag.</p>
+
+<p>"All right," she said.</p>
+
+<p>She left.</p>
+
+<p>Mac stood in the dojo alone for a long moment.</p>
+
+<p>He picked up his sword.</p>
+
+<p>He went back to work.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Methos showed up on a Thursday with two bags and the specific unhurried quality of a man who had packed for this kind of thing before.</p>
+
+<p>She looked at the bags.</p>
+
+<p>"Is that everything," she said.</p>
+
+<p>"Everything I need," he said.</p>
+
+<p>She looked at the smaller bag. It had a combination lock on it. She looked at Methos.</p>
+
+<p>"What's in that one," she said.</p>
+
+<p>"Things I'll need," he said, "for the first few days."</p>
+
+<p>She would find out on day one what the smaller bag was for. She would not, at that point, find it unreasonable. She would, at several subsequent points, find it extremely unreasonable. This would not change what was in the bag.</p>
+
+<p>They got in the car.</p>
+
+<p>The location was a cottage. Not remote — there was a town twenty minutes away, a shop, a pub that Methos visited once and never mentioned again. But quiet. The kind of quiet that had weight to it. The kind of quiet that made you aware of how much noise you normally occupied.</p>
+
+<p>She stood in the kitchen the first morning and looked at the table.</p>
+
+<p>On the table: pencils. A stack of paper. A Japanese textbook. A practice surface for Kali sticks.</p>
+
+<p>She picked up a pencil.</p>
+
+<p>It was, immediately and obviously, a terrible pencil. The kind of pencil that had been produced by someone who had decided pencils should exist but had not invested further in the concept. The graphite was wrong. The grip was wrong. The weight was wrong.</p>
+
+<p>She looked at Methos.</p>
+
+<p>"These are bad pencils," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"Why are we using bad pencils," she said.</p>
+
+<p>"We're using the pencils that are here," he said, with the complete serenity of a man who had packed the pencils specifically.</p>
+
+<p>She looked at the pencil.</p>
+
+<p>She put it down.</p>
+
+<p>She picked it up again.</p>
+
+<p>She started work.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Every day at noon Methos turned on a boombox in the kitchen.</p>
+
+<p>It played The Song That Never Ends.</p>
+
+<p>Then it played it again.</p>
+
+<p>Then it played it again.</p>
+
+<p>Days one through seven: she filed it. She was a professional. She had worked New Year's Eve at a bar. She could handle a song.</p>
+
+<p>Days eight through ten: it was getting to her. She didn't say anything. She managed it. She was very good at managing things. This would turn out to be exactly the problem.</p>
+
+<p>The curriculum, such as it was:</p>
+
+<p>Japanese in the morning. Formal keigo. Third person service register. The language of precise deference and exact address, which Methos taught with the specific patience of a man who had been speaking it since before she was born or her grandmother was born or anyone she had ever met had been born.</p>
+
+<p>Kali in the afternoon. Sticks instead of straws — she had actual sticks for Kali. The Japanese was the straw situation. The sticks were real.</p>
+
+<p>Check sugar. Non-negotiable. Matter of fact. Methos produced the equipment on day one with the same energy he produced everything else: as if it had always been here and she had simply not known to look for it.</p>
+
+<p>Value houses would come later. On day eighteen. With better pencils.</p>
+
+<p>But first: days one through seventeen with the bad pencils and the straw drumsticks and the song and the weight of the necklace not against her collarbone.</p>
+
+<p>She did it anyway.</p>
+
+<p>That was the point. Methos was finding out whether she'd do it anyway.</p>
+
+<p>She did.</p>
+
+<!-- ——————— PART SEVEN: THE WALL ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Seven</div>
+    <h2>Day 17</h2>
+    <div class="part-sub">The Wall</div>
+</div>
+
+<p>By day seventeen you are deep enough in that the beginning is gone — the novelty, the adrenaline, the sense of embarking on something — and the end is not yet visible. You are in the middle of the middle. Your body is adapted enough that it no longer protests loudly; it just aches constantly and quietly. Your mind is stripped of its usual defenses because you've been operating at capacity for over two weeks and the padding is gone.</p>
+
+<p>Everything that was already there before the thirty days — every unprocessed thing, every suppressed thing, every thing you've been managing and filing and keeping in the correct place — is right at the surface.</p>
+
+<p>Day seventeen is when it comes up.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>The pencils were wrong. She knew they were wrong. She'd been working with them for seventeen days and they'd been wrong for seventeen days but today — today they were catastrophically, cosmically, personally wrong in a way that had nothing to do with the pencils.</p>
+
+<p>She snapped one.</p>
+
+<p>She looked at it.</p>
+
+<p>She snapped another one.</p>
+
+<p>She picked up the straw. The straw that was supposed to be the drumstick. The straw that Methos had produced on day one with the specific energy of a man who had thought about this and decided that playing air drums on a practice surface with a drinking straw was the correct methodology for maintaining rhythm muscle memory when a full kit was unavailable.</p>
+
+<p>She had been doing this for seventeen days. Today the straw was not a drumstick. The straw had never been a drumstick. The straw was a straw and she was sitting in a room somewhere in the middle of thirty days and Richie was not here and Mac was not here and she had bad pencils and a straw and she was supposed to be learning formal Japanese keigo in the third person service register and she could not do it today, she could not do any of it today.</p>
+
+<p>She put the straw down.</p>
+
+<p>She picked it up.</p>
+
+<p>She put it down again.</p>
+
+<p>She stood up.</p>
+
+<p>She hit the wall. With her open hand. Not hard enough to hurt — hard enough to make a sound. Hard enough to mean something.</p>
+
+<p>She hit it again.</p>
+
+<p>And again.</p>
+
+<p>And then she wasn't hitting it anymore, she was just — her forehead against the wall, her hands flat against it, breathing. The specific breathing of someone who had been not crying for a very long time and was now negotiating with themselves about whether today was the day.</p>
+
+<p>Today was the day.</p>
+
+<p>She didn't make a lot of noise. That wasn't Jennifer. She just — cried. Against the wall. With her hands flat against it and her forehead against it and her whole body against it like the wall was the only thing keeping her upright, which right now it was.</p>
+
+<p>The pencils were on the floor. The straw was on the floor. The Japanese textbook was on the floor. She didn't know when any of that had happened.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Methos did not leave the room.</p>
+
+<p>He also did not approach her. He did not speak. He did not make the sounds of a person about to intervene or comfort or manage.</p>
+
+<p>He sat where he was sitting. He may or may not have been reading. He was present. That was all. He was simply present in the room with her while she had the thing she'd been not having for twenty-one years.</p>
+
+<p>He had been alive for five thousand years. He had been in rooms with people falling apart for five thousand years. He knew the difference between someone who needed to be pulled back and someone who needed to be allowed to go all the way through.</p>
+
+<p>Jennifer needed to go all the way through.</p>
+
+<p>He let her.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>It took a while. It took as long as it took. She didn't track it.</p>
+
+<p>At some point she slid down the wall and sat on the floor with her back against it. Her face was a disaster. She knew her face was a disaster. She didn't manage it.</p>
+
+<p>The room was quiet.</p>
+
+<p>"Day seventeen," Methos said. From wherever he was. Quietly.</p>
+
+<p>She didn't say anything.</p>
+
+<p>"It's always day seventeen," he said. "Give or take."</p>
+
+<p>She looked at the ceiling.</p>
+
+<p>"The pencils are terrible," she said. Her voice was wrecked.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"The straw is not a drumstick," she said.</p>
+
+<p>"No," he said.</p>
+
+<p>"It has never been a drumstick," she said.</p>
+
+<p>"No," he said.</p>
+
+<p>A long pause.</p>
+
+<p>"What is it actually," she said.</p>
+
+<p>"A straw," he said.</p>
+
+<p>"Right," she said.</p>
+
+<p>She sat with that for a moment.</p>
+
+<p>"Why a straw," she said.</p>
+
+<p>"I had straws," he said. "I didn't have drumsticks."</p>
+
+<p>She looked at the straw on the floor.</p>
+
+<p>"You could have gotten drumsticks," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"Why didn't you," she said.</p>
+
+<p>"Because you can do it with a straw," he said. "And I wanted to know if you'd do it with a straw."</p>
+
+<p>She sat with that.</p>
+
+<p>"I did it with a straw," she said.</p>
+
+<p>"You did," he said.</p>
+
+<p>"For seventeen days," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"And now I'm on the floor," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"Having a breakdown," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>She looked at the ceiling again. She breathed. The wreckage of her face was starting to settle into something that was still wrecked but quieter.</p>
+
+<p>"How many more days," she said.</p>
+
+<p>"Thirteen," he said.</p>
+
+<p>"Will the straws become drumsticks at some point," she said.</p>
+
+<p>"No," he said.</p>
+
+<p>"Will the pencils improve," she said.</p>
+
+<p>"No," he said.</p>
+
+<p>"Will I stop having days like this," she said.</p>
+
+<p>A pause. The Methos pause. The one that meant he was choosing between the comfortable answer and the true one.</p>
+
+<p>"Day twenty," he said. "Usually."</p>
+
+<p>Three more days.</p>
+
+<p>She nodded. She picked up the straw from the floor. She looked at it.</p>
+
+<p>She put it down again. Not today. Not yet.</p>
+
+<p>"Can I just sit here for a while," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>She sat there for a while.</p>
+
+<p>He stayed in the room.</p>
+
+<p>That was all he did. That was everything he did.</p>
+
+<p>Later she wrote one line in Orangi-San about day seventeen.</p>
+
+<div class="journal">
+    <p>He stayed in the room.</p>
+</div>
+
+<p>That was the whole entry. That was all it needed to be.</p>
+
+<!-- ——————— PART EIGHT: VALUE HOUSES ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Eight</div>
+    <h2>Day 18</h2>
+    <div class="part-sub">Value Houses</div>
+</div>
+
+<p>On day eighteen Methos put better pencils on the table.</p>
+
+<p>Not dramatically. Not with announcement. He just — put them there. The good kind. The kind that had been produced by someone who cared about pencils and had invested in the concept.</p>
+
+<p>She walked in. She looked at the table.</p>
+
+<p>She looked at the pencils.</p>
+
+<p>She looked at him.</p>
+
+<p>"These are better pencils," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>"You had these the whole time," she said.</p>
+
+<p>"Yes," he said.</p>
+
+<p>She picked one up. She looked at it. She looked at him.</p>
+
+<p>"Why," she said.</p>
+
+<p>"Because I wanted to know if you'd do it with the bad ones," he said.</p>
+
+<p>"I did," she said.</p>
+
+<p>"You did," he said.</p>
+
+<p>"And now I get the good ones," she said.</p>
+
+<p>"Now you get the good ones," he said.</p>
+
+<p>She looked at the pencil. She looked at the drawing surface — also new. She looked at the simple structure he'd drawn as the example. A house. A light source. The shadow falling correctly across the planes.</p>
+
+<p>"Value houses," he said. "Light and shadow. You're learning to see before you draw."</p>
+
+<p>"I don't draw," she said.</p>
+
+<p>"You will," he said.</p>
+
+<p>She looked at him.</p>
+
+<p>"Is this in the curriculum," she said.</p>
+
+<p>"It is now," he said.</p>
+
+<p>She picked up the pencil. She looked at the example. She started.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Her first house was terrible. The second was less terrible. By the fifth something was happening — the Jennifer thing, the watching-before-committing thing, the reading-the-room thing applied to light and shadow and the planes of a simple structure.</p>
+
+<p>Methos watched without commenting.</p>
+
+<p>By the tenth she wasn't drawing a house. She was seeing a house. There was a difference and she could feel the difference and she filed it.</p>
+
+<p>At the end of the session she looked at the row of value houses on the paper. Bad to less bad to something.</p>
+
+<p>"Why value houses specifically," she said.</p>
+
+<p>"Because a house has four walls," he said. "And you know what to do with walls now."</p>
+
+<p>She looked at him.</p>
+
+<p>He picked up his beer.</p>
+
+<p>She looked at the value houses.</p>
+
+<p>She almost smiled.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>The keigo that morning had been different. She wasn't performing it for the curriculum. She was in it. The clarity from day seventeen was still in her body and it changed how she received the language. Methos noticed. He didn't say anything.</p>
+
+<p>Kali in the afternoon. Real sticks in her hands instead of the straw. Her body knowing what to do. The rhythm that was always there finding the real instrument finally. This was not emotional. This was just correct.</p>
+
+<p>Check sugar. He said it the same way he always said it. Matter of fact. Non-negotiable. She did it.</p>
+
+<p>She sent Mac one text that evening.</p>
+
+<div class="journal">
+    <p>Day 17 happened.</p>
+</div>
+
+<p>Mac texted back one word.</p>
+
+<div class="journal">
+    <p>Good.</p>
+</div>
+
+<p>Not good that it had happened. Good that she was on the other side.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Methos built the fire that evening without asking. Without announcing it. At some point it was just — there. The specific Methos move of tending without making it tending. He'd been doing this for five thousand years. He knew how to put something warm in a room without requiring acknowledgment.</p>
+
+<p>She sat by it. She didn't say thank you. He didn't require it. They sat in the specific companionable quiet of two people who had been through something together and didn't need to discuss it.</p>
+
+<p>At the end of the day — when the day was done and she was about to sleep — he nodded at the safe.</p>
+
+<p>She opened it.</p>
+
+<p>She put the Soundgarden necklace on. She put the Shield Knot keychain in her pocket.</p>
+
+<p>The weight settled back where it belonged.</p>
+
+<p>She closed the safe.</p>
+
+<p>That was all. That was exactly enough.</p>
+
+<p>She picked up the good pencil.</p>
+
+<p>She drew one more value house.</p>
+
+<p>It was the best one.</p>
+
+<!-- ——————— PART NINE: THE SONG ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Nine</div>
+    <h2>The Song That Never Ends</h2>
+</div>
+
+<p>Days one through seven: the song played at noon. It was annoying. She filed it. She was a professional. She had worked New Year's Eve at a bar. She could handle a song.</p>
+
+<p>Days eight through ten: it was getting to her. She didn't say anything. She managed it. She was very good at managing things. This was exactly the problem.</p>
+
+<p>Day eleven: she removed the tape. Or the CD. Whatever format Methos had chosen for maximum commitment to the bit. She felt clever. She felt like she'd solved it.</p>
+
+<p>Methos produced a backup from somewhere. The song played.</p>
+
+<p>She filed this. She did not say anything.</p>
+
+<p>Day twelve: she hid the backup.</p>
+
+<p>He had another backup.</p>
+
+<p>Day thirteen: she cut the cord.</p>
+
+<p>The replica was already playing in the kitchen. He had had it running since 11:58. He knew.</p>
+
+<p>She stood in the kitchen looking at the cord in her hand and the song playing from an identical boombox and Methos in the doorway with the specific expression of a man who had packed thirty of these and had all the time in the world.</p>
+
+<p>"How many do you have," she said.</p>
+
+<p>He looked at her.</p>
+
+<p>"How many," she said.</p>
+
+<p>"Enough," he said.</p>
+
+<p>Day fourteen: she gave a boombox the wall treatment. Full Jennifer, full commitment, the specific focused energy of someone who had made a decision about a piece of equipment.</p>
+
+<p>The song kept playing. Different machine. Same song. Always the same song.</p>
+
+<p>She looked at the machine. She looked at Methos.</p>
+
+<p>"I have more," he said.</p>
+
+<p>"I know," she said.</p>
+
+<p>She picked up her Kali sticks.</p>
+
+<p>She went back to work.</p>
+
+<p>Days fifteen and sixteen: she tried ignoring it. She tried working through it. She tried the specific Jennifer quality of filing a thing in the place where things go and continuing. The song did not care. The song never ended. That was the whole point of the song.</p>
+
+<p>Day seventeen: the wall. The straw. The breakdown. The clarity.</p>
+
+<p>She didn't touch the boombox on day seventeen. She forgot it existed.</p>
+
+<p>Day eighteen: value houses. Better pencils. The fire. The jewelry back.</p>
+
+<p>Noon came.</p>
+
+<p>The song started.</p>
+
+<p>She looked at the boombox.</p>
+
+<p>She walked over to it.</p>
+
+<p>She turned it off.</p>
+
+<p>Just that. The button. One press.</p>
+
+<p>The silence was enormous.</p>
+
+<p>She stood in it for a moment.</p>
+
+<p>She went back to her value houses.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Methos, from wherever he was, said nothing. He had the expression of a man whose student had just passed the exam he'd designed the entire thirty days around.</p>
+
+<p>He wrote something down. She didn't see what.</p>
+
+<p>Later she would find out he'd started a tally on day one. Every intervention. Every backup deployed. Every cord cut. Every boombox that met the wall.</p>
+
+<p>At the bottom of the tally, in his handwriting:</p>
+
+<div class="journal">
+    <p>Day 18. She turned it off.</p>
+</div>
+
+<p>Just that. No grade. No commentary. The fact of it, recorded. Filed. Kept.</p>
+
+<p>She wrote about it in Orangi-San that night.</p>
+
+<div class="journal">
+    <p>The song never ends until you decide it does. That's the whole thing. That's all it ever was.</p>
+</div>
+
+<p>She closed the notebook.</p>
+
+<p>She picked up the good pencil.</p>
+
+<p>She drew one more value house.</p>
+
+<p>The silence in the kitchen was the best thing she'd heard in eighteen days.</p>
+
+<!-- ——————— PART TEN: THE DREAMS ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Ten</div>
+    <h2>Night 18 / Night 19</h2>
+    <div class="part-sub">The Dreams</div>
+</div>
+
+<p>Night eighteen she dreamed she was fighting Methos.</p>
+
+<p>Not a sparring session. Not a training scenario. For real. The specific quality of a dream where you know the stakes even without knowing how you know.</p>
+
+<p>She didn't lose. She didn't win either. A draw against Methos. Against five thousand years. That was not nothing. That was everything. Her sleeping mind had assessed herself honestly and found: not yet, but close. Close enough to make it a draw.</p>
+
+<p>Night nineteen she dreamed of the Bear.</p>
+
+<p>Not Methos. Not anyone she knew. Six attackers — strangers, threats, the specific shape of danger — and the Bear with six arms took all six of them and none of them got through.</p>
+
+<p>She woke on day twenty and something had shifted that she couldn't name yet but Methos could see from across the room.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>She told him at breakfast. Flat voice. Matter of fact. Like she was reporting something she'd observed.</p>
+
+<p>"I had a dream."</p>
+
+<p>He looked at her over whatever he was drinking.</p>
+
+<p>She told him about night eighteen first. The draw. Fighting him for real. Neither of them winning.</p>
+
+<p>He listened. He said nothing.</p>
+
+<p>"And then last night," she said.</p>
+
+<p>She told him about the Bear. The six arms. The six of him. All six going down. Nothing getting through.</p>
+
+<p>She stopped.</p>
+
+<p>The room was quiet.</p>
+
+<p>"The den," she said. "That's what it felt like. I was protecting the den."</p>
+
+<p>Methos looked at her for a long moment.</p>
+
+<p>He had the expression of a man who had been waiting for this specific conversation since day one and was now having it and finding it to be exactly what he'd expected and somehow more than he'd expected simultaneously.</p>
+
+<p>"Yes," he said.</p>
+
+<p>Just that.</p>
+
+<p>"Yes."</p>
+
+<p>She looked at him.</p>
+
+<p>"That's it, isn't it," she said. "That's what you've been looking for."</p>
+
+<p>He picked up his drink. He looked at her with five thousand years of honest assessment.</p>
+
+<p>"You were always capable of protecting people," he said. "That was never the question."</p>
+
+<p>"What was the question," she said.</p>
+
+<p>"Whether you knew it," he said.</p>
+
+<p>She sat with that.</p>
+
+<p>"Do I know it now," she said.</p>
+
+<p>"You dreamed six of me," he said. "And killed all of them."</p>
+
+<p>A beat.</p>
+
+<p>"Yes," he said. "You know it now."</p>
+
+<p>She looked at her hands. The hands that had held the bad pencils for seventeen days. The hands that had hit the wall. The hands that had turned off the boombox. The hands that had held the straw and made it work anyway.</p>
+
+<p>The Bear's hands.</p>
+
+<p>"What happens now," she said.</p>
+
+<p>"Eleven more days," he said.</p>
+
+<p>"Do they change," she said.</p>
+
+<p>"No," he said. "But you do."</p>
+
+<div class="scene-break">* * *</div>
+
+<p>She picked up the good pencil.</p>
+
+<p>She drew the Bear.</p>
+
+<p>Six arms. Fully deployed. Nothing getting through.</p>
+
+<p>Methos looked at it for a long moment.</p>
+
+<p>He took it. He folded it carefully. He put it in his pocket.</p>
+
+<p>She watched him do this.</p>
+
+<p>She didn't ask why. She already knew.</p>
+
+<p>He was keeping it. He'd been keeping everything since day one — the tally, the notes, the specific record of Jennifer Marsh finding out what she was made of across many days in a room with bad pencils and a straw and a song that never ended.</p>
+
+<p>The Bear drawing went in the collection.</p>
+
+<p>It was the most important one.</p>
+
+<p>One line in Orangi-San that night.</p>
+
+<div class="journal">
+    <p>The den is real. I knew it before. Now I know I know it.</p>
+</div>
+
+<p>She closed the notebook.</p>
+
+<p>Eleven more days.</p>
+
+<p>She slept without dreaming.</p>
+
+<p>She didn't need to anymore.</p>
+
+<!-- ——————— PART ELEVEN: MAKE ME ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Eleven</div>
+    <h2>Day 20</h2>
+    <div class="part-sub">Make Me</div>
+</div>
+
+<p>On day twenty Methos woke up and put the bad pencils back on the table.</p>
+
+<p>New box of straws. Same setup as day one. Complete reset. Like the last nineteen days hadn't happened.</p>
+
+<p>She walked in. She saw the table. She saw the bad pencils. She saw the straws.</p>
+
+<p>She looked at Methos.</p>
+
+<p>He looked back with the complete serenity of a man who had done nothing wrong.</p>
+
+<p>She looked at the table again.</p>
+
+<p>The old Jennifer — day one Jennifer, day sixteen Jennifer, even day seventeen Jennifer before the wall — would have sat down. Would have filed it. Would have picked up the bad pencil and done it anyway because that was what you did, that was the requirement, that was what being a nice girl who didn't make scenes looked like in practice.</p>
+
+<p>Day twenty Jennifer looked at the table.</p>
+
+<p>She looked at Methos.</p>
+
+<p>"No," she said.</p>
+
+<p>He said nothing.</p>
+
+<p>"No," she said again. Flat voice. Full deployment. The real one. "We're not doing this again. Not if I have anything to say about it."</p>
+
+<p>She looked at him with the full twenty days in her eyes — the bad pencils and the straw and the song and the wall and day seventeen and the Bear and six versions of him going down in a dream and nothing getting through.</p>
+
+<p>"And it turns out," she said, "I have a lot to say about a lot of things."</p>
+
+<p>Methos looked at her.</p>
+
+<p>The silence was very specific. The silence of a man receiving exactly what he'd been waiting for.</p>
+
+<p>"Sit down," he said.</p>
+
+<p>"No," she said.</p>
+
+<p>"Jennifer," he said.</p>
+
+<p>"No," she said. "We're done here."</p>
+
+<p>"Sit down."</p>
+
+<p>"Make me."</p>
+
+<div class="scene-break">* * *</div>
+
+<p>The two words landed in the room like something solid. Not aggressive. Not performative. Just — completely certain. The flat voice at a setting it had never been at before. The setting that didn't have a name yet because she'd never needed it until now.</p>
+
+<p>Methos looked at her.</p>
+
+<p>She looked back.</p>
+
+<p>Five thousand years of survival on one side of the room. Twenty days of Jennifer Marsh finding out what she was made of on the other.</p>
+
+<p>Nobody moved.</p>
+
+<p>Nobody moved for a long moment.</p>
+
+<p>And then Methos reached into his pocket. He took out his phone. He typed with the unhurried quality of a man confirming something he already knew.</p>
+
+<p>She watched him type.</p>
+
+<p>He put the phone back in his pocket.</p>
+
+<p>"What did you just send," she said.</p>
+
+<p>"We're getting on the next train," he said. "See you at the condo."</p>
+
+<p>She looked at him.</p>
+
+<p>"We," she said.</p>
+
+<p>"We," he confirmed.</p>
+
+<p>A beat.</p>
+
+<p>"You're coming back with me," she said.</p>
+
+<p>"Someone has to make sure you eat on the train," he said.</p>
+
+<p>She looked at him for a long moment.</p>
+
+<p>"That's not why," she said.</p>
+
+<p>He picked up his coat.</p>
+
+<p>"No," he said. "It's not."</p>
+
+<p>He didn't elaborate. He was Methos. He didn't elaborate on the things that mattered most.</p>
+
+<p>But she filed it. In the specific place she kept the things she was going to return to for the rest of her life.</p>
+
+<p>He had come. He had stayed in the room on day seventeen. He had said her name. He had built the fire. He had given the good pencils back. He had put the bad ones out on day twenty to find out if she'd had enough.</p>
+
+<p>She'd had enough.</p>
+
+<p><em>Make me</em> was the whole thirty days in two words.</p>
+
+<p>He packed his coat. That was his version of the same two words.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>He picked up the good pencils from wherever he'd had them — drawer, bag, pocket, somewhere she couldn't see — and put them on the table.</p>
+
+<p>She looked at the good pencils.</p>
+
+<p>She looked at him.</p>
+
+<p>"You had them," she said.</p>
+
+<p>"I always had them," he said.</p>
+
+<p>"Day twenty," she said.</p>
+
+<p>"Day twenty," he confirmed.</p>
+
+<p>She looked at the table. She looked at the door. She looked at Methos.</p>
+
+<p>"We're still going home," she said.</p>
+
+<p>"Yes," he said. "You are."</p>
+
+<p>"Today," she said.</p>
+
+<p>"Today," he said. "After breakfast."</p>
+
+<p>She looked at him for a long moment.</p>
+
+<p>She sat down.</p>
+
+<p>She picked up the good pencil.</p>
+
+<p>She drew one more value house.</p>
+
+<p>It was perfect. It had always been going to be perfect. The light source exactly right. The shadow falling correctly. The planes reading clearly. Twenty days of seeing before drawing landing in one clean confident house on a page.</p>
+
+<p>She put the pencil down.</p>
+
+<p>She stood up.</p>
+
+<p>"Breakfast," she said.</p>
+
+<p>"Breakfast," he said.</p>
+
+<p>They ate. She packed. They got the train.</p>
+
+<!-- ——————— PART TWELVE: TEXT CHAIN ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Twelve</div>
+    <h2>The Text Chain</h2>
+</div>
+
+<p>Mac's phone buzzed.</p>
+
+<p>He read:</p>
+
+<div class="journal">
+    <p>We're getting on the next train. See you at the condo.</p>
+</div>
+
+<p>He stared at it.</p>
+
+<p>He texted back:</p>
+
+<div class="journal">
+    <p>What happened.</p>
+</div>
+
+<p>A pause. The Methos pause. The one that meant he was choosing his words.</p>
+
+<div class="journal">
+    <p>I put the bad pencils out on day twenty.</p>
+</div>
+
+<p>Mac read this. He already knew what the bad pencils meant. He texted back:</p>
+
+<div class="journal">
+    <p>And.</p>
+</div>
+
+<p>Another pause.</p>
+
+<div class="journal">
+    <p>I told her to sit down.</p>
+</div>
+
+<p>Mac looked at Richie. He looked at his phone. He texted:</p>
+
+<div class="journal">
+    <p>And.</p>
+</div>
+
+<p>The response was immediate this time. No pause. Methos had been waiting to send this one.</p>
+
+<div class="journal">
+    <p>Without the slightest balk she said: make me.</p>
+</div>
+
+<p>Mac read it.</p>
+
+<p>He read it again.</p>
+
+<p>He put his phone down. He picked it up. He read it a third time.</p>
+
+<p>He typed back:</p>
+
+<div class="journal">
+    <p>Make me.</p>
+</div>
+
+<p><em>Make me,</em> Methos confirmed.</p>
+
+<p>The longest pause in the history of their correspondence.</p>
+
+<div class="journal">
+    <p>She didn't blink, Duncan. Not once.</p>
+</div>
+
+<p>Mac put his phone in his pocket.</p>
+
+<p>He looked at Richie. "Pack your things."</p>
+
+<p>"What did Methos say?"</p>
+
+<p>Mac looked at him. "She told Methos to make her. Better said: <em>Make me.</em>"</p>
+
+<p>Richie stared at him. "She said <em>make me</em>, to Methos."</p>
+
+<p>"Without the slightest balk."</p>
+
+<p>Richie was quiet for a very long moment. Thirty days of yin visible in how he held the silence.</p>
+
+<p>"That's her. That's exactly her."</p>
+
+<p>"Yes. It is." Mac picked up his bag. "Let's go home."</p>
+
+<!-- ——————— PART THIRTEEN: CALABRIA ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Thirteen</div>
+    <h2>Calabria</h2>
+    <div class="part-sub">Richie's Thirty Days</div>
+</div>
+
+<p>Mac hadn't just sent Jennifer to Methos for thirty days. He'd taken Richie somewhere too.</p>
+
+<p>Richie's thirty days ran parallel — different teacher, different methodology, different everything, but the same thirty days. Mac took him to Calabria.</p>
+
+<p>Thirty days of yin.</p>
+
+<p>Which was the most Mac possible prescription for Richie Ryan — the kid who was all forward momentum, all instinct, all fast-twitch response, all action before stillness. Mac looked at Richie and saw someone who needed to learn to be still before he could be truly dangerous.</p>
+
+<p>So Calabria. Thirty days of yin. Meditation probably. Slow forms. The long patient work of learning to wait, to read, to be present without acting. Everything that was the opposite of Richie's natural register.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Richie's thirty days with Mac were a completely different register.</p>
+
+<p>Not boot camp. Not Methos's methodology of deliberate friction and bad pencils and songs that never end. Mac didn't teach that way. Mac taught by being present, by demonstrating, by the long patient companionship of someone who had been doing this for four hundred years and knew that some things couldn't be pushed, they could only be accompanied.</p>
+
+<p>Richie's thirty days were quieter. Gentler. More space than structure.</p>
+
+<p>Mac watching Richie and adjusting in real time the way Mac always adjusted — not to make it easier but to make it right for who Richie actually was.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>When Mac's phone buzzed and he read <em>We're getting on the next train, see you at the condo</em> — he wasn't comparing. He wasn't measuring Richie against Jennifer or Jennifer against Richie. They had gone to different places because they'd needed different things.</p>
+
+<p>But he looked at Richie in the Calabrian afternoon and he knew.</p>
+
+<p>Jennifer had blown the doors off.</p>
+
+<p>Richie was doing exactly what Richie needed to do.</p>
+
+<p>Both things were true simultaneously and Mac held both with the quality of a teacher who knew his students.</p>
+
+<p>Richie looked at the Calabrian light doing its particular afternoon thing through the window.</p>
+
+<p>He had the expression. The full version. The one that was entirely for Jennifer and nobody else.</p>
+
+<p>"That's my girl," he said quietly to the Calabrian afternoon.</p>
+
+<h3>30 Days of Yin — The Italy Diary of Richie Ryan</h3>
+
+<div class="diary">
+    <p class="diary-heading">Departure</p>
+
+    <p class="diary-date">Thursday</p>
+    <p>Hey, leaving you at the train station today was one of the hardest things I've ever had to do. I miss you so much already. How are we going to survive 30 days apart? I mean, I know you have to do this. I just wish it was over already. Time to board the plane. 1-4-3</p>
+
+    <p class="diary-date">Friday</p>
+    <p>This plane ride is long but Mac's teaching me some Italian words and phrases so I can blend in I guess. Whatever you're doing, know I love you, my strawberry girl. You can do this I know it. No matter what. 1-4-3</p>
+
+    <p class="diary-date italian">Italian (Plane Lesson #1)</p>
+    <p><em>Fragola</em> — Strawberry<br>
+    <em>Bella Fragola</em> — Beautiful Strawberry<br>
+    [I can't draw]</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Week One — Observe Yin</p>
+
+    <p class="diary-date">Monday — MBF</p>
+    <p>We've landed safely and this place is gorgeous! You have to see this, with me. We'll plan a trip here. Maybe we should move here. I'm guessing the weather where you are is not great. Mississippi in the summer. I hope Methos isn't riding into you too hard. I miss you my bella fragola.</p>
+
+    <p class="diary-date">Tuesday — MBF</p>
+    <p>Mac's finally telling me what he wants me to work on here. He called it 30 Days of Yin. My first assignment is to: observe yin. So I'm out here in this open air market in the sun. Mac says it's all around us and subtle. Gentle Power. That's you, Jen, gentle power.</p>
+
+    <p class="diary-date">Wednesday — MBF</p>
+    <p>I have my first observation of yin. I watched a man at the market pick out a treat for his wife. I love doing that for you, and I love it when you do that for me, tacos in particular. 1-4-3, Fragolina</p>
+
+    <p class="diary-date">Thursday</p>
+    <p>Bella Fragola, How are you? I love you. I miss you. It's difficult to sleep without you. Luckily the espresso is free flowing. Today's observed yin: our Host, Claudio (the guy's a trip) — his wife booked him a surprise massage. 1-4-3 Stay strong, Kosho.</p>
+
+    <p class="diary-date">Friday</p>
+    <p>Mia Bella Fragola, today's yin is brought to you again by the open air market. A woman walking her dog had to go into a business that didn't allow dogs to enter. She found an older gentleman who agreed to hold the leash for her. We should get a dog. 1-4-3</p>
+
+    <p class="diary-date italian">Italian (Week One Vocab)</p>
+    <p><em>Buongiorno</em> — Good morning<br>
+    <em>Buonasera</em> — Good evening<br>
+    <em>Prego</em> — You're welcome (many uses)<br>
+    <em>Grazie</em> — Thank you</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Week Two — Yin Is Everywhere</p>
+
+    <p class="diary-date">Monday — MBF</p>
+    <p>Claudio's neighbor is doing some major upgrades in his villa. Mac offered to help — that's yin. He's not going to get paid or get anything out of it. Very yin. I'm going to help as well, of course. Miss you terribly. 1-4-3. Can't wait to see you again.</p>
+
+    <p class="diary-date">Tuesday — MBF!</p>
+    <p>This place is all about food. Food everywhere, offered all the time. Feeding other people is very yin. Remember when we had pizza that first night at your place? I was yin, before yin was cool. 1-4-3 3-5-7</p>
+
+    <p class="diary-date">Wednesday</p>
+    <p>Some yin you do for me all the time — Reminders. I'd be lost without you, really. I feel lost without you now but I know I will see you again soon. Speed up that training with Methos. Daddy needs his medicine.</p>
+
+    <p class="diary-date">Thursday — MBF! 1-4-3</p>
+    <p>Okay, technically I didn't see this today but it occurs to me that picking someone up from the airport is definitely yin. I guess I'm thinking about the airport because I want to come home to you, today, if I could. I hope you're okay and Methos isn't being too big of a dick. Can't wait to see you, kiss you, Jen. 1-4-3</p>
+
+    <p class="diary-date">Friday — MBF!</p>
+    <p>Today's yin is brought to you by Claudio's wife Marie. When she heard we were going to go fishing she packed a lunch — for all of us. Like I said they are all about the food here. We're going to have to find a couple ways to burn off all these calories. Maybe I'll make a yin-a to-do-to-you list!</p>
+
+    <p class="diary-date italian">Italian (Week Two Vocab)</p>
+    <p><em>Per favore</em> — Please<br>
+    <em>Mi scusi</em> — Excuse me, I'm sorry<br>
+    <em>Scusa</em> — Excuse me (casual)</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Week Three — MBF! 1-4-3</p>
+
+    <p class="diary-date">Monday</p>
+    <p>Back in the open air market again today. The weather is great, warm breeze, but I saw a mom chasing after her kid yelling about a jacket. No one needs a jacket today but the effort is the yin. Feeding people, making sure they're comfortable. Mac says we're changing it up tomorrow. I want to see you.</p>
+
+    <p class="diary-date">Tuesday — The Change Up</p>
+    <p>I am going to do acts of yin — minimum 1 per day. So, not much, but I did hold open a door for someone. That totally counts and it's not hard to do. This is your Richie, Mr. Yin, signing off for today.<br>
+    I want to kiss you all over over and over again.</p>
+
+    <p class="diary-date">Thursday</p>
+    <p>Today's Yin in Action. Marie was having some trouble with her legs/feet swelling. I took off her shoes for her. Kind of felt like a shoe salesman. But no worries, mia bella fragola — foot rubs are still only for you. I miss you. I want you. I love you.</p>
+
+    <p class="diary-date">Friday</p>
+    <p>Ciao, Bella Fragola. I was just schooled on what Ciao actually means and kind of feel like a jerk for saying it to everyone. You probably know what it means in that beautiful brain of yours. From here to forever this word is only for you. Ciao, Bella.</p>
+
+    <p class="diary-date italian">Italian (Week Three Vocab)</p>
+    <p><em>Vorrei</em> — I would like...<br>
+    <em>Il conto, per favore</em> — The bill, please<br>
+    <em>Posso avere?</em> — May I have?<br>
+    <em>Dove</em> — Where is?</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Week Four — CBF!</p>
+
+    <p class="diary-date">Monday</p>
+    <p>Today I did something that you sometimes have to remind me to do — I took out the garbage today. It's a very practical yin. I miss you, Jen. I need you. I feel like a piece of me is being chipped away every day I'm here without you. I need to be with you ASAP. 1-4-3</p>
+
+    <p class="diary-date">Tuesday — A Poem for You</p>
+    <p class="poem">mia bella fragola<br>
+    Tu sei il mio cuore<br>
+    E il mio amore<br>
+    E il mio everything<br>
+    Tu sei forte e bella<br>
+    Come il caffè<br>
+    I tuoi occhi sono<br>
+    Come il...<br>
+    Non ho le parole<br>
+    ma tu sai</p>
+    <p style="text-align: center;">3-5-7</p>
+
+    <p class="diary-date">Thursday</p>
+    <p>Ha! Today's act of yin is for Mac. I saw his battery was running low so I put it on the charger. I know he's texting with Methos about you so maybe that's a yin for all of us, really. Come home to me. Come home to me. I need you, girl.</p>
+
+    <p class="diary-date">Friday — mia bellissima fragola</p>
+    <p class="poem">There once was a cannoli<br>
+    That everyone wanted<br>
+    Even though that they've already had one<br>
+    As an act of yin today<br>
+    the agricoltore di fragole (strawberry farmer)<br>
+    let someone else have the last one<br>
+    [mac helped with this one]</p>
+
+    <p class="diary-date italian">Italian (Week Four Vocab)</p>
+    <p><em>Non capisco</em> — I don't understand<br>
+    <em>Parla inglese?</em> — Do you speak English?<br>
+    <em>Mi sono perso</em> — I'm lost</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Final Days — MBF</p>
+
+    <p class="diary-date">Monday</p>
+    <p>Remember that joke — I think it was a joke that Amanda made — men are good for 3 things: killing bugs, getting things off high shelves, carrying heavy things. I carried a heavy thing today. Big muscle yin. :) Soon! So soon! I can feel it.</p>
+
+    <p class="diary-date">Tuesday</p>
+    <p>Mac confirmed it. We are probably going home soon. You must be doing wonderful. Mac's mood is up so he's stoically happy for you today. My yin — I bought a surprise for you, not so much a souvenir as a surprise. You're going to love it. 1-4-3 3-5-7</p>
+
+    <p class="diary-date">Wednesday</p>
+    <p>If this isn't yin then nothing is. Mac wanted to go to the opera. I did not. I went.</p>
+    <p style="text-align: center;">&#9833; yin &#9833;</p>
+    <p>Coming home day after the next. Hear you're on your way too! FINALLY</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Flying Home — MBF</p>
+
+    <p class="diary-date">Thursday — On the Plane</p>
+    <p>Mac has told me to go to step 3 on Yin and write down all the ways to BE yin. Some good ideas I'm writing down while we fly home to you.</p>
+    <p>Nurse the sick. Play someone's music. Water the plants. Speak up for someone. Pick up a guilty pleasure. Untangle things. Offer advice. Fix the printer jam. Breakfast in bed. Random restaurant date. Take care of family. Give massages. Put the seat down.</p>
+
+    <p class="diary-date italian">Italian (Flying Home Vocab)</p>
+    <p><em>Mio fratello / mia sorella</em> — My brother / my sister</p>
+</div>
+
+<div class="diary">
+    <p class="diary-heading">Almost Home</p>
+
+    <p class="diary-date">Monday — Connecting Flight</p>
+    <p>He is snoring again!<br>
+    Next connecting flight<br>
+    gets me home to you<br>
+    I can't sleep, I can barely<br>
+    keep still<br>
+    Tomorrow I see you<br>
+    Tomorrow I kiss you<br>
+    MBF</p>
+
+    <p class="diary-date">Tuesday — To Do List (When I Get Home)</p>
+    <p>put the dishes away<br>
+    go get groceries<br>
+    plan out a vacation<br>
+    MAKE COFFEE</p>
+
+    <p class="diary-date">Wednesday — Landing</p>
+    <p>run errands<br>
+    fill the gas tank<br>
+    tidy up</p>
+    <p>We're landing in 10 minutes.</p>
+    <p>my darling — soon</p>
+</div>
+
+<!-- ——————— PART FOURTEEN: FITZ ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Fourteen</div>
+    <h2>Coming Home</h2>
+    <div class="part-sub">Fitz Keeps the Hearth</div>
+</div>
+
+<p>Mac had left the condo key for Fitz so that he could have everything in place when everyone returned home.</p>
+
+<p>Keeping the hearth was the most Fitz possible expression of love. Not the grand gesture. Not the concert hall with three hundred seats. Just — the hearth. The fire, food, a place ready to receive people who had been away doing something hard.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>The condo was comfortable when Jennifer and Methos arrived.</p>
+
+<p>That was the first thing, the first word, that rolled through her mind: <em>comfort</em>. The condo was inviting and something smelled right. The lights were on at the correct level and there were flowers on the table.</p>
+
+<p>She looked at the condo, the flowers and then at Fitz. "My darling girl, when are we running away together?"</p>
+
+<p>She looked at Fitz, who was in the kitchen doing something that smelled like it involved butter and care and four hundred years of knowing what people needed when they came home.</p>
+
+<p>"Fitz," she said. "It smells really good in here, like butter and love."</p>
+
+<p>Jennifer crossed the room and hugged him. Methos, from the doorway, looked at Fitz over Jennifer's shoulder.</p>
+
+<p>Fitz looked back. Something passed between them, the specific something that passed between two people who had been alive long enough to know that the grand gesture was easy and that the hearth was hard. Fitz had always chosen the hearth.</p>
+
+<p>Methos put his bag down. "She's right, something smells good."</p>
+
+<p>"Sit down," Fitz said. "Both of you."</p>
+
+<p>"He said sit down," Methos said. Jennifer glared at him. "Different context," he said, with complete serenity.</p>
+
+<p>She almost smiled. Jennifer sat down.</p>
+
+<div class="scene-break">* * *</div>
+
+<p>The food was what the food was when Fitz made it — specific, researched, exactly right for the occasion. Not celebratory food. Recovery food. The kind that sat in the body like a hand on the shoulder. The bread was warm, the soup was good and the slow-cooked entrée hit on many levels. Fitz fed them without ceremony. He sat with them. He didn't ask about the thirty days. He didn't need to know but he could see it on them, on Jennifer especially.</p>
+
+<p>They ate. The condo was comfortable. The flowers were on the table. The hearth was kept.</p>
+
+<!-- ——————— PART FIFTEEN: THE BOW AND THE TACKLE ——————— -->
+<div class="part-header">
+    <div class="part-number">Part Fifteen</div>
+    <h2>The Arrival</h2>
+    <div class="part-sub">The Bow and the Tackle</div>
+</div>
+
+<p>Mac came in behind Richie.</p>
+
+<p>Jennifer looked at him.</p>
+
+<p>She set down her coffee mug. She stood.</p>
+
+<p>She bowed.</p>
+
+<p>Not casually, not quickly — the real thing. Jennifer was completely serious with the formal acknowledgment of what the thirty days had been. What Mac had given her by arranging the ordeal was something she couldn't pay back in any currency, except this. It was the specific solemn recognition of student to teacher, of someone who had been changed by someone else's investment in them. Mac received it. He knew what it meant. He didn't make anything of it. He just — received it.</p>
+
+<p>And then she tackled Richie.</p>
+
+<p>No transition. No beat. Richie was there, the thirty days were over, the bow was complete and she crossed the distance and that was it. He caught her. Thirty days of yin meant he was ready, he was present, and his body knew before his mind did that she was moving.</p>
+
+<p>Mac watched this happen. He had the expression. The real one. The one that wasn't for the room.</p>
+
+<p>Methos, from somewhere behind Mac, picked up his book.</p>
+
+<p>He was not reading it. "Correct," he said. To no one. Just that. "Correct."</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Once everyone had been fed and was comfortable, Fitz returned the condo key to Mac. "What is that?" Methos questioned.</p>
+
+<p>"It's the lovely keychain Jenny originally gave me with her apartment key. Now it's the condo key," Mac answered before putting it in his pocket. "A very lovely gesture."</p>
+
+<p>"It says dry cleaning," Methos announced and Mac just shook his head. Hadn't the word <em>lovely</em> tipped Methos that it wasn't to be discussed?</p>
+
+<p>"It says what?" Jennifer demanded. She had heard Methos but was taken aback. "You never told me it said dry cleaning, Sensei."</p>
+
+<p>"Because it doesn't matter what it says. The intent was lovely and that's what I've held on to."</p>
+
+<div class="scene-break">* * *</div>
+
+<p>Mac asked her again when they were back at the dojo. Not formally. Not as a test. Just — they were training, and he looked at her and asked it. The same question. The second one.</p>
+
+<p>"Would you kill for Richie."</p>
+
+<p>No hesitation.</p>
+
+<p>"Yes." Mac looked at her for a long moment. He nodded and picked up his sword. "Again."</p>
+
+<p>She picked up hers and they went again.</p>
+
+<p>Mac didn't say anything else about it. He didn't need to. The answer had been in her eyes before she said the word and that was what he had been looking for. The hesitation was gone. The nice girl was still there. She hadn't gone anywhere. She was just standing next to the Mama Bear. They'd made their arrangement and it worked.</p>
+
+<!-- ——————— THE INTERVIEW SESSIONS ——————— -->
+<div class="part-header">
+    <h2>The Interview Sessions</h2>
+</div>
+
+<h3>Session One — Section 1</h3>
+
+<p>"Let's start our discussion with your formative years, Marsh, as this is where your shadow began developing," Methos began and Jennifer nodded. She had received some counseling in high school. Jennifer knew the terminology. "I am aware of the abuse and neglect you were raised in, no siblings, no father. You were basically on your own since the day you were born, Marsh. How do you think that kind of environment shaped you into what you are today?"</p>
+
+<p>"I was forced to learn to take care of my own business, didn't want any help from anyone," Jennifer answered. "That works against me still today. I have trouble asking for help, especially when I need it most, like when I first got to town and I didn't want help from Mac — cash, lunch, stuff from the store."</p>
+
+<p>"Pride, fear or both?"</p>
+
+<p>"Probably both. Getting things done, whether they were specifically for myself, felt good especially when the adults in my life, teachers or neighbors, were surprised at how able I was. I could wash my own clothes at eight years old because I had to, not because I was so brilliant. And the sticky end of all this was that the praise lit up my brain. When people-pleasing feels so good it's easy to miss your own needs."</p>
+
+<p>Methos nodded and made scattered notes on his clipboard. "You've had some therapy, Marsh, that's good," Methos commented. "If we were able to bring a younger version of you here, what would you tell her?"</p>
+
+<p>"Nothing, absolutely nothing," Jennifer responded firmly. "I would just hug her and not let go."</p>
+
+<p>"Why?"</p>
+
+<p>"Because she needed to know that she was good and beautiful and appreciated. That the messages being received were not true. That she was nice and sweet and smart."</p>
+
+<p>"Who lied to you?"</p>
+
+<p>"Who didn't lie to me," Jennifer parried back. She could feel her eyes begin to well and wiped them away impatiently.</p>
+
+<p>"Who is the first person you could trust?"</p>
+
+<p>Jennifer shrugged. "Probably some of my school friends as much as a bunch of nine-year-olds can trust each other."</p>
+
+<p>"How about high school?" Jennifer explained how she had by chance fallen into a group of kids that did everything together. "Every day we'd go to the skate park closest to school, sometimes someone would have beer, cigarettes, you name it."</p>
+
+<p>"So what is the extent of your drug use before the law started loosening in these parts?"</p>
+
+<p>"Cigarettes, coffee, weed in that order. Not much alcohol, mostly because the only thing I wanted to be when I grew up was not her."</p>
+
+<p>"So your mother's alcoholism followed you into more than a functional childhood. She follows you into the bar you ironically work at. You most likely are tempering yourself at the new and improved family dinner while the rest of us dance with Dionysus."</p>
+
+<h3>Session One — Section 2</h3>
+
+<p>"What happened junior and senior year to Web?"</p>
+
+<p>"He finished high school on a regular schedule where my goal was to get away from Eleanor. Technically I probably ran away from home but what it felt like was finding someone with their own place willing to take me in. A dorm-theatre nerd but one with a job."</p>
+
+<p>"What did moving from Eleanor to this mystery man's home get you and what did you have to pay for it?"</p>
+
+<p>"I didn't have to deal with Eleanor in any way. I didn't want to, went months, wonderful calm months without having to deal with her bullshit."</p>
+
+<p>"And what did you lose?"</p>
+
+<p>"My virginity in every way possible." At Methos's prompting she continued. "His name was Kenan, sexy, very charming, opened my world in ways I couldn't have even imagined."</p>
+
+<p>"You said he had a job. How old was this Kenan?"</p>
+
+<p>"Twenty-two when I met him."</p>
+
+<p>"And you were? Sixteen?" Methos commented. "And he took advantage of your innocence, in every way possible? That's rape, Marsh, statutory rape."</p>
+
+<p>"It didn't feel like rape. It felt like an escape and a mature relationship in comparison."</p>
+
+<p>"Can you expand on losing your virginity in every way possible?"</p>
+
+<p>"That checklist we all discussed before coming here. Just about everything on it."</p>
+
+<p>"At sixteen." Methos sighed. "What a heavy price to pay at sixteen just to feel safe. You traded one abuse for another, and thought it was an upgrade."</p>
+
+<p>"It was an upgrade."</p>
+
+<p>"You thought it was an upgrade. It was not an upgrade."</p>
+
+<p>"You weren't there. How could you possibly judge me?"</p>
+
+<p>"I don't have to judge you. When you see this clearly for what it was you'll judge it yourself."</p>
+
+<p>"Whatever, Methos."</p>
+
+<p>He paused. "One of the young ladies you train in the dojo comes to you in confidence and tells you that she's running away from an awful home life. She adds that the boyfriend is in his twenties — maybe your age right now. The boyfriend is an abusive sadomasochist who likes to cut her and loan her out at orgies. What is your advice, Sensei?"</p>
+
+<p>Jennifer was silent for a few moments. "I would not advise her to follow my path."</p>
+
+<p>"You'd probably call the cops as well. You know that you have a duty to report, right?"</p>
+
+<p>Jennifer let it all sit out there in the air and examined the situation from an older, wiser woman currently loved by a non-transactional man. The tears came running and she tried to wipe them away with a logical fallacy. "It's not like I'm the only woman who was ever raped."</p>
+
+<p>"That is woefully, tragically correct, Marsh." He instructed her to write what she had said in her notebook.</p>
+
+<div class="journal">
+    <p>It's not like I'm the only woman who was ever raped. But —</p>
+</div>
+
+<p>"But what? You write the rest of that. Don't think, just write."</p>
+
+<div class="journal">
+    <p>But — I was, for over a year, by someone who probably knew better even if I didn't.</p>
+</div>
+
+<p>"Read it to me, Marsh," Methos directed once she set down the pencil. She read it aloud slowly. "Now answer this question. What did it cost me."</p>
+
+<p>It took a few minutes before she let the words hit.</p>
+
+<div class="journal">
+    <p>Being with Kenan cost my virginity, my self-respect, a clear view of the world and enough damage to not immediately recognize what a good man Richie is, fear, uncertainty. Web was a good man at the time. I ignored that. Maybe there were other ways to get away from Eleanor, maybe not.</p>
+</div>
+
+<p>Methos simply nodded. "When exactly did you first kiss Richie?"</p>
+
+<p>"Birthday kiss on my 20th birthday, a few months after I met all of you."</p>
+
+<p>"Richie was the only one to recognize your birthday," Methos commented with a slight grin. "He just may be the right suitor for you."</p>
+
+<p>"Well, I hope so seeing as how we're living together." Jennifer chuckled. And then her face was stone serious. "That is all I will discuss regarding Richie."</p>
+
+<p>"Why?"</p>
+
+<p>"Because some things are sacred and must be treated as such."</p>
+
+<p>Methos nodded and wrote a few more letters on his clipboard. "That's fine. What I'd really like to talk about is Daniela. We'll start there tomorrow."</p>
+
+<div class="scene-break">* * *</div>
+
+<h3>Session Two — Section 3</h3>
+
+<p>"The negotiation meeting at Mac's must have blown you away when Richie objected to any sexual acts that you weren't comfortable entertaining," Methos opened. "I imagine you had some regret for not speaking openly about what Daniela has to offer you."</p>
+
+<p>"We spoke about it that evening when we got home."</p>
+
+<p>"And?"</p>
+
+<p>"And what? Daniela's moved on down the road. I missed the boat on that one."</p>
+
+<p>"She hasn't left the planet, Marsh. You could still explore with Daniela. Richie is okay with it. You are the one who has been denying yourself, rejecting an impulse, a call to taste more of the world."</p>
+
+<p>"I don't think she'd appreciate me showing up on her doorstep and asking for sex."</p>
+
+<p>"Marsh, listen to me now and hear what I'm saying. You could show up on anyone's doorstep, male, female, non-binary, and every single one of them would open the door and beg you enter. Don't believe me? Make it a point to ask Daniela for a weekend of lesbian experience, see what she says." Methos suggested. "That woman is tall, strong and gorgeous. She'd probably make you scream in ways you never have."</p>
+
+<p>Jennifer let his statement land. "I really think that moment has passed. I wouldn't want to ruin the friendship we have built."</p>
+
+<p>"Ah, the last words of all sour grapes relationships," Methos sighed. "What will you do if another Daniela comes around?"</p>
+
+<p>Jennifer took a deep breath and was craving all of her vices all at once. "I don't know, Methos. Maybe I'd handle it differently with what I know now."</p>
+
+<p>"Write down what not pursuing Daniela has cost you."</p>
+
+<p>"I don't know what I lost in not doing something."</p>
+
+<p>"Exactly. Write it down."</p>
+
+<h3>Session Two — Section 4</h3>
+
+<p>"Ever been arrested, Marsh?"</p>
+
+<p>"Uh no," Jennifer answered with a chuckle.</p>
+
+<p>"Never? Nothing? Never let off with a warning?"</p>
+
+<p>"Not even a speeding ticket."</p>
+
+<p>"Very interesting," Methos responded while he continued jotting notes. "No wonder Richie trips your trigger. A good girl and the bad boy. Classic love tale."</p>
+
+<p>Jennifer was nonplussed. "Not talking about Richie."</p>
+
+<p>"Even if you've never been arrested you've probably broken the law at some point. When was the last time?"</p>
+
+<p>"I've stolen crackers, cream, sugar from Joe's."</p>
+
+<p>"And that's like taking a pen home from the office. Doesn't count."</p>
+
+<p>"Vandalism?" Jennifer suggested. Methos said that was a suitable answer and questioned the details. "I broke a couple windows and scratched up a car."</p>
+
+<p>"Boyfriend breakup, what else?"</p>
+
+<p>Jennifer thought for a few moments. "There've been some sketchy moments in bartending, some at Joe's, but probably not anything the cops would bother with."</p>
+
+<p>"Hazard of the trade."</p>
+
+<p>Silence.</p>
+
+<p>"Do you want to have children?"</p>
+
+<p>"Maybe, there's a lot of variables there," Jennifer answered, going through all of the standard issues everyone faced and then the complications of the Immortals.</p>
+
+<p>"What were your feelings about it earlier in your life. Was being a mother an aspiration?"</p>
+
+<p>Jennifer took a few minutes to really think about it.</p>
+
+<p>"Probably not. There was a chance I could've been another Eleanor and I couldn't do that to a child."</p>
+
+<p>"So a sacrifice of your wants just in case the cycle isn't broken," Methos commented. "A lot of missed opportunities for the things a lot of people do whether or not it's a good idea."</p>
+
+<p>"Prudence is not a bad thing, and I stand behind my decision. And don't try to throw any of that 'what if your kid could've cured cancer' at me."</p>
+
+<p>"Wouldn't dream of it, Marsh," Methos commented. "Have you and Richie considered an adoption?"</p>
+
+<p>"It's on the not-no list."</p>
+
+<!-- ——————— END MATTER ——————— -->
+<div class="end-matter">
+    <p style="font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.15em; margin-bottom: 2rem;">— END OF BOOK FIVE —</p>
+    <div class="end-publisher">West One Publishing</div>
+    <div class="end-link"><a href="https://fudesan.github.io/West-One-Publishing">fudesan.github.io/West-One-Publishing</a></div>
+</div>
+
+</div><!-- .content -->
+
+</body>
+</html>
