@@ -13,10 +13,17 @@ Jennifer Marsh arrives in Seacouver at nineteen with a bartending job, a drum ki
 
 |Book |Title                              |Status          |
 |-----|-----------------------------------|----------------|
-|One  |There Can Be Only One Morning Shift|Complete        |
-|Two  |There Can Be Only One Morning Shift|Work in Progress|
-|Three|There Can Be Only One Morning Shift|Complete        |
-|Four |There Can Be Only One Morning Shift|Work in Progress|
+|One  |The Anomaly|Complete        |
+|Two  |The Long Game|Work in Progress|
+|Three|The Cabin|Complete        |
+|Four ||Work in Progress|
+|Intermezzo|   
+|Five  |Work in Progress|
+|Six|        |
+|Seven |Work in Progress
+Eight  |The Anomaly|Complete        |
+|Eight  |The Long Game|Work in Progress|
+|Nine| Japan |Complete        |
 
 **Read it here:** [fudesan.github.io/West-One-Publishing](https://fudesan.github.io/West-One-Publishing)
 
