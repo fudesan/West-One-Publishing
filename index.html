@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>West One Publishing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --parchment: #f5f0e8;
+    --ink: #2c1810;
+    --accent: #8b4513;
+    --muted: #6b5744;
+    --rule: #c8a882;
+    --max-width: 680px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--parchment);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .page { max-width: var(--max-width); margin: 0 auto; }
+
+  /* Header */
+  .site-header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 2px solid var(--rule);
+    margin-bottom: 3rem;
+  }
+
+  .publisher-name {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+
+  .publisher-tagline {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  /* Series heading */
+  .series-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Book card */
+  .book-card {
+    border-top: 1px solid var(--rule);
+    padding: 2rem 0;
+  }
+
+  .book-card:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .book-meta-top {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .book-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-bottom: 0.3rem;
+  }
+
+  .book-series-line {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .book-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .tag-sep { color: var(--rule); }
+
+  .badge {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--parchment);
+    padding: 0.2em 0.6em;
+    border-radius: 1px;
+  }
+
+  .badge.wip {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+
+  .read-link {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .read-link:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 500px) {
+    .publisher-name { font-size: 1.5rem; }
+    .book-title { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <div class="publisher-name">West One Publishing</div>
+    <div class="publisher-tagline">Fan fiction by Fude-san</div>
+  </header>
+
+  <main>
+    <div class="series-heading">The Jennifer Marsh Series &mdash; Highlander: The Series</div>
+
+    <article class="book-card">
+      <div class="book-meta-top">Highlander: The Series &middot; Fan Fiction</div>
+      <h2 class="book-title">The Anomaly</h2>
+      <div class="book-series-line">Book One of the Jennifer Marsh Series</div>
+      <div class="book-tags">
+        <span class="tag">OC-centric</span>
+        <span class="tag-sep">&middot;</span>
+        <span class="tag">Canon-parallel</span>
+        <span class="tag-sep">&middot;</span>
+        <span class="tag">Slow Burn</span>
+        <span class="badge">Complete</span>
+      </div>
+      <a href="aiop1.html" class="read-link">Read it here &rarr;</a>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>West One Publishing &bull; <a href="mailto:fudesan@yahoo.com">fudesan@yahoo.com</a></p>
+    <p style="margin-top:0.4rem;">Based on <em>Highlander: The Series</em> &bull; No copyright infringement intended</p>
+  </footer>
+
+</div>
+</body>
+</html>
