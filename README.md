@@ -21,9 +21,9 @@ Jennifer Marsh arrives in Seacouver at nineteen with a bartending job, a drum ki
 |Five  |Work in Progress|
 |Six|        |
 |Seven |Work in Progress
-  
 |Eight  |The Long Game|Work in Progress|
 |Nine| Japan |Complete        |
+  
 
 **Read it here:** [fudesan.github.io/West-One-Publishing](https://fudesan.github.io/West-One-Publishing)
 
