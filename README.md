@@ -21,7 +21,7 @@ Jennifer Marsh arrives in Seacouver at nineteen with a bartending job, a drum ki
 |Five  |Work in Progress|
 |Six|        |
 |Seven |Work in Progress
-Eight  |The Anomaly|Complete        |
+  
 |Eight  |The Long Game|Work in Progress|
 |Nine| Japan |Complete        |
 
