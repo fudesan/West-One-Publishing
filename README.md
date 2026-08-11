@@ -7,22 +7,14 @@ Fan fiction and original fiction by **Fude-san** (筆者さん).
 
 ## The Jennifer Marsh Series
 
-A complete Highlander: The Series fan fiction — eight books, canon-parallel, OC-centric.
+A complete Highlander: The Series fan fiction — 21 books, canon-parallel, OC-centric.
 
 Jennifer Marsh arrives in Seacouver at nineteen with a bartending job, a drum kit, and no idea what she’s walked into. What follows is found family, slow burn, Japanese language acquisition, a dojo, and the specific education of becoming someone the Immortals trust.
 
 |Book |Title                              |Status          |
 |-----|-----------------------------------|----------------|
 |One  |The Anomaly|Complete        |
-|Two  |The Long Game|Work in Progress|
-|Three|The Cabin|Complete        |
-|Four ||Work in Progress|
-|Intermezzo|   
-|Five  |Work in Progress|
-|Six|        |
-|Seven |Work in Progress
-|Eight  |The Long Game|Work in Progress|
-|Nine| Japan |Complete        |
+
   
 
 **Read it here:** [fudesan.github.io/West-One-Publishing](https://fudesan.github.io/West-One-Publishing)
